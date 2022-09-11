@@ -1,0 +1,45 @@
+:root{
+    --primary-color: #f05123;
+    --black-color: #000;
+    --white-color: #ffffff;
+    --gray-color: #666;
+    --text-color: #333;
+    --yellow-color: #fed810;
+    --plum-color: #b80257;
+    --fb-color: #4080ff;
+    --mail-color: #f47425;
+    --invalid-color: #f33a58;
+    --desc-color: #0000008a;
+    --first-color: #1dbfaf;
+    --second-color: #1dbfaf;
+    --button-color: #1dbfaf;
+    --header-height: 120px;
+    --button-image: linear-gradient(70.06deg, #2cccff -5%, #22dfbf 106%);
+    --font-Roboto: 'Roboto', sans-serif;
+}
+* {
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+    font-family: var(--font-Roboto);
+    box-sizing: border-box;
+}
+
+
+.grid {
+    width: 1500px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
