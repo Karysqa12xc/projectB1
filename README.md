@@ -3,7 +3,7 @@
 #Lưu ý khi download code về máy
 ##Nên tạo một thư mục có tên là workspace trước rồi add nó vào vscode(linlk hướng dẫn: https://youtu.be/TkPppGzB9ZA)
 
-##Khi push code lên thì commit tên của bản thần rồi mới push
+##Khi push code lên thì commit tên của bản thân rồi mới push lên
 
 #Chức năng web: Đưa người dùng đến những trang học tập của các ngành: Công nghệ thông tin, Thiết kế đồ họa, Blender, Unity…
 
