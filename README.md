@@ -19,3 +19,7 @@ VD:
                         <li class="header__navbar-item” </li>
 			</ul>
 </nav>
+
+#Cách đẩy code:
+git pull
+git push

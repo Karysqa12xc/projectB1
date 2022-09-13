@@ -1,6 +1,6 @@
 /* app_header */
 .app__header {
-    background: linear-gradient(to left bottom, rgb(118, 18, 255), rgb(5, 178, 255));
+    background: linear-gradient(to left bottom, rgb(255 18 211), rgb(5 255 247));
     height: var(--header-height);
     position: sticky;
 }
@@ -97,7 +97,7 @@
     height: 50px;
     border-radius: 3px;
     box-shadow:0 2px 4px var(--gray-color);
-    display: none;
+     display: none;
     transform-origin: calc(100% - 20px) top;
     animation: faceIn ease  0.3s;
 
@@ -133,4 +133,15 @@
     text-decoration: none;
     display: block;
     font-size: 1.4rem;
+}
+
+/* Sửa icon của phần kết nối */
+.fa-facebook-messenger{
+   color: #d309d3;
+}
+.fa-tiktok{
+    color: black;
+}
+.fa-twitter{
+    color: aqua;
 }
