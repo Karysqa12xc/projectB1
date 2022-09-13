@@ -145,3 +145,85 @@
 .fa-twitter{
     color: aqua;
 }
+
+.app__header-notice {
+    position: absolute;
+    width: 360px;
+    background-color: var(--white-color);
+    top: calc(30% + 5px);
+    right: 208px;
+    display: none;
+    animation: headerNoticeGrow ease-in 0.3;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px #ccc;
+}
+
+.app__header-notice::before {
+    content: "";
+    border-width: 21px 26px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    top: -33px;
+    right: 30px;
+}
+
+.app__header-head-item:hover .app__header-notice{
+    display: block;
+}
+.app__header-notice-head {
+    padding: 10px;
+}
+
+.app__header-notice-separator {
+    margin: 0;
+}
+
+.app__header-notice-list {
+    padding-left: 0;
+    list-style: none;
+    height: 416px;
+    overflow-y: scroll;
+}
+
+.app__header-notice--has-color {
+    background-color: rgba(243, 58, 88, 0.09);
+}
+
+.app__header-notice-link {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.app__header-notice-item {
+    display: flex;
+}
+
+.app__header-notice-link:hover{
+    border-radius: 3px;
+}
+
+.app__header-notice-picture {
+    width: 59px;
+    height: 57px;
+    border-radius: 50px;
+}
+
+.app__header-notice-note {
+    display: flex;
+    color: var(--mail-color);
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.app__header-note-content {
+    font-size: 1.9rem;
+    padding-left: 10px;
+}
+
+.app__header-notice-note-item {
+    font-size: 1.2rem;
+    padding-left: 10px;
+    color: rgba(245, 117, 38, 0.7);
+}
