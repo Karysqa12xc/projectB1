@@ -2,7 +2,7 @@
 .app__header {
     background: linear-gradient(to left bottom, rgb(118, 18, 255), rgb(5, 178, 255));
     height: var(--header-height);
-    position: relative;
+    position: sticky;
 }
 
 .app__header-head {
@@ -30,7 +30,7 @@
 .app__header-head-inp {
     background-color: var(--white-color);
     left: 0;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     height: 100%;
     width: fit-content;
     color: var(--text-color);
@@ -68,7 +68,7 @@
 .app__header-heading {
     color: var(--white-color);
     margin: -26px 40px;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 500;
 }
 
@@ -78,10 +78,59 @@
 }
 
 .app__header-head-link {
+    position: relative;
     color: var(--white-color);
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     line-height: 1.4rem;
     margin: 5px 40px;
     display: block;
+}
+
+/* Thông tin trong kết nối */
+.app__header-information{
+    position: absolute;
+    background-color: var(--white-color);
+    top: calc(30% + 2px);
+    right: 45px;
+    width: 200px;
+    height: 50px;
+    border-radius: 3px;
+    box-shadow:0 2px 4px var(--gray-color);
+    display: none;
+    transform-origin: calc(100% - 20px) top;
+    animation: faceIn ease  0.3s;
+
+}
+
+.app__header-head-item-has-information:hover .app__header-information{
+    display: block;
+}
+.app__header-information::before{
+    content: "";
+    position: absolute;
+    border-width: 11px 16px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    right: 15px;
+    top: -22px;
+    z-index: 3;
+}
+.app__header-information-head{
+    font-size: 1.8rem;
+    z-index: 1;
+}
+.app__header-information-list{
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+}
+.app__header-information-item{
+    margin: auto;
+}
+
+.app__header-information-link{
+    text-decoration: none;
+    display: block;
+    font-size: 1.4rem;
 }

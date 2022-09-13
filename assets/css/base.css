@@ -26,9 +26,31 @@ html{
     box-sizing: border-box;
 }
 
+/* Animation */
+@keyframes faceIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes headerNoticeGrow {
+    from {
+        opacity: 0;
+        transform: scale(var(--grow-from));
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(var(--grow-to));
+    }
+}
 
 .grid {
-    width: 1500px;
+    width: 1800px;
     max-width: 100%;
     margin: 0 auto;
 }
