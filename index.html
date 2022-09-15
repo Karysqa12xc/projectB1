@@ -22,9 +22,10 @@
         <header>
             <div class="grid">
                 <div class="app__header">
+                    <!-- nav head -->
                     <nav class="app__header-head">
-                        <ul class="app__header-head-list">
-                            <li class="app__header-head-item">
+                        <ul class="app__header-head-list-up">
+                            <li class="app__header-head-item-up">
                                 <i class="app__header-heading-bigIcon fa-brands fa-joomla"></i>
                                 <h2 class="app__header-heading">
                                     Tổng hợp các khóa học miễn phí
@@ -39,10 +40,17 @@
                             </div>
                         </div>
 
-                        <ul class="app__header-head-list">
-                            <li class="app__header-head-item">
+                        <ul class="app__header-head-list-down">
+                            <li class="app__header-head-item-down">
+                                <a href="#" class="app__header-head-link">
+                                    <i class="fa-solid fa-comment"></i>
+                                    Tin nhắn
+                                </a>
+                            </li>
+                            <li class="app__header-head-item-down app__header-head-item-has-notice">
                                 <a href="#" class="app__header-head-link">
                                     <i class="fa-solid fa-bell"></i>
+                                    <span class="app__header-head-pointer">+</span>
                                     <span class="app__header-head-content">Thông báo</span>
                                 </a>
                                 <!-- Thông tin bên trong thông báo -->
@@ -57,7 +65,8 @@
                                                         class="app__header-notice-picture">
                                                 </div>
                                                 <div class="app__header-notice-note">
-                                                    <p class="app__header-note-content">Quỳnh vừa mới thêm một khóa học mới</p>
+                                                    <p class="app__header-note-content">Quỳnh vừa mới thêm một khóa học
+                                                        mới</p>
                                                     <span class="app__header-notice-note-item">Chưa xem</span>
                                                 </div>
                                             </li>
@@ -74,15 +83,16 @@
                                                 </div>
                                             </li>
                                         </a>
-                                        <a href="#" class="app__header-notice-link">
+                                        <a href="#" class="app__header-notice-link app__header-notice--has-color">
                                             <li class="app__header-notice-item">
                                                 <div class="app__header-notice-dictionary">
                                                     <img src="assets/img/uchia_chrome.jpg" alt="Ảnh đại diện"
                                                         class="app__header-notice-picture">
                                                 </div>
                                                 <div class="app__header-notice-note">
-                                                    <p class="app__header-note-content">Uchiha Chrome vừa mới follow bạn</p>
-                                                    <span class="app__header-notice-note-item">Đã xem</span>
+                                                    <p class="app__header-note-content">Uchiha Chrome vừa mới follow bạn
+                                                    </p>
+                                                    <span class="app__header-notice-note-item">Chưa xem</span>
                                                 </div>
                                             </li>
                                         </a>
@@ -132,9 +142,58 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="app__header-head-item app__header-head-item-has-information">
+                            
+                            <li class="app__header-head-item">
                                 <a href="#" class="app__header-head-link">
-                                    <i class="fa-sharp fa-solid fa-share-nodes"></i>
+                                    Đăng nhập
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- nav end -->
+                    <nav class="app__header-end">
+                        <ul class="app__header-end-list app__header-end-left">
+                            <li class="app__header-end-item">
+                                <a href="#" class="app__header-end-link">
+                                    <img src="assets/img/icon_people.png" alt="Ảnh về chúng tôi" class="app__header-end-picture">
+                                    Giới thiệu
+                                </a>
+                            </li>
+                            <li class="app__header-end-item">
+                                <a href="#" class="app__header-end-link">
+                                    <img src="assets/img/myCourse_2.png" alt="Ảnh khóa học của tôi" class="app__header-end-picture">
+                                    My course
+                                </a>
+                            </li>
+                            <li class="app__header-end-item">
+                                <a href="#" class="app__header-end-link">
+                                    <img src="assets/img/Dang_follow.png" alt="Ảnh đang follow" class="app__header-end-picture">
+                                    Đang Follow
+                                </a>
+                            </li>
+                        </ul>
+
+
+                        <ul class="app__header-end-list app__header-end-right">
+
+                            <li class="app__header-end-item">
+                                <a href="#" class="app__header-end-link">
+                                    <img src="assets/img/icon_follower_3.png" alt="Ảnh follow" class="app__header-end-picture">
+                                    Follower
+                                </a>
+                            </li>
+
+                            <li class="app__header-end-item">
+                                <a href="#" class="app__header-end-link">
+                                    <img src="assets/img/icon_donate.png" alt="Ảnh icon_donate" class="app__header-end-picture">
+                                    Ủng hộ tôi
+                                </a>
+                            </li>
+
+                            <li class="app__header-end-item app__header-head-item-has-information">
+                                <a href="#" class="app__header-end-link">
+                                    <img src="assets/img/icon_connection_2.png" alt="Ảnh kết nối" class="app__header-end-picture">
                                     <span class="app__header-head-content">Kết nối</span>
                                 </a>
                                 <!-- Thông tin bên trong kết nối -->
@@ -161,11 +220,15 @@
                                                 <i class="fa-brands fa-tiktok"></i>
                                             </a>
                                         </li>
+                                        <li class="app__header-information-item">
+                                            <a href="" class="app__header-information-link">
+                                                <i class="fa-brands fa-reddit"></i>
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                                 </a>
                             </li>
-
                         </ul>
                     </nav>
                 </div>
@@ -174,7 +237,8 @@
 
 
 
-        <footer></footer>
+        <footer>
+        </footer>
     </div>
 </body>
 

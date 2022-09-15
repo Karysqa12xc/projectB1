@@ -1,13 +1,16 @@
 /* app_header */
 .app__header {
+    z-index: 1;
+    width: 100%;
     background: linear-gradient(to left bottom, rgb(255 18 211), rgb(5 255 247));
     height: var(--header-height);
-    position: sticky;
+    position: fixed;
 }
-
+/* nav head */
 .app__header-head {
-    display: flex;
+    display: flex; 
     justify-content: space-between;
+    align-items: center;
 }
 
 .app__header-head-search {
@@ -52,14 +55,18 @@
     color: rgb(118, 18, 255);
 }
 
-.app__header-head-list {
-    padding: 0;
+.app__header-head-list-up{
     list-style-type: none;
-    padding: 0;
-    display: inline-flex;
+    padding-left: 40px;
+    display: flex;
+    margin-top: -16px;
+}
+.app__header-head-list-down{
+    list-style-type: none;
+    padding-right: 30px;
+    display: flex;
     justify-content: space-around;
 }
-
 .app__header-heading-bigIcon {
     font-size: 3.0rem;
     color: var(--white-color);
@@ -67,95 +74,54 @@
 
 .app__header-heading {
     color: var(--white-color);
-    margin: -26px 40px;
+    margin: -29px 34px;
     font-size: 2rem;
+    padding: 0;
     font-weight: 500;
 }
-
-.app__header-head-item {
-    margin: 5px;
-    font-weight: 600;
+.app__header-head-item-down{
+    margin-right: 58px;
+    margin-top: 5px;
 }
-
+.app__header-head-item{
+    margin-top: 6px;
+}
 .app__header-head-link {
+    display: block;
+    font-weight: 600;
     position: relative;
     color: var(--white-color);
     text-decoration: none;
     font-size: 1.8rem;
     line-height: 1.4rem;
-    margin: 5px 40px;
-    display: block;
+    margin-top: 5px;
 }
 
-/* Thông tin trong kết nối */
-.app__header-information{
-    position: absolute;
-    background-color: var(--white-color);
-    top: calc(30% + 2px);
-    right: 45px;
-    width: 200px;
-    height: 50px;
-    border-radius: 3px;
-    box-shadow:0 2px 4px var(--gray-color);
-     display: none;
-    transform-origin: calc(100% - 20px) top;
-    animation: faceIn ease  0.3s;
 
-}
-
-.app__header-head-item-has-information:hover .app__header-information{
-    display: block;
-}
-.app__header-information::before{
-    content: "";
-    position: absolute;
-    border-width: 11px 16px;
-    border-style: solid;
-    border-color: transparent transparent var(--white-color) transparent;
-    right: 15px;
-    top: -22px;
-    z-index: 3;
-}
-.app__header-information-head{
-    font-size: 1.8rem;
-    z-index: 1;
-}
-.app__header-information-list{
-    padding-left: 0;
-    list-style: none;
-    display: flex;
-}
-.app__header-information-item{
-    margin: auto;
-}
-
-.app__header-information-link{
-    text-decoration: none;
-    display: block;
-    font-size: 1.4rem;
-}
-
-/* Sửa icon của phần kết nối */
-.fa-facebook-messenger{
-   color: #d309d3;
-}
-.fa-tiktok{
-    color: black;
-}
-.fa-twitter{
-    color: aqua;
-}
-
+/* Nội dụng trong thông báo */
 .app__header-notice {
+    z-index: 1;
     position: absolute;
     width: 360px;
     background-color: var(--white-color);
-    top: calc(30% + 5px);
-    right: 208px;
+    top: calc(100% + -80px);
+    right: 160px;
     display: none;
-    animation: headerNoticeGrow ease-in 0.3;
+    transform-origin: top right;
+    animation: headerNoticeGrow ease 0.25s;
     border-radius: 2px;
     box-shadow: 0 2px 2px #ccc;
+}
+.app__header-head-pointer{
+    position: absolute;
+    background-color: red;
+    padding: 0px 5px;
+    border-radius: 100px;
+    font-size: 0.8rem;
+    top: -6px;
+    left: -7px;
+    color: transparent;
+    text-align: center;
 }
 
 .app__header-notice::before {
@@ -164,13 +130,25 @@
     border-style: solid;
     border-color: transparent transparent var(--white-color) transparent;
     position: absolute;
-    top: -33px;
-    right: 30px;
+    top: -35px;
+    right: 24px;
 }
 
-.app__header-head-item:hover .app__header-notice{
+.app__header-notice::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 121px;
+    height: 18px;
+    top: -17px;
+    right: 14px;
+    background-color:transparent;
+}
+
+.app__header-head-item-has-notice:hover .app__header-notice{
     display: block;
 }
+
 .app__header-notice-head {
     padding: 10px;
 }
@@ -202,6 +180,7 @@
 
 .app__header-notice-link:hover{
     border-radius: 3px;
+    background-color: #ccc;
 }
 
 .app__header-notice-picture {
@@ -226,4 +205,116 @@
     font-size: 1.2rem;
     padding-left: 10px;
     color: rgba(245, 117, 38, 0.7);
+}
+
+/* nav end */
+ .app__header-end{
+    top: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.app__header-end-list{
+    position: absolute;
+    list-style: none;
+    padding-left: 0;
+}
+.app__header-end-left{
+    display: flex;
+    left: 0;
+    margin-left: 15px;
+}
+.app__header-end-right{
+    right: 0;
+    display: flex;
+    margin-right: 15px;
+}
+.app__header-end-item{
+    padding: 5px;
+    margin: 0 20px;
+}
+.app__header-end-link{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--white-color);
+    text-decoration: none;
+    display: block;
+} 
+
+.app__header-end-picture{
+    margin-bottom: 6px;
+}
+
+
+
+/* Thông tin trong kết nối */
+.app__header-information{
+    position: absolute;
+    background-color: var(--white-color);
+    top: calc(100% + 5px);
+    right: 22px;
+    width: 200px;
+    height: 50px;
+    border-radius: 3px;
+    box-shadow:0 2px 4px var(--gray-color);
+    display: none;
+    transform-origin: calc(100% - 20px) top;
+    animation: faceIn ease  0.3s;
+}
+
+
+.app__header-head-item-has-information:hover .app__header-information{
+    display: block;
+}
+.app__header-information::before{
+    content: "";
+    position: absolute;
+    border-width: 11px 16px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    right: 15px;
+    top: -22px;
+}
+
+.app__header-information::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 76px;
+    height: 18px;
+    top: -17px;
+    right: 5px;
+    background-color: transparent;
+}
+.app__header-information-head{
+    font-size: 1.8rem;
+}
+.app__header-information-list{
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+}
+.app__header-information-item{
+    margin: auto;
+}
+
+.app__header-information-link{
+    text-decoration: none;
+    display: block;
+    font-size: 1.4rem;
+}
+
+/* Sửa icon của phần kết nối */
+.fa-facebook-messenger{
+   color: #d309d3; 
+}
+.fa-tiktok{
+    color: black;
+}
+.fa-twitter{
+    color: #1d9bf0;
+}
+
+.fa-reddit{
+    color: red;
 }

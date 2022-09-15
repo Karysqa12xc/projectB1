@@ -40,17 +40,17 @@ html{
 @keyframes headerNoticeGrow {
     from {
         opacity: 0;
-        transform: scale(var(--grow-from));
+        transform: scale(0);
     }
 
     to {
         opacity: 1;
-        transform: scale(var(--grow-to));
+        transform: scale(1);
     }
 }
 
 .grid {
-    width: 1800px;
+    width: 1600px;
     max-width: 100%;
     margin: 0 auto;
 }
