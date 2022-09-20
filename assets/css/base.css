@@ -14,6 +14,7 @@
     --button-color-2: #fe2c55;
     --hover-1: #e8ebed;
     --header-height: 120px;
+    --shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     --button-image: linear-gradient(70.06deg, #2cccff -5%, #22dfbf 106%);
     --font-Roboto: 'Roboto', sans-serif;
 }
@@ -74,7 +75,13 @@ html {
         opacity: 1;
     }
 }
-
+@keyframes moveRight{
+    from{
+        right: 0%;
+    }to{
+        right: 100%;
+    }
+}
 .grid {
     width: 1600px;
     max-width: 100%;

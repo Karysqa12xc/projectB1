@@ -603,42 +603,44 @@
 }
 
 /* Thông tin trong phần Follower */
-.app__header-end-follower{
+.app__header-end-follower {
     background-color: var(--white-color);
     position: absolute;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: var(--shadow);
     width: 300px;
     border-radius: 4px;
     display: none;
     animation: faceIn ease 0.3s;
 }
 
-.app__header-end-item-has-follower:hover .app__header-end-follower{
+.app__header-end-item-has-follower:hover .app__header-end-follower {
     display: block;
 }
-.app__header-end-follower-heading{
+
+.app__header-end-follower-heading {
     margin-top: 8px;
     padding: 10px;
 }
-.app__header-end-follower-separator{
 
-}
-.app__header-end-follower-content{
+.app__header-end-follower-separator {}
 
-}
-.app__header-end-follower-list{
+.app__header-end-follower-content {}
+
+.app__header-end-follower-list {
     max-height: 420px;
     overflow-y: scroll;
     list-style: none;
     padding-left: 0;
 }
-.app__header-end-follower-item{
+
+.app__header-end-follower-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-bottom: 12px;
 }
-.app__header-end-follower-link{
+
+.app__header-end-follower-link {
     text-decoration: none;
     font-size: 1.6rem;
     display: block;
@@ -646,24 +648,28 @@
     cursor: default;
 }
 
-.app__header-end-follower-link:hover{
+.app__header-end-follower-link:hover {
     color: var(--text-color);
     background-color: var(--white-color);
 }
-.app__header-end-follower-photo{
+
+.app__header-end-follower-photo {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     margin-left: 8px;
 }
-.app__header-end-follower-title{
+
+.app__header-end-follower-title {
     margin: 12px 0px 0px 8px;
 }
-.app__header-end-follower-userName{
+
+.app__header-end-follower-userName {
     padding-bottom: 5px;
     color: var(--primary-color);
 }
-.app__header-end-follower-picture{
+
+.app__header-end-follower-picture {
     width: 56px;
     height: 55px;
     border-radius: 50px;
@@ -671,10 +677,12 @@
     object-position: top;
     cursor: pointer;
 }
-.app__header-end-follower-user{
+
+.app__header-end-follower-user {
     margin: 0px 15px 0px 0px;
 }
-.app__header-end-follower-btn{
+
+.app__header-end-follower-btn {
     background-color: var(--hover-1);
     text-decoration: none;
     font-size: 1.6rem;
@@ -688,7 +696,8 @@
     cursor: pointer;
     margin-left: 6px;
 }
-.app__header-end-follower-fl{
+
+.app__header-end-follower-fl {
     margin-top: 2px;
     text-decoration: none;
     font-size: 1rem;
@@ -699,56 +708,66 @@
     border-radius: 10px;
     min-width: 50px;
 }
-.app__header-end-follower-fl:hover{
+
+.app__header-end-follower-fl:hover {
     opacity: 0.7;
     color: var(--hover-1);
 }
-.app__header-end-follower-btn:hover{
+
+.app__header-end-follower-btn:hover {
     color: var(--white-color);
     background-color: var(--fb-color);
 }
 
 
 /* Thông tin trong phần Đang Follow */
-.app__header-end-viewer{
+.app__header-end-viewer {
     position: absolute;
     background-color: var(--white-color);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: var(--shadow);
     border-radius: 4px;
     animation: faceIn ease 0.3s;
     display: none;
 }
-.app__header-end-item-has-viewer:hover .app__header-end-viewer{
+
+.app__header-end-item-has-viewer:hover .app__header-end-viewer {
     display: block;
 }
-.app__header-end-viewer-title{
+
+.app__header-end-viewer-title {
     padding: 12px 12px 10px 12px;
     line-height: 2.9rem;
 }
-.app__header-end-viewer-list{
+
+.app__header-end-viewer-list {
     list-style: none;
     padding-left: 0;
 }
-.app__header-end-viewer-item{
+
+.app__header-end-viewer-item {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-.app__header-end-viewer-link{
+
+.app__header-end-viewer-link {
     padding: 5px;
     margin-bottom: 10px;
     text-decoration: none;
     color: var(--text-color);
     cursor: default;
 }
-.app__header-end-viewer-link:hover{
+
+.app__header-end-viewer-link:hover {
     color: var(--text-color);
 }
-.app__header-end-viewer-user{
+
+.app__header-end-viewer-user {
     display: flex;
     align-items: center;
 }
-.app__header-end-viewer-photo{
+
+.app__header-end-viewer-photo {
     width: 55px;
     height: 50px;
     border-radius: 30px;
@@ -756,30 +775,36 @@
     object-position: top;
     cursor: pointer;
 }
-.app__header-end-viewer-content{
+
+.app__header-end-viewer-content {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
     margin-top: 10px;
 }
-.app__header-end-viewer-userName{
+
+.app__header-end-viewer-userName {
     font-size: 2.0rem;
     color: var(--primary-color);
     cursor: default;
 }
-.app__header-end-viewer-description{
+
+.app__header-end-viewer-description {
     cursor: default;
 }
-.app__header-end-viewer-description:hover{
+
+.app__header-end-viewer-description:hover {
     color: var(--text-color);
 }
-.app__header-end-viewer-icon{
+
+.app__header-end-viewer-icon {
     display: flex;
     flex-direction: column;
     align-items: stretch;
     margin-top: -30px;
 }
-.app__header-end-viewer-connect{
+
+.app__header-end-viewer-connect {
     background-color: var(--hover-1);
     text-decoration: none;
     display: block;
@@ -789,16 +814,19 @@
     height: 36px;
     border-radius: 30px;
 }
-.app__header-end-viewer-connect:hover{
-    background-color: var(--fb-color);   
+
+.app__header-end-viewer-connect:hover {
+    background-color: var(--fb-color);
     color: var(--white-color);
 }
-.app__header-end-viewer-connect--1{
+
+.app__header-end-viewer-connect--1 {
     position: relative;
     text-align: center;
     margin-bottom: 12px;
 }
-.app__header-end-viewer-information{
+
+.app__header-end-viewer-information {
     color: var(--white-color);
     background-color: var(--fb-color);
     border-radius: 5px;
@@ -810,22 +838,160 @@
     left: 40px;
     display: none;
 }
-.app__header-end-viewer-connect--1:hover .app__header-end-viewer-information{
+
+.app__header-end-viewer-connect--1:hover .app__header-end-viewer-information {
     display: block;
 }
-.app__header-end-viewer-connect--2{
+
+.app__header-end-viewer-connect--2 {
     position: relative;
     text-align: center;
     margin: auto;
     line-height: 2.8rem;
     margin-left: 1px;
 }
-.app__header-end-viewer-connect--2:hover .app__header-end-viewer-information{
+
+.app__header-end-viewer-connect--2:hover .app__header-end-viewer-information {
     display: block;
 }
+
 /* Thông tin trong phần ủng hộ */
+.app__header-end-donate {
+    position: absolute;
+    background-color: var(--white-color);
+    box-shadow: var(--shadow);
+    width: 350px;
+    border-radius: 5px;
+    animation: faceIn ease 0.3s;
+    display: none;
+}
+.app__header-end-item-has-donate:hover .app__header-end-donate{
+    display: block;
+}
+.app__header-end-donate-support{
+    display: none;
+}
+#app__header-end-donate-1:target{
+    display: block;
+}
+#app__header-end-donate-2:target{
+    display: block;
+}
+.app__header-end-donate-history-support{
+    display: none;
+}
+.app__header-end-donate-head {}
 
+.app__header-end-donate-head-list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding-left: 0;
+    margin: 10px;
+}
 
+.app__header-end-donate-head-item {
+    margin: auto;
+    
+}
+
+.app__header-end-donate-infotmation { 
+    display: block;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--text-color);
+    position: relative;
+    
+}
+.app__header-end-donate-infotmation:hover{
+    color: var(--invalid-color);
+}
+.app__header-end-donate-infotmation::after{
+    position: absolute;
+    top: 20px;
+    right: -11px;
+    content: "";
+    width: 0px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: var(--invalid-color);  
+}
+.app__header-end-donate-infotmation:hover::after{
+    display: block;
+    width: 100%;
+    left: 0;
+}
+
+.app__header-end-donate-heading {
+    text-align: center;
+}
+
+.app__header-end-donate-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.app__header-end-donate-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+}
+
+.app__header-end-donate-link {
+    text-decoration: none;
+    display: block;
+}
+
+.app__header-end-donate-photo {
+    display: flex;
+    align-items: center;
+}
+
+.app__header-end-donate-picture {
+    width: 55px;
+    height: 55px;
+    border-radius: 30px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.app__header-end-donate-content {
+    margin: 12px 0px 0px 10px;
+    color: var(--text-color);
+}
+
+.app__header-end-donate-userName {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+.app__header-end-donate-description {}
+
+.app__header-end-donate-icon {
+    text-align: center;
+    line-height: 3.9rem; 
+}
+
+.app__header-end-donate-icon-link { 
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background-color: var(--hover-1);
+    display: block
+}
+.app__header-end-donate-icon-link:hover{
+    background-color: var(--fb-color);
+    color: var(--white-color);
+}
+.app__header-end-donate-money{
+    font-size: 1.6rem;
+    color: var(--yellow-color);
+    font-weight: 800;
+}
 /* Thông tin trong kết nối */
 .app__header-information {
     position: absolute;
