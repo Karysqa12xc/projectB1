@@ -607,7 +607,7 @@
     background-color: var(--white-color);
     position: absolute;
     box-shadow: var(--shadow);
-    width: 300px;
+    min-width: 400px;
     border-radius: 4px;
     display: none;
     animation: faceIn ease 0.3s;
