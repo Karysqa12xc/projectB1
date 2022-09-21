@@ -20,778 +20,822 @@
 <body>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <div class="app">
-        <header class="app__header">
+        <header>
             <div class="grid">
-                <!-- nav head -->
-                <nav class="app__header-head">
-                    <ul class="app__header-head-list-up">
-                        <li class="app__header-head-item-up">
-                            <i class="app__header-heading-bigIcon fa-brands fa-joomla"></i>
-                            <h2 class="app__header-heading">
-                                Tổng hợp các khóa học miễn phí
-                            </h2>
-                        </li>
-                    </ul>
+                <div class="app__header">
+                    <!-- nav head -->
+                    <nav class="app__header-head">
+                        <ul class="app__header-head-list-up">
+                            <li class="app__header-head-item-up">
+                                <i class="app__header-heading-bigIcon fa-brands fa-joomla" ></i>
+                                <h2 class="app__header-heading">
+                                    Tổng hợp các khóa học miễn phí
+                                </h2>
+                            </li>
+                        </ul>
 
-                    <div class="app__header-head-search">
-                        <input type="text" class="app__header-head-inp" placeholder="Từ khóa tìm kiếm..!">
-                        <div class="app__header-head-icon">
-                            <i class="app__header-head-icon-opacity fa-solid fa-magnifying-glass"></i>
+                        <div class="app__header-head-search">
+                            <input type="text" class="app__header-head-inp" placeholder="Từ khóa tìm kiếm..!">
+                            <div class="app__header-head-icon">
+                                <i class="app__header-head-icon-opacity fa-solid fa-magnifying-glass"></i>
+                            </div>
                         </div>
-                    </div>
 
-                    <ul class="app__header-head-list-down">
-                        <li class="app__header-head-item-down">
-                            <a href="#app__header-head-target" class="app__header-head-link">
-                                <i class="fa-solid fa-comments"></i>
-                                <span class="app__header-head-pointer">+</span>
-                                Tin nhắn
-                            </a>
-                            <!-- Thông tin trong phần tin nhắn -->
-                            <div class="app__header-msg" id="app__header-head-target">
-                                <div class="app__header-msg-head">
-                                    <h2 class="app__header-msg-head-headding">Chat</h2>
-                                    <a href="#" class="app__header-msg-head-link">x</a>
-                                </div>
-
-                                <input type="text" placeholder="Tìm kiếm trong tin nhắn" class="app__header-msg-search">
-                                <ul class="app__header-msg-list">
-                                    <li class="app__header-msg-item">
-                                        <a href="#" class="app__header-msg-link">
-                                            <div class="app__header-msg-avartar">
-                                                <img src="assets/img/Tấn lỗ.jpg" alt="Ảnh đại diện"
-                                                    class="app__header-msg-picture">
-                                            </div>
-                                            <div class="app__header-msg-content">
-                                                <h2 class="app__header-msg-userName">Nhà Thơ Tấn Lỗ</h2>
-                                                <span class="app__header-msg-Messages"></span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="app__header-msg-item">
-                                        <a href="#" class="app__header-msg-link">
-                                            <div class="app__header-msg-avartar">
-                                                <img src="assets/img/Processor.jpg" alt="Ảnh đại diện"
-                                                    class="app__header-msg-picture">
-                                            </div>
-                                            <div class="app__header-msg-content">
-                                                <h2 class="app__header-msg-userName">Giáo Sư Chỉ Bạn</h2>
-                                                <span class="app__header-msg-Messages"></span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="app__header-msg-item">
-                                        <a href="#" class="app__header-msg-link">
-
-                                            <div class="app__header-msg-avartar">
-                                                <img src="assets/img/hoahau.jpg" alt="Ảnh đại diện"
-                                                    class="app__header-msg-picture">
-                                            </div>
-                                            <div class="app__header-msg-content">
-                                                <h2 class="app__header-msg-userName">Nguyễn Phúc Thùy Tiên</h2>
-                                                <span class="app__header-msg-Messages"></span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="app__header-msg-item">
-                                        <a href="#" class="app__header-msg-link">
-
-                                            <div class="app__header-msg-avartar">
-                                                <img src="assets/img/lowG fake.jpg" alt="Ảnh đại diện"
-                                                    class="app__header-msg-picture">
-                                            </div>
-                                            <div class="app__header-msg-content">
-                                                <h2 class="app__header-msg-userName">Low G Fake</h2>
-                                                <span class="app__header-msg-Messages"></span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="app__header-msg-item">
-                                        <a href="#" class="app__header-msg-link">
-
-                                            <div class="app__header-msg-avartar">
-                                                <img src="assets/img/lyquychan.jpg" alt="Ảnh đại diên"
-                                                    class="app__header-msg-picture">
-                                            </div>
-                                            <div class="app__header-msg-content">
-                                                <h2 class="app__header-msg-userName">Lý Quỳ Cơn Gió Đen</h2>
-                                                <span class="app__header-msg-Messages"></span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="app__header-msg-item">
-                                        <a href="#" class="app__header-msg-link">
-
-                                            <div class="app__header-msg-avartar">
-                                                <img src="assets/img/LamXung.jpg" alt="Ảnh đại diện"
-                                                    class="app__header-msg-picture">
-                                            </div>
-                                            <div class="app__header-msg-content">
-                                                <h2 class="app__header-msg-userName">Anh Lâm Múa Thương</h2>
-                                                <span class="app__header-msg-Messages"></span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="app__header-msg-item">
-                                        <a href="#" class="app__header-msg-link">
-
-                                            <div class="app__header-msg-avartar">
-                                                <img src="assets/img/DiepVan.jpg" alt="Ảnh đại diện"
-                                                    class="app__header-msg-picture">
-                                            </div>
-                                            <div class="app__header-msg-content">
-                                                <h2 class="app__header-msg-userName">Diệp Vấn Vịnh Hạ Long</h2>
-                                                <span class="app__header-msg-Messages"></span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="app__header-msg-item">
-                                        <a href="#" class="app__header-msg-link">
-
-                                            <div class="app__header-msg-avartar">
-                                                <img src="assets/img/Anh_Bthg.jpg" alt="Ảnh đại diện"
-                                                    class="app__header-msg-picture">
-                                            </div>
-                                            <div class="app__header-msg-content">
-                                                <h2 class="app__header-msg-userName">Anh Long Áo Đen</h2>
-                                                <span class="app__header-msg-Messages"></span>
-                                            </div>
-                                        </a>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="app__header-head-item-down app__header-head-item-has-notice">
-                            <a href="#" class="app__header-head-link">
-                                <i class="fa-solid fa-bell"></i>
-                                <span class="app__header-head-pointer">+</span>
-                                <span class="app__header-head-content">Thông báo</span>
-                            </a>
-                            <!-- Thông tin bên trong thông báo -->
-                            <div class="app__header-notice">
-                                <h2 class="app__header-notice-head">Thông báo của bạn</h2>
-                                <hr class="app__header-notice-separator">
-                                <ul class="app__header-notice-list">
-                                    <a href="#" class="app__header-notice-link app__header-notice--has-color">
-                                        <li class="app__header-notice-item">
-                                            <div class="app__header-notice-dictionary">
-                                                <img src="assets/img/male.jpg" alt="Ảnh đại diện"
-                                                    class="app__header-notice-picture">
-                                            </div>
-                                            <div class="app__header-notice-note">
-                                                <p class="app__header-note-content">Quỳnh vừa mới thêm một khóa học
-                                                    mới</p>
-                                                <span class="app__header-notice-note-item">Chưa xem</span>
-                                            </div>
-                                        </li>
-                                    </a>
-                                    <a href="#" class="app__header-notice-link app__header-notice--has-color">
-                                        <li class="app__header-notice-item">
-                                            <div class="app__header-notice-dictionary">
-                                                <img src="assets/img/conan.jpg" alt="Ảnh đại diện"
-                                                    class="app__header-notice-picture">
-                                            </div>
-                                            <div class="app__header-notice-note">
-                                                <p class="app__header-note-content">CAND đã nhắn tin cho bạn</p>
-                                                <span class="app__header-notice-note-item">Chưa xem</span>
-                                            </div>
-                                        </li>
-                                    </a>
-                                    <a href="#" class="app__header-notice-link app__header-notice--has-color">
-                                        <li class="app__header-notice-item">
-                                            <div class="app__header-notice-dictionary">
-                                                <img src="assets/img/uchia_chrome.jpg" alt="Ảnh đại diện"
-                                                    class="app__header-notice-picture">
-                                            </div>
-                                            <div class="app__header-notice-note">
-                                                <p class="app__header-note-content">Uchiha Chrome vừa mới follow bạn
-                                                </p>
-                                                <span class="app__header-notice-note-item">Chưa xem</span>
-                                            </div>
-                                        </li>
-                                    </a>
-                                    <a href="#" class="app__header-notice-link">
-                                        <li class="app__header-notice-item">
-                                            <div class="app__header-notice-dictionary">
-                                                <img src="assets/img/meo_lag.jpg" alt="Ảnh đại diện"
-                                                    class="app__header-notice-picture">
-                                            </div>
-                                            <div class="app__header-notice-note">
-                                                <p class="app__header-note-content">
-                                                    Mèo lag đã bình luận về khóa học mà
-                                                    bạn đóng góp
-                                                </p>
-                                                <span class="app__header-notice-note-item">Đã xem</span>
-                                            </div>
-                                        </li>
-                                    </a>
-                                    <a href="#" class="app__header-notice-link app__header-notice--has-color">
-                                        <li class="app__header-notice-item">
-                                            <div class="app__header-notice-dictionary">
-                                                <img src="assets/img/conan_2.png" alt="Ảnh đại diện"
-                                                    class="app__header-notice-picture">
-                                            </div>
-                                            <div class="app__header-notice-note">
-                                                <p class="app__header-note-content">
-                                                    CAĐĐ vừa gửa bạn lời mời kết bạn
-                                                </p>
-                                                <span class="app__header-notice-note-item">Chưa xem</span>
-                                            </div>
-                                        </li>
-                                    </a>
-                                    <a href="#" class="app__header-notice-link">
-                                        <li class="app__header-notice-item">
-                                            <div class="app__header-notice-dictionary">
-                                                <img src="assets/img/Tấn lỗ.jpg" alt="Ảnh đại diện"
-                                                    class="app__header-notice-picture">
-                                            </div>
-                                            <div class="app__header-notice-note">
-                                                <p class="app__header-note-content">Tấn lỗ đã nhắn tin cho
-                                                    bạn</p>
-                                                <span class="app__header-notice-note-item">Chưa xem</span>
-                                            </div>
-                                        </li>
-                                    </a>
-
-                                </ul>
-                            </div>
-                        </li>
-
-                        <!-- Thẻ avartar -->
-                        <li class="app__header-head-item app__header-head-item-has-avartar">
-                            <!-- Hiển thị thông tin khi chưa đăng nhập -->
-                            <!-- <a href="#" class="app__header-head-link">
-                                        Đăng nhập | Đăng ký
-                                    </a> -->
-
-                            <img src="assets/img/Avartar.jpg" alt="Ảnh avartar" class="app__header-head-avartar">
-                            <!-- Thông tin trong phân avartar -->
-                            <div class="app__header-avartar">
-                                <div class="app__header-avartar-heading">
-                                    <img src="assets/img/Avartar.jpg" alt="Ảnh đại diện" class="app__header-avartar-in">
-                                    <div class="app__header-avartar-nickname">
-                                        <h2 class="app__header-avartar-text">Nam Hoàng Hoàng</h2>
-                                        <p class="app__header-avartar-text">@ChuGuild</p>
-                                    </div>
-                                </div>
-                                <hr class="app__header-avartar-separator">
-                                <ul class="app__header-avartar-list">
-                                    <a href="#" class="app__header-avartar-link">
-                                        <li class="app__header-avartar-list-item">Trang cá nhân</li>
-                                    </a>
-                                    <hr class="app__header-avartar-separator">
-                                    <a href="#" class="app__header-avartar-link">
-                                        <li class="app__header-avartar-list-item">Tạo khóa học</li>
-                                    </a>
-                                    <a href="#" class="app__header-avartar-link">
-                                        <li class="app__header-avartar-list-item">Khóa học của tôi</li>
-                                    </a>
-                                    <hr class="app__header-avartar-separator">
-                                    <a href="#" class="app__header-avartar-link">
-                                        <li class="app__header-avartar-list-item">Khóa học đã lưu</li>
-                                    </a>
-                                    <hr class="app__header-avartar-separator">
-                                    <a href="#" class="app__header-avartar-link">
-                                        <li class="app__header-avartar-list-item">Cài đặt</li>
-                                    </a>
-                                    <a href="#" class="app__header-avartar-link">
-                                        <li class="app__header-avartar-list-item">Đăng xuất</li>
-                                    </a>
-                                </ul>
-
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
-
-                <!-- nav end -->
-                <nav class="app__header-end">
-                    <div class="app__header-end-left">
-                        <ul class="app__header-end-list app__header-end--flexLeft">
-                            <li class="app__header-end-item">
-                                <a href="#app__header-end-has-introduce" class="app__header-end-link">
-                                    <img src="assets/img/icon_people.png" alt="Ảnh về chúng tôi"
-                                        class="app__header-end-picture">
-                                    Giới thiệu
+                        <ul class="app__header-head-list-down">
+                            <li class="app__header-head-item-down">
+                                <a href="#app__header-head-target" class="app__header-head-link">
+                                    <i class="fa-solid fa-comments"></i>
+                                    <span class="app__header-head-pointer">+</span>
+                                    Tin nhắn
                                 </a>
+                                <!-- Thông tin trong phần tin nhắn -->
+                                <div class="app__header-msg" id="app__header-head-target">
+                                    <div class="app__header-msg-head">
+                                        <h2 class="app__header-msg-head-headding">Chat</h2>
+                                        <a href="#" class="app__header-msg-head-link">x</a>
+                                    </div>
 
-                                <!-- Thông tin trong giới thiệu -->
-                                <div id="app__header-end-has-introduce" class="app__header-end-introduce">
-                                    <div class="app__header-end-introduce-dialog">
-                                        <div class="app__header-end-introduce-content">
-                                            <header class="app__header-end-introduce-head">
-                                                <h2 class="app__header-end-introduce-title">Tổng quan chức năng của
-                                                    trang web</h2>
-                                                <a href="#" class="app__header-end-introduce-link">x</a>
-                                            </header>
-                                            <hr class="app__header-end-introduce-separator">
-                                            <div class="app__header-end-introduce-main">
-                                                <p class="app__header-end-introduce-paragraph">
-                                                </p>
+                                    <input type="text" placeholder="Tìm kiếm trong tin nhắn"
+                                        class="app__header-msg-search">
+                                    <ul class="app__header-msg-list">
+                                        <li class="app__header-notice-link app__header-msg-item app__header-notice--has-color">
+                                            <a href="#" class="app__header-msg-link">
+                                                <div class="app__header-msg-avartar">
+                                                    <img src="assets/img/Tấn lỗ.jpg" alt="Ảnh đại diện"
+                                                        class="app__header-msg-picture">
+                                                </div>
+                                                <div class="app__header-msg-content">
+                                                    <h2 class="app__header-msg-userName">Nhà Thơ Tấn Lỗ</h2>
+                                                    <span class="app__header-msg-Messages">Chào bạn :))</span>
+                                                    <span aria-hidden="true"> . </span>
+                                                    <span data-testid="timestamp" class=""> 1 phút</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="app__header-notice-link app__header-msg-item app__header-notice--has-color">
+                                            <a href="#" class="app__header-msg-link">
+                                                <div class="app__header-msg-avartar">
+                                                    <img src="assets/img/Processor.jpg" alt="Ảnh đại diện"
+                                                        class="app__header-msg-picture">
+                                                </div>
+                                                <div class="app__header-msg-content">
+                                                    <h2 class="app__header-msg-userName">Giáo Sư Chỉ Bạn</h2>
+                                                    <span class="app__header-msg-Messages">Ra là vậy...</span>
+                                                    <span aria-hidden="true"> . </span>
+                                                    <span data-testid="timestamp" class=""> 47 phút</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="app__header-notice-link app__header-msg-item">
+                                            <a href="#" class="app__header-msg-link">
+
+                                                <div class="app__header-msg-avartar">
+                                                    <img src="assets/img/hoahau.jpg" alt="Ảnh đại diện"
+                                                        class="app__header-msg-picture">
+                                                </div>
+                                                <div class="app__header-msg-content">
+                                                    <h2 class="app__header-msg-userName">Nguyễn Phúc Thùy Tiên</h2>
+                                                    <span class="app__header-msg-Messages">Dạ vâng ạ</span>
+                                                    <span aria-hidden="true"> . </span>
+                                                    <span data-testid="timestamp" class=""> 7 giờ</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="app__header-notice-link app__header-msg-item app__header-notice--has-color">
+                                            <a href="#" class="app__header-msg-link">
+
+                                                <div class="app__header-msg-avartar">
+                                                    <img src="assets/img/lowG fake.jpg" alt="Ảnh đại diện"
+                                                        class="app__header-msg-picture">
+                                                </div>
+                                                <div class="app__header-msg-content">
+                                                    <h2 class="app__header-msg-userName">Low G Fake</h2>
+                                                    <span class="app__header-msg-Messages">okeee</span>
+                                                    <span aria-hidden="true"> . </span>
+                                                    <span data-testid="timestamp" class=""> 3 phút </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="app__header-notice-link app__header-msg-item">
+                                            <a href="#" class="app__header-msg-link">
+
+                                                <div class="app__header-msg-avartar">
+                                                    <img src="assets/img/lyquychan.jpg" alt="Ảnh đại diên"
+                                                        class="app__header-msg-picture">
+                                                </div>
+                                                <div class="app__header-msg-content">
+                                                    <h2 class="app__header-msg-userName">Lý Quỳ Cơn Gió Đen</h2>
+                                                    <span class="app__header-msg-Messages">Thật thế à bạn trẻ???</span>
+                                                    <span aria-hidden="true"> . </span>
+                                                    <span data-testid="timestamp" class=""> 3 giờ</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="app__header-notice-link app__header-msg-item">
+                                            <a href="#" class="app__header-msg-link">
+
+                                                <div class="app__header-msg-avartar">
+                                                    <img src="assets/img/LamXung.jpg" alt="Ảnh đại diện"
+                                                        class="app__header-msg-picture">
+                                                </div>
+                                                <div class="app__header-msg-content">
+                                                    <h2 class="app__header-msg-userName">Anh Lâm Múa Thương</h2>
+                                                    <span class="app__header-msg-Messages">Em cảm ơn anh đã tư vấn cho em ạ!!</span>
+                                                    <span aria-hidden="true"> . </span>
+                                                    <span data-testid="timestamp" class=""> 22 phút</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="app__header-notice-link app__header-msg-item app__header-notice--has-color">
+                                            <a href="#" class="app__header-msg-link">
+
+                                                <div class="app__header-msg-avartar">
+                                                    <img src="assets/img/DiepVan.jpg" alt="Ảnh đại diện"
+                                                        class="app__header-msg-picture">
+                                                </div>
+                                                <div class="app__header-msg-content">
+                                                    <h2 class="app__header-msg-userName">Diệp Vấn Vịnh Hạ Long</h2>
+                                                    <span class="app__header-msg-Messages">Hi, chào cậu.</span>
+                                                    <span aria-hidden="true"> . </span>
+                                                    <span data-testid="timestamp" class=""> 15 phút</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="app__header-notice-link app__header-msg-item">
+                                            <a href="#" class="app__header-msg-link">
+
+                                                <div class="app__header-msg-avartar">
+                                                    <img src="assets/img/Anh_Bthg.jpg" alt="Ảnh đại diện"
+                                                        class="app__header-msg-picture">
+                                                </div>
+                                                <div class="app__header-msg-content">
+                                                    <h2 class="app__header-msg-userName">Anh Long Áo Đen</h2>
+                                                    <span class="app__header-msg-Messages">Em chỉ chi tiết cho anh nhé?</span>
+                                                    <span aria-hidden="true"> . </span>
+                                                    <span data-testid="timestamp" class=""> 2 giờ</span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="app__header-head-item-down app__header-head-item-has-notice">
+                                <a href="#" class="app__header-head-link">
+                                    <i class="fa-solid fa-bell"></i>
+                                    <span class="app__header-head-pointer">+</span>
+                                    <span class="app__header-head-content">Thông báo</span>
+                                </a>
+                                <!-- Thông tin bên trong thông báo -->
+                                <div class="app__header-notice">
+                                    <h2 class="app__header-notice-head">Thông báo của bạn</h2>
+                                    <hr class="app__header-notice-separator">
+                                    <ul class="app__header-notice-list">
+                                        <a href="#" class="app__header-notice-link app__header-notice--has-color">
+                                            <li class="app__header-notice-item">
+                                                <div class="app__header-notice-dictionary">
+                                                <img src="assets/img/male.jpg" alt="Ảnh đại diện"
+                                                        class="app__header-notice-picture">
+                                                </div>
+                                                <div class="app__header-notice-note">
+                                                    <p class="app__header-note-content">Quỳnh vừa mới thêm một khóa học
+                                                        mới</p>
+                                                    <span class="app__header-notice-note-item">Chưa xem</span>
+                                                </div>
+                                            </li>
+                                        </a>
+                                        <a href="#" class="app__header-notice-link app__header-notice--has-color">
+                                            <li class="app__header-notice-item">
+                                                <div class="app__header-notice-dictionary">
+                                                    <img src="assets/img/conan.jpg" alt="Ảnh đại diện"
+                                                        class="app__header-notice-picture">
+                                                </div>
+                                                <div class="app__header-notice-note">
+                                                    <p class="app__header-note-content">CAND đã nhắn tin cho bạn</p>
+                                                    <span class="app__header-notice-note-item">Chưa xem</span>
+                                                </div>
+                                            </li>
+                                        </a>
+                                        <a href="#" class="app__header-notice-link app__header-notice--has-color">
+                                            <li class="app__header-notice-item">
+                                                <div class="app__header-notice-dictionary">
+                                                    <img src="assets/img/uchia_chrome.jpg" alt="Ảnh đại diện"
+                                                        class="app__header-notice-picture">
+                                                </div>
+                                                <div class="app__header-notice-note">
+                                                    <p class="app__header-note-content">Uchiha Chrome vừa mới follow bạn
+                                                    </p>
+                                                    <span class="app__header-notice-note-item">Chưa xem</span>
+                                                </div>
+                                            </li>
+                                        </a>
+                                        <a href="#" class="app__header-notice-link">
+                                            <li class="app__header-notice-item">
+                                                <div class="app__header-notice-dictionary">
+                                                    <img src="assets/img/meo_lag.jpg" alt="Ảnh đại diện"
+                                                        class="app__header-notice-picture">
+                                                </div>
+                                                <div class="app__header-notice-note">
+                                                    <p class="app__header-note-content">
+                                                        Mèo lag đã bình luận về khóa học mà
+                                                        bạn đóng góp
+                                                    </p>
+                                                    <span class="app__header-notice-note-item">Đã xem</span>
+                                                </div>
+                                            </li>
+                                        </a>
+                                        <a href="#" class="app__header-notice-link app__header-notice--has-color">
+                                            <li class="app__header-notice-item">
+                                                <div class="app__header-notice-dictionary">
+                                                    <img src="assets/img/conan_2.png" alt="Ảnh đại diện"
+                                                        class="app__header-notice-picture">
+                                                </div>
+                                                <div class="app__header-notice-note">
+                                                    <p class="app__header-note-content">
+                                                        CAĐĐ vừa gửa bạn lời mời kết bạn
+                                                    </p>
+                                                    <span class="app__header-notice-note-item">Chưa xem</span>
+                                                </div>
+                                            </li>
+                                        </a>
+                                        <a href="#" class="app__header-notice-link">
+                                            <li class="app__header-notice-item">
+                                                <div class="app__header-notice-dictionary">
+                                                    <img src="https://th.bing.com/th/id/OIP.NYQtwkbyYcJSgYS2UiCsngHaCv?w=322&h=129&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Ảnh đại diện"
+                                                        class="app__header-notice-picture">
+                                                </div>
+                                                <div class="app__header-notice-note">
+                                                    <p class="app__header-note-content">Minhk đã trả lời bình luận của 
+                                                        bạn</p>
+                                                    <span class="app__header-notice-note-item">Đã xem</span>
+                                                </div>
+                                            </li>
+                                        </a>
+                                        <a href="#" class="app__header-notice-link">
+                                            <li class="app__header-notice-item">
+                                                <div class="app__header-notice-dictionary">
+                                                    <img src="https://th.bing.com/th/id/OIP.T7H5hGJ4rl5vXj_BhBdB8QHaIp?w=136&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Ảnh đại diện"
+                                                        class="app__header-notice-picture">
+                                                </div>
+                                                <div class="app__header-notice-note">
+                                                    <p class="app__header-note-content">Hiệptk đã follow bạn</p>
+                                                    <span class="app__header-notice-note-item">Đã xem</span>
+                                                </div>
+                                            </li>
+                                        </a>
+                                        <a href="#" class="app__header-notice-link ">
+                                            <li class="app__header-notice-item">
+                                                <div class="app__header-notice-dictionary">
+                                                    <img src="data:image/jpeg;base64,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" alt="Ảnh đại diện"
+                                                        class="app__header-notice-picture">
+                                                </div>
+                                                <div class="app__header-notice-note">
+                                                    <p class="app__header-note-content">
+                                                        Link vừa follow bạn vài phút trước </p>
+                                                    <span class="app__header-notice-note-item">Đã xem</span>
+                                                </div>
+                                            </li>
+                                        </a>
+                                        <a href="#" class="app__header-notice-link app__header-notice--has-color">
+                                            <li class="app__header-notice-item">
+                                                <div class="app__header-notice-dictionary">
+                                                    <img src="data:image/jpeg;base64,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" alt="Ảnh đại diện"
+                                                        class="app__header-notice-picture">
+                                                </div>
+                                                <div class="app__header-notice-note">
+                                                    <p class="app__header-note-content">
+                                                        Link vừa nhắm tin cho bạn</p>
+                                                    <span class="app__header-notice-note-item">Chưa xem</span>
+                                                </div>
+                                            </li>
+                                        </a>
+
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!-- Thẻ avartar -->
+                            <li class="app__header-head-item app__header-head-item-has-avartar">
+                                <!-- Hiển thị thông tin khi chưa đăng nhập -->
+                                <!-- <a href="#" class="app__header-head-link">
+                                    Đăng nhập | Đăng ký
+                                </a> -->
+
+                                <img src="assets/img/Avartar.jpg" alt="Ảnh avartar" class="app__header-head-avartar">
+                                <!-- Thông tin trong phân avartar -->
+                                <div class="app__header-avartar">
+                                    <div class="app__header-avartar-heading">
+                                        <img src="assets/img/Avartar.jpg" alt="Ảnh đại diện"
+                                            class="app__header-avartar-in">
+                                        <div class="app__header-avartar-nickname">
+                                            <h2 class="app__header-avartar-text">Nam Hoàng Hoàng</h2>
+                                            <p class="app__header-avartar-text">@ChuGuild</p>
+                                        </div>
+                                    </div>
+                                    <hr class="app__header-avartar-separator">
+                                    <ul class="app__header-avartar-list">
+                                        <a href="#" class="app__header-avartar-link">
+                                            <li class="app__header-avartar-list-item">Trang cá nhân</li>
+                                        </a>
+                                        <hr class="app__header-avartar-separator">
+                                        <a href="#" class="app__header-avartar-link">
+                                            <li class="app__header-avartar-list-item">Tạo khóa học</li>
+                                        </a>
+                                        <a href="#" class="app__header-avartar-link">
+                                            <li class="app__header-avartar-list-item">Khóa học của tôi</li>
+                                        </a>
+                                        <hr class="app__header-avartar-separator">
+                                        <a href="#" class="app__header-avartar-link">
+                                            <li class="app__header-avartar-list-item">Khóa học đã lưu</li>
+                                        </a>
+                                        <hr class="app__header-avartar-separator">
+                                        <a href="#" class="app__header-avartar-link">
+                                            <li class="app__header-avartar-list-item">Cài đặt</li>
+                                        </a>
+                                        <a href="#" class="app__header-avartar-link">
+                                            <li class="app__header-avartar-list-item">Đăng xuất</li>
+                                        </a>
+                                    </ul>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- nav end -->
+                    <nav class="app__header-end">
+                        <div class="app__header-end-left">
+                            <ul class="app__header-end-list app__header-end--flexLeft">
+                                <li class="app__header-end-item">
+                                    <a href="#app__header-end-has-introduce" class="app__header-end-link">
+                                        <img src="assets/img/icon_people.png" alt="Ảnh về chúng tôi"
+                                            class="app__header-end-picture">
+                                        Giới thiệu
+                                    </a>
+
+                                    <!-- Thông tin trong giới thiệu -->
+                                    <div id="app__header-end-has-introduce" class="app__header-end-introduce">
+                                        <div class="app__header-end-introduce-dialog">
+                                            <div class="app__header-end-introduce-content">
+                                                <header class="app__header-end-introduce-head">
+                                                    <h2 class="app__header-end-introduce-title">Tổng quan chức năng của
+                                                        trang web</h2>
+                                                    <a href="#" class="app__header-end-introduce-link">x</a>
+                                                </header>
+                                                <hr class="app__header-end-introduce-separator">
+                                                <div class="app__header-end-introduce-main">
+                                                    <p class="app__header-end-introduce-paragraph">
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </li>
-                            <li class="app__header-end-item app__header-end-item-has-course">
-                                <a href="#" class="app__header-end-link">
-                                    <img src="assets/img/myCourse_2.png" alt="Ảnh khóa học của tôi"
-                                        class="app__header-end-picture">
-                                    My course
-                                </a>
-                                <!-- Thông tin trong phần my course -->
-                                <div class="app__header-end-course">
-                                    <h2 class="app__header-end-course-heading">Khóa học của bạn</h2>
-                                    <ul class="app__header-end-course-list">
-                                        <li class="app__header-end-course-item">
-                                            <a href="#" class="app__header-end-course-link">
-                                                <div class="app__header-end-course-photo">
-                                                    <img src="assets/img/Ảnh mẫu cho phần main.png" alt="Ảnh khóa học"
-                                                        class="app__header-end-course-picture">
-                                                </div>
-                                                <div class="app__header-end-course-content">
-                                                    <h4 class="app__header-end-course-title">Khóa học HTML, CSS</h4>
-                                                    <p class="app__header-end-course-notice">Bạn đã đăng ký học 4
-                                                        tháng trước</p>
-                                                    <progress class="app__header-end-course-process" value="60"
-                                                        max="100"></progress>
-                                                </div>
-                                            </a>
+                                </li>
+                                <li class="app__header-end-item app__header-end-item-has-course">
+                                    <a href="#" class="app__header-end-link">
+                                        <img src="assets/img/myCourse_2.png" alt="Ảnh khóa học của tôi"
+                                            class="app__header-end-picture">
+                                        My course
+                                    </a>
+                                    <!-- Thông tin trong phần my course -->
+                                    <div class="app__header-end-course">
+                                        <h2 class="app__header-end-course-heading">Khóa học của bạn</h2>
+                                        <ul class="app__header-end-course-list">
+                                            <li class="app__header-end-course-item">
+                                                <a href="#" class="app__header-end-course-link">
+                                                    <div class="app__header-end-course-photo">
+                                                        <img src="assets/img/Ảnh mẫu cho phần main.png"
+                                                            alt="Ảnh khóa học" class="app__header-end-course-picture">
+                                                    </div>
+                                                    <div class="app__header-end-course-content">
+                                                        <h4 class="app__header-end-course-title">Khóa học HTML, CSS</h4>
+                                                        <p class="app__header-end-course-notice">Bạn đã đăng ký học 4
+                                                            tháng trước</p>
+                                                        <progress class="app__header-end-course-process" value="60"
+                                                            max="100"></progress>
+                                                    </div>
+                                                </a>
 
-                                        </li>
-                                        <li class="app__header-end-course-item">
-                                            <a href="#" class="app__header-end-course-link">
-                                                <div class="app__header-end-course-photo">
-                                                    <img src="assets/img/Ảnh mẫu cho phần main_1.png" alt="Ảnh khóa học"
-                                                        class="app__header-end-course-picture">
-                                                </div>
-                                                <div class="app__header-end-course-content">
-                                                    <h4 class="app__header-end-course-title">Cách reponsive trang
-                                                        web</h4>
-                                                    <p class="app__header-end-course-notice">Bạn đã đăng ký học 3h
-                                                        trước</p>
-                                                    <progress class="app__header-end-course-process" value="40"
-                                                        max="100"></progress>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <li class="app__header-end-course-item">
-                                            <a href="#" class="app__header-end-course-link">
-                                                <div class="app__header-end-course-photo">
-                                                    <img src="assets/img/Ảnh mẫu cho phần main_2.png" alt="Ảnh khóa học"
-                                                        class="app__header-end-course-picture">
-                                                </div>
-                                                <div class="app__header-end-course-content">
-                                                    <h4 class="app__header-end-course-title">JavaScript bản proMax
-                                                    </h4>
-                                                    <p class="app__header-end-course-notice">Bạn đã đăng ký học 6
-                                                        tháng trước</p>
-                                                    <progress class="app__header-end-course-process" value="90"
-                                                        max="100"></progress>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="app__header-end-course-item app__header-end-course-item--no-hover">
-                                            <a href="#" class="app__header-end-course-link">
-                                                <div class="app__header-end-course-photo">
-                                                    <img src="assets/img/Ảnh mẫu cho phần main_4.png" alt="Ảnh khóa học"
-                                                        class="app__header-end-course-picture">
-                                                </div>
-                                                <div
-                                                    class="app__header-end-course-content app__header-end-course-content--has-button">
-                                                    <h4 class="app__header-end-course-title">Cách làm việc với git
-                                                    </h4>
-                                                    <p class="app__header-end-course-notice">Bạn mới đăng ký học</p>
-                                                    <button class="app__header-end-course-btn">Bắt đầu</button>
-                                                </div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="app__header-end-item app__header-end-item-has-follower">
-                                <a href="#" class="app__header-end-link">
-                                    <img src="assets/img/icon_follower_3.png" alt="Ảnh follow"
-                                        class="app__header-end-picture">
-                                    Follower
-                                </a>
-                                <!-- Thông tin trong phần follower -->
-                                <div class="app__header-end-follower">
-                                    <h2 class="app__header-end-follower-heading">Người đang theo dõi bạn</h2>
-                                    <hr class="app__header-end-follower-separator">
-                                    <div class="app__header-end-follower-content">
-                                        <ul class="app__header-end-follower-list">
-                                            <li class="app__header-end-follower-item">
-                                                <a href="#" class="app__header-end-follower-link">
-                                                    <div class="app__header-end-follower-photo">
-                                                        <div class="app__header-end-follower-title">
-                                                            <h3 class="app__header-end-follower-userName">Uchiha
-                                                                Chrome
-                                                            </h3>
-                                                            <p class="app__header-end-follower-description">
-                                                                @DongHoUchiha</p>
-                                                        </div>
-                                                        <img src="assets/img/uchia_chrome.jpg" alt="Ảnh đại diện"
-                                                            class="app__header-end-follower-picture">
-                                                    </div>
-                                                </a>
-                                                <div class="app__header-end-follower-user">
-                                                    <a href="#" class="app__header-end-follower-btn">
-                                                        <i class="fa-solid fa-comment"></i>
-                                                        <a href="#" class="app__header-end-follower-fl">Follow</a>
-                                                    </a>
-                                                </div>
                                             </li>
-                                            <li class="app__header-end-follower-item">
-                                                <a href="#" class="app__header-end-follower-link">
-                                                    <div class="app__header-end-follower-photo">
-                                                        <div class="app__header-end-follower-title">
-                                                            <h3 class="app__header-end-follower-userName">Uchiha
-                                                                Fifefox
-                                                            </h3>
-                                                            <p class="app__header-end-follower-description">
-                                                                @DongHoUchiha</p>
-                                                        </div>
-                                                        <img src="assets/img/uchia_firefox.jpg" alt="Ảnh đại diện"
-                                                            class="app__header-end-follower-picture">
+                                            <li class="app__header-end-course-item">
+                                                <a href="#" class="app__header-end-course-link">
+                                                    <div class="app__header-end-course-photo">
+                                                        <img src="assets/img/Ảnh mẫu cho phần main_1.png"
+                                                            alt="Ảnh khóa học" class="app__header-end-course-picture">
+                                                    </div>
+                                                    <div class="app__header-end-course-content">
+                                                        <h4 class="app__header-end-course-title">Cách reponsive trang
+                                                            web</h4>
+                                                        <p class="app__header-end-course-notice">Bạn đã đăng ký học 3h
+                                                            trước</p>
+                                                        <progress class="app__header-end-course-process" value="40"
+                                                            max="100"></progress>
                                                     </div>
                                                 </a>
-                                                <div class="app__header-end-follower-user">
-                                                    <a href="#" class="app__header-end-follower-btn">
-                                                        <i class="fa-solid fa-comment"></i>
-                                                        <a href="#" class="app__header-end-follower-fl">Follow</a>
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li class="app__header-end-follower-item">
-                                                <a href="#" class="app__header-end-follower-link">
-                                                    <div class="app__header-end-follower-photo">
-                                                        <div class="app__header-end-follower-title">
-                                                            <h3 class="app__header-end-follower-userName">Uchiha Cốc
-                                                                Cốc
-                                                            </h3>
-                                                            <p class="app__header-end-follower-description">
-                                                                @DongHoUchiha</p>
-                                                        </div>
-                                                        <img src="assets/img/uchia_coccoc.jpg" alt="Ảnh đại diện"
-                                                            class="app__header-end-follower-picture">
-                                                    </div>
-                                                </a>
-                                                <div class="app__header-end-follower-user">
-                                                    <a href="#" class="app__header-end-follower-btn">
-                                                        <i class="fa-solid fa-comment"></i>
-                                                        <a href="#" class="app__header-end-follower-fl">Follow</a>
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li class="app__header-end-follower-item">
-                                                <a href="#" class="app__header-end-follower-link">
-                                                    <div class="app__header-end-follower-photo">
-                                                        <div class="app__header-end-follower-title">
-                                                            <h3 class="app__header-end-follower-userName">Uchiha
-                                                                Edge
-                                                            </h3>
-                                                            <p class="app__header-end-follower-description">
-                                                                @DongHoUchiha</p>
-                                                        </div>
-                                                        <img src="assets/img/uchia_edge.jpg" alt="Ảnh đại diện"
-                                                            class="app__header-end-follower-picture">
-                                                    </div>
-                                                </a>
-                                                <div class="app__header-end-follower-user">
-                                                    <a href="#" class="app__header-end-follower-btn">
-                                                        <i class="fa-solid fa-comment"></i>
-                                                        <a href="#" class="app__header-end-follower-fl">Follow</a>
-                                                    </a>
-                                                </div>
                                             </li>
 
-                                            <li class="app__header-end-follower-item">
-                                                <a href="#" class="app__header-end-follower-link">
-                                                    <div class="app__header-end-follower-photo">
-                                                        <div class="app__header-end-follower-title">
-                                                            <h3 class="app__header-end-follower-userName">Uchiha IE
-                                                            </h3>
-                                                            <p class="app__header-end-follower-description">
-                                                                @DongHoUchiha</p>
-                                                        </div>
-                                                        <img src="assets/img/uchia_IE.jpg.png" alt="Ảnh đại diện"
-                                                            class="app__header-end-follower-picture">
+                                            <li class="app__header-end-course-item">
+                                                <a href="#" class="app__header-end-course-link">
+                                                    <div class="app__header-end-course-photo">
+                                                        <img src="assets/img/Ảnh mẫu cho phần main_2.png"
+                                                            alt="Ảnh khóa học" class="app__header-end-course-picture">
+                                                    </div>
+                                                    <div class="app__header-end-course-content">
+                                                        <h4 class="app__header-end-course-title">JavaScript bản proMax
+                                                        </h4>
+                                                        <p class="app__header-end-course-notice">Bạn đã đăng ký học 6
+                                                            tháng trước</p>
+                                                        <progress class="app__header-end-course-process" value="90"
+                                                            max="100"></progress>
                                                     </div>
                                                 </a>
-                                                <div class="app__header-end-follower-user">
-                                                    <a href="#" class="app__header-end-follower-btn">
-                                                        <i class="fa-solid fa-comment"></i>
-                                                        <a href="#" class="app__header-end-follower-fl">Follow</a>
-                                                    </a>
-                                                </div>
                                             </li>
-
-                                            <li class="app__header-end-follower-item">
-                                                <a href="#" class="app__header-end-follower-link">
-                                                    <div class="app__header-end-follower-photo">
-                                                        <div class="app__header-end-follower-title">
-                                                            <h3 class="app__header-end-follower-userName">Một Đấm Là
-                                                                Nằm
-                                                            </h3>
-                                                            <p class="app__header-end-follower-description">
-                                                                @MaiTaiSon</p>
-                                                        </div>
-                                                        <img src="assets/img/mike_tyson.jpg" alt="Ảnh đại diện"
-                                                            class="app__header-end-follower-picture">
+                                            <li
+                                                class="app__header-end-course-item app__header-end-course-item--no-hover">
+                                                <a href="#" class="app__header-end-course-link">
+                                                    <div class="app__header-end-course-photo">
+                                                        <img src="assets/img/Ảnh mẫu cho phần main_4.png"
+                                                            alt="Ảnh khóa học" class="app__header-end-course-picture">
+                                                    </div>
+                                                    <div
+                                                        class="app__header-end-course-content app__header-end-course-content--has-button">
+                                                        <h4 class="app__header-end-course-title">Cách làm việc với git
+                                                        </h4>
+                                                        <p class="app__header-end-course-notice">Bạn mới đăng ký học</p>
+                                                        <button class="app__header-end-course-btn">Bắt đầu</button>
                                                     </div>
                                                 </a>
-                                                <div class="app__header-end-follower-user">
-                                                    <a href="#" class="app__header-end-follower-btn">
-                                                        <i class="fa-solid fa-comment"></i>
-                                                        <a href="#" class="app__header-end-follower-fl">Follow</a>
-                                                    </a>
-                                                </div>
-                                            </li>
-
-                                            <li class="app__header-end-follower-item">
-                                                <a href="#" class="app__header-end-follower-link">
-                                                    <div class="app__header-end-follower-photo">
-                                                        <div class="app__header-end-follower-title">
-                                                            <h3 class="app__header-end-follower-userName">Cục Đá
-                                                            </h3>
-                                                            <p class="app__header-end-follower-description">@Rock
-                                                            </p>
-                                                        </div>
-                                                        <img src="assets/img/the_rock.jpg" alt="Ảnh đại diện"
-                                                            class="app__header-end-follower-picture">
-                                                    </div>
-                                                </a>
-                                                <div class="app__header-end-follower-user">
-                                                    <a href="#" class="app__header-end-follower-btn">
-                                                        <i class="fa-solid fa-comment"></i>
-                                                        <a href="#" class="app__header-end-follower-fl">Follow</a>
-                                                    </a>
-                                                </div>
                                             </li>
                                         </ul>
                                     </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="app__header-end-right">
-                        <ul class="app__header-end-list app__header-end--flexRight">
-                            <li class="app__header-end-item app__header-end-item-has-viewer">
-                                <a href="#" class="app__header-end-link">
-                                    <img src="assets/img/Dang_follow.png" alt="Ảnh đang follow"
-                                        class="app__header-end-picture">
-                                    Đang Follow
-                                </a>
-                                <!-- Thông tin trong phần đang follow -->
-                                <div class="app__header-end-viewer">
-                                    <h2 class="app__header-end-viewer-title">Người bạn đang Follow</h2>
-                                    <hr class="app__header-end-viewer-separator">
-                                    <ul class="app__header-end-viewer-list">
-                                        <li class="app__header-end-viewer-item">
-                                            <a href="#" class="app__header-end-viewer-link">
-                                                <div class="app__header-end-viewer-user">
-                                                    <img src="assets/img/male.jpg" alt="Ảnh đại diện"
-                                                        class="app__header-end-viewer-photo">
-                                                    <div class="app__header-end-viewer-content">
-                                                        <h3 class="app__header-end-viewer-userName">Quỳnh</h3>
-                                                        <p class="app__header-end-viewer-description">@QuynhLe</p>
+                                </li>
+                                <li class="app__header-end-item app__header-end-item-has-follower">
+                                    <a href="#" class="app__header-end-link">
+                                        <img src="assets/img/icon_follower_3.png" alt="Ảnh follow"
+                                            class="app__header-end-picture">
+                                        Follower
+                                    </a>
+                                    <!-- Thông tin trong phần follower -->
+                                    <div class="app__header-end-follower">
+                                        <h2 class="app__header-end-follower-heading">Người đang theo dõi bạn</h2>
+                                        <hr class="app__header-end-follower-separator">
+                                        <div class="app__header-end-follower-content">
+                                            <ul class="app__header-end-follower-list">
+                                                <li class="app__header-end-follower-item">
+                                                    <a href="#" class="  app__header-end-follower-link ">
+                                                        <div class="app__header-end-follower-photo">
+                                                            <div class="app__header-end-follower-title">
+                                                                <h3 class="app__header-end-follower-userName">Uchiha
+                                                                    Chrome
+                                                                </h3>
+                                                                <p class="app__header-end-follower-description">
+                                                                    @DongHoUchiha</p>
+                                                            </div>
+                                                            <img src="assets/img/uchia_chrome.jpg" alt="Ảnh đại diện"
+                                                                class="app__header-end-follower-picture">
+                                                        </div>
+                                                    </a>
+                                                    <div class="app__header-end-follower-user">
+                                                        <a href="#" class="app__header-end-follower-btn">
+                                                            <i class="fa-solid fa-comment"></i>
+                                                            <a href="#" class="app__header-end-follower-fl">Follow</a>
+                                                        </a>
                                                     </div>
-                                                </div>
-                                                <div class="app__header-end-viewer-icon">
-                                                    <a href="#"
-                                                        class="app__header-end-viewer-connect app__header-end-viewer-connect--1">
-                                                        <i class="fa-solid fa-comment"></i>
-                                                        <div class="app__header-end-viewer-information">Nhắn tin
+                                                </li>
+                                                <li class="app__header-end-follower-item">
+                                                    <a href="#" class="app__header-end-follower-link">
+                                                        <div class="app__header-end-follower-photo">
+                                                            <div class="app__header-end-follower-title">
+                                                                <h3 class="app__header-end-follower-userName">Uchiha
+                                                                    Fifefox
+                                                                </h3>
+                                                                <p class="app__header-end-follower-description">
+                                                                    @DongHoUchiha</p>
+                                                            </div>
+                                                            <img src="assets/img/uchia_firefox.jpg" alt="Ảnh đại diện"
+                                                                class="app__header-end-follower-picture">
                                                         </div>
                                                     </a>
-                                                    <a href="#"
-                                                        class="app__header-end-viewer-connect app__header-end-viewer-connect--2">
-                                                        <svg width="20" height="20" viewBox="0 0 48 48"
-                                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                d="M13.0001 13C13.0001 9.68629 15.6864 7 19.0001 7C22.3139 7 25.0001 9.68629 25.0001 13C25.0001 16.3137 22.3139 19 19.0001 19C15.6864 19 13.0001 16.3137 13.0001 13ZM19.0001 3C13.4773 3 9.00015 7.47715 9.00015 13C9.00015 18.5228 13.4773 23 19.0001 23C24.523 23 29.0001 18.5228 29.0001 13C29.0001 7.47715 24.523 3 19.0001 3ZM5.19435 40.9681C6.70152 35.5144 10.0886 32.2352 13.9162 30.738C17.7125 29.2531 22.0358 29.4832 25.6064 31.2486C26.1015 31.4934 26.7131 31.338 26.9931 30.8619L28.0072 29.1381C28.2872 28.662 28.1294 28.0465 27.6384 27.7937C23.0156 25.4139 17.4034 25.0789 12.4591 27.0129C7.37426 29.0018 3.09339 33.3505 1.2883 40.0887C1.14539 40.6222 1.48573 41.1592 2.02454 41.2805L3.97575 41.7195C4.51457 41.8408 5.04724 41.5004 5.19435 40.9681ZM44.7074 30.1212C45.0979 29.7307 45.0979 29.0975 44.7074 28.707L43.2932 27.2928C42.9026 26.9023 42.2695 26.9023 41.8789 27.2928L30.0003 39.1715L25.1216 34.2928C24.7311 33.9023 24.0979 33.9023 23.7074 34.2928L22.2932 35.707C21.9026 36.0975 21.9026 36.7307 22.2932 37.1212L28.586 43.4141C29.3671 44.1952 30.6334 44.1952 31.4145 43.4141L44.7074 30.1212Z">
-                                                            </path>
-                                                        </svg>
-                                                        <div class="app__header-end-viewer-information">Bỏ theo dõi
+                                                    <div class="app__header-end-follower-user">
+                                                        <a href="#" class="app__header-end-follower-btn">
+                                                            <i class="fa-solid fa-comment"></i>
+                                                            <a href="#" class="app__header-end-follower-fl">Follow</a>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li class="app__header-end-follower-item">
+                                                    <a href="#" class="app__header-end-follower-link">
+                                                        <div class="app__header-end-follower-photo">
+                                                            <div class="app__header-end-follower-title">
+                                                                <h3 class="app__header-end-follower-userName">Uchiha Cốc
+                                                                    Cốc
+                                                                </h3>
+                                                                <p class="app__header-end-follower-description">
+                                                                    @DongHoUchiha</p>
+                                                            </div>
+                                                            <img src="assets/img/uchia_coccoc.jpg" alt="Ảnh đại diện"
+                                                                class="app__header-end-follower-picture">
                                                         </div>
                                                     </a>
-                                                </div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
+                                                    <div class="app__header-end-follower-user">
+                                                        <a href="#" class="app__header-end-follower-btn">
+                                                            <i class="fa-solid fa-comment"></i>
+                                                            <a href="#" class="app__header-end-follower-fl">Follow</a>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li class="app__header-end-follower-item">
+                                                    <a href="#" class="app__header-end-follower-link">
+                                                        <div class="app__header-end-follower-photo">
+                                                            <div class="app__header-end-follower-title">
+                                                                <h3 class="app__header-end-follower-userName">Uchiha
+                                                                    Edge
+                                                                </h3>
+                                                                <p class="app__header-end-follower-description">
+                                                                    @DongHoUchiha</p>
+                                                            </div>
+                                                            <img src="assets/img/uchia_edge.jpg" alt="Ảnh đại diện"
+                                                                class="app__header-end-follower-picture">
+                                                        </div>
+                                                    </a>
+                                                    <div class="app__header-end-follower-user">
+                                                        <a href="#" class="app__header-end-follower-btn">
+                                                            <i class="fa-solid fa-comment"></i>
+                                                            <a href="#" class="app__header-end-follower-fl">Follow</a>
+                                                        </a>
+                                                    </div>
+                                                </li>
 
-                            <li class="app__header-end-item app__header-end-item-has-donate">
-                                <a href="#" class="app__header-end-link">
-                                    <img src="assets/img/icon_donate.png" alt="Ảnh icon_donate"
-                                        class="app__header-end-picture">
-                                    Ủng hộ
-                                </a>
-                                <!-- Thông tin bên trong Ủng hộ -->
-                                <div class="app__header-end-donate">
-                                    <div class="app__header-end-donate-head">
-                                        <ul class="app__header-end-donate-head-list">
-                                            <li class="app__header-end-donate-head-item">
-                                                <a href="#app__header-end-donate-1"
-                                                    class="app__header-end-donate-infotmation">Donate</a>
-                                            </li>
-                                            <li class="app__header-end-donate-head-item">
-                                                <a href="#app__header-end-donate-2"
-                                                    class="app__header-end-donate-infotmation app__header-end-donate-infotmation--change">Received
-                                                    donate</a>
-                                            </li>
-                                        </ul>
+                                                <li class="app__header-end-follower-item">
+                                                    <a href="#" class="app__header-end-follower-link">
+                                                        <div class="app__header-end-follower-photo">
+                                                            <div class="app__header-end-follower-title">
+                                                                <h3 class="app__header-end-follower-userName">Uchiha IE
+                                                                </h3>
+                                                                <p class="app__header-end-follower-description">
+                                                                    @DongHoUchiha</p>
+                                                            </div>
+                                                            <img src="assets/img/uchia_IE.jpg.png" alt="Ảnh đại diện"
+                                                                class="app__header-end-follower-picture">
+                                                        </div>
+                                                    </a>
+                                                    <div class="app__header-end-follower-user">
+                                                        <a href="#" class="app__header-end-follower-btn">
+                                                            <i class="fa-solid fa-comment"></i>
+                                                            <a href="#" class="app__header-end-follower-fl">Follow</a>
+                                                        </a>
+                                                    </div>
+                                                </li>
+
+                                                <li class="app__header-end-follower-item">
+                                                    <a href="#" class="app__header-end-follower-link">
+                                                        <div class="app__header-end-follower-photo">
+                                                            <div class="app__header-end-follower-title">
+                                                                <h3 class="app__header-end-follower-userName">Một Đấm Là
+                                                                    Nằm
+                                                                </h3>
+                                                                <p class="app__header-end-follower-description">
+                                                                    @MaiTaiSon</p>
+                                                            </div>
+                                                            <img src="assets/img/mike_tyson.jpg" alt="Ảnh đại diện"
+                                                                class="app__header-end-follower-picture">
+                                                        </div>
+                                                    </a>
+                                                    <div class="app__header-end-follower-user">
+                                                        <a href="#" class="app__header-end-follower-btn">
+                                                            <i class="fa-solid fa-comment"></i>
+                                                            <a href="#" class="app__header-end-follower-fl">Follow</a>
+                                                        </a>
+                                                    </div>
+                                                </li>
+
+                                                <li class=" app__header-end-follower-item">
+                                                    <a href="#" class=" app__header-end-follower-link">
+                                                        <div class="app__header-end-follower-photo">
+                                                            <div class="app__header-end-follower-title">
+                                                                <h3 class="app__header-end-follower-userName">Cục Đá
+                                                                </h3>
+                                                                <p class="app__header-end-follower-description">@Rock
+                                                                </p>
+                                                            </div>
+                                                            <img src="assets/img/the_rock.jpg" alt="Ảnh đại diện"
+                                                                class="app__header-end-follower-picture">
+                                                        </div>
+                                                    </a>
+                                                    <div class="app__header-end-follower-user">
+                                                        <a href="#" class="app__header-end-follower-btn">
+                                                            <i class="fa-solid fa-comment"></i>
+                                                            <a href="#" class="app__header-end-follower-fl">Follow</a>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <hr class="app__header-end-donate-separator">
-                                    <div id="app__header-end-donate-1" class="app__header-end-donate-support">
-                                        <h3 class="app__header-end-donate-heading">Ủng hộ</h3>
-                                        <ul class="app__header-end-donate-list app__header-end-donate-list--1">
-                                            <li class="app__header-end-donate-item">
-                                                <a href="#" class="app__header-end-donate-link">
-                                                    <div class="app__header-end-donate-photo">
-                                                        <img src="assets/img/male_1.jpg" alt="Ảnh đại diện"
-                                                            class="app__header-end-donate-picture">
-                                                        <div class="app__header-end-donate-content">
-                                                            <h3 class="app__header-end-donate-userName">Ngọc Ánh
-                                                            </h3>
-                                                            <p class="app__header-end-donate-description">@AnhNgoc
-                                                            </p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="app__header-end-right">
+                            <ul class="app__header-end-list app__header-end--flexRight">
+                                <li class="app__header-end-item app__header-end-item-has-viewer">
+                                    <a href="#" class="app__header-end-link">
+                                        <img src="assets/img/Dang_follow.png" alt="Ảnh đang follow"
+                                            class="app__header-end-picture">
+                                        Đang Follow
+                                    </a>
+                                    <!-- Thông tin trong phần đang follow -->
+                                    <div class="app__header-end-viewer">
+                                        <h2 class="app__header-end-viewer-title">Người bạn đang Follow</h2>
+                                        <hr class="app__header-end-viewer-separator">
+                                        <ul class="app__header-end-viewer-list">
+                                            <li class="app__header-end-viewer-item">
+                                                <a href="#" class="app__header-end-viewer-link">
+                                                    <div class="app__header-end-viewer-user">
+                                                        <img src="assets/img/male.jpg" alt="Ảnh đại diện"
+                                                            class="app__header-end-viewer-photo">
+                                                        <div class="app__header-end-viewer-content">
+                                                            <h3 class="app__header-end-viewer-userName">Quỳnh</h3>
+                                                            <p class="app__header-end-viewer-description">@QuynhLe</p>
                                                         </div>
                                                     </div>
-                                                    <div class="app__header-end-donate-icon">
-                                                        <a href="#" class="app__header-end-donate-icon-link">
-                                                            <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                                                    <div class="app__header-end-viewer-icon">
+                                                        <a href="#"
+                                                            class="app__header-end-viewer-connect app__header-end-viewer-connect--1">
+                                                            <i class="fa-solid fa-comment"></i>
+                                                            <div class="app__header-end-viewer-information">Nhắn tin
+                                                            </div>
                                                         </a>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="app__header-end-donate-item">
-                                                <a href="#" class="app__header-end-donate-link">
-                                                    <div class="app__header-end-donate-photo">
-                                                        <img src="assets/img/male_2.jpg" alt="Ảnh đại diện"
-                                                            class="app__header-end-donate-picture">
-                                                        <div class="app__header-end-donate-content">
-                                                            <h3 class="app__header-end-donate-userName">Thư Nguyễn
-                                                            </h3>
-                                                            <p class="app__header-end-donate-description">@NguyenThu
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="app__header-end-donate-icon">
-                                                        <a href="#" class="app__header-end-donate-icon-link">
-                                                            <i class="fa-solid fa-circle-dollar-to-slot"></i>
-                                                        </a>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="app__header-end-donate-item">
-                                                <a href="#" class="app__header-end-donate-link">
-                                                    <div class="app__header-end-donate-photo">
-                                                        <img src="assets/img/male_3.jpg" alt="Ảnh đại diện"
-                                                            class="app__header-end-donate-picture">
-                                                        <div class="app__header-end-donate-content">
-                                                            <h3 class="app__header-end-donate-userName">Võ Tòng</h3>
-                                                            <p class="app__header-end-donate-description">@DamHo</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="app__header-end-donate-icon">
-                                                        <a href="#" class="app__header-end-donate-icon-link">
-                                                            <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                                                        <a href="#"
+                                                            class="app__header-end-viewer-connect app__header-end-viewer-connect--2">
+                                                            <svg width="20" height="20" viewBox="0 0 48 48"
+                                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M13.0001 13C13.0001 9.68629 15.6864 7 19.0001 7C22.3139 7 25.0001 9.68629 25.0001 13C25.0001 16.3137 22.3139 19 19.0001 19C15.6864 19 13.0001 16.3137 13.0001 13ZM19.0001 3C13.4773 3 9.00015 7.47715 9.00015 13C9.00015 18.5228 13.4773 23 19.0001 23C24.523 23 29.0001 18.5228 29.0001 13C29.0001 7.47715 24.523 3 19.0001 3ZM5.19435 40.9681C6.70152 35.5144 10.0886 32.2352 13.9162 30.738C17.7125 29.2531 22.0358 29.4832 25.6064 31.2486C26.1015 31.4934 26.7131 31.338 26.9931 30.8619L28.0072 29.1381C28.2872 28.662 28.1294 28.0465 27.6384 27.7937C23.0156 25.4139 17.4034 25.0789 12.4591 27.0129C7.37426 29.0018 3.09339 33.3505 1.2883 40.0887C1.14539 40.6222 1.48573 41.1592 2.02454 41.2805L3.97575 41.7195C4.51457 41.8408 5.04724 41.5004 5.19435 40.9681ZM44.7074 30.1212C45.0979 29.7307 45.0979 29.0975 44.7074 28.707L43.2932 27.2928C42.9026 26.9023 42.2695 26.9023 41.8789 27.2928L30.0003 39.1715L25.1216 34.2928C24.7311 33.9023 24.0979 33.9023 23.7074 34.2928L22.2932 35.707C21.9026 36.0975 21.9026 36.7307 22.2932 37.1212L28.586 43.4141C29.3671 44.1952 30.6334 44.1952 31.4145 43.4141L44.7074 30.1212Z">
+                                                                </path>
+                                                            </svg>
+                                                            <div class="app__header-end-viewer-information">Bỏ theo dõi
+                                                            </div>
                                                         </a>
                                                     </div>
                                                 </a>
                                             </li>
                                         </ul>
                                     </div>
-                                    <div id="app__header-end-donate-2" class="app__header-end-donate-history-support">
-                                        <h3 class="app__header-end-donate-heading">Lịch sử nhận donate</h3>
-                                        <ul class="app__header-end-donate-list app__header-end-donate-list--1">
-                                            <li class="app__header-end-donate-item">
-                                                <a href="#" class="app__header-end-donate-link">
-                                                    <div class="app__header-end-donate-photo">
-                                                        <img src="assets/img/male_1.jpg" alt="Ảnh đại diện"
-                                                            class="app__header-end-donate-picture">
-                                                        <div class="app__header-end-donate-content">
-                                                            <h3 class="app__header-end-donate-userName">Ngọc Ánh
-                                                            </h3>
-                                                            <p class="app__header-end-donate-description">@AnhNgoc
-                                                            </p>
+                                </li>
+
+                                <li class="app__header-end-item app__header-end-item-has-donate">
+                                    <a href="#" class="app__header-end-link">
+                                        <img src="assets/img/icon_donate.png" alt="Ảnh icon_donate"
+                                            class="app__header-end-picture">
+                                        Ủng hộ
+                                    </a>
+                                        <!-- Thông tin bên trong Ủng hộ -->
+                                        <div class="app__header-end-donate">
+                                            <div class="app__header-end-donate-head">
+                                                <ul class="app__header-end-donate-head-list">
+                                                    <li class="app__header-end-donate-head-item">
+                                                        <a href="#app__header-end-donate-1" class="app__header-end-donate-infotmation">Donate</a>
+                                                    </li>
+                                                    <li class="app__header-end-donate-head-item">
+                                                        <a href="#app__header-end-donate-2" class="app__header-end-donate-infotmation app__header-end-donate-infotmation--change">Received donate</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <hr class="app__header-end-donate-separator">
+                                            <div id="app__header-end-donate-1" class="app__header-end-donate-support">                     
+                                                <h3 class="app__header-end-donate-heading">Ủng hộ</h3>
+                                                <ul class="app__header-end-donate-list app__header-end-donate-list--1">
+                                                    <li class="app__header-end-donate-item">
+                                                        <a href="#" class="app__header-end-donate-link">
+                                                            <div class="app__header-end-donate-photo">
+                                                                <img src="assets/img/male_1.jpg" alt="Ảnh đại diện" class="app__header-end-donate-picture">
+                                                                <div class="app__header-end-donate-content">
+                                                                    <h3 class="app__header-end-donate-userName">Ngọc Ánh</h3>
+                                                                    <p class="app__header-end-donate-description">@AnhNgoc</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="app__header-end-donate-icon">
+                                                                <a href="#" class="app__header-end-donate-icon-link">
+                                                                    <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                                                                </a>
+                                                            </div>
+                                                        </a>
+                                                    </li>       
+                                                    <li class="app__header-end-donate-item">
+                                                        <a href="#" class="app__header-end-donate-link">
+                                                            <div class="app__header-end-donate-photo">
+                                                                <img src="assets/img/male_2.jpg" alt="Ảnh đại diện" class="app__header-end-donate-picture">
+                                                                <div class="app__header-end-donate-content">
+                                                                    <h3 class="app__header-end-donate-userName">Thư Nguyễn</h3>
+                                                                    <p class="app__header-end-donate-description">@NguyenThu</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="app__header-end-donate-icon">
+                                                                <a href="#" class="app__header-end-donate-icon-link">
+                                                                    <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                                                                </a>
+                                                            </div>
+                                                        </a>
+                                                    </li> 
+                                                    <li class="app__header-end-donate-item">
+                                                        <a href="#" class="app__header-end-donate-link">
+                                                            <div class="app__header-end-donate-photo">
+                                                                <img src="assets/img/male_3.jpg" alt="Ảnh đại diện" class="app__header-end-donate-picture">
+                                                                <div class="app__header-end-donate-content">
+                                                                    <h3 class="app__header-end-donate-userName">Võ Tòng</h3>
+                                                                    <p class="app__header-end-donate-description">@DamHo</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="app__header-end-donate-icon">
+                                                                <a href="#" class="app__header-end-donate-icon-link">
+                                                                    <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                                                                </a>
+                                                            </div>
+                                                        </a>
+                                                    </li>                                     
+                                                </ul>
+                                            </div>
+                                            <div id="app__header-end-donate-2" class="app__header-end-donate-history-support">      
+                                                <h3 class="app__header-end-donate-heading">Lịch sử nhận donate</h3>
+                                                <ul class="app__header-end-donate-list app__header-end-donate-list--1">
+                                                    <li class="app__header-end-donate-item">
+                                                        <a href="#" class="app__header-end-donate-link  ">
+                                                            <div class="app__header-end-donate-photo">
+                                                                <img src="assets/img/male_1.jpg" alt="Ảnh đại diện" class="app__header-end-donate-picture">
+                                                                <div class="app__header-end-donate-content">
+                                                                    <h3 class="app__header-end-donate-userName">Ngọc Ánh</h3>
+                                                                    <p class="app__header-end-donate-description">@AnhNgoc</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <div class="app__header-end-donate-icon">
+                                                            <p class="app__header-end-donate-money">+25000000đ</p>
                                                         </div>
-                                                    </div>
+                                                    </li>  
+                                                    <li class="app__header-end-donate-item">
+                                                        <a href="#" class="app__header-end-donate-link ">
+                                                            <div class="app__header-end-donate-photo">
+                                                                <img src="assets/img/Tấn lỗ.jpg" alt="Ảnh đại diện" class="app__header-end-donate-picture">
+                                                                <div class="app__header-end-donate-content">
+                                                                    <h3 class="app__header-end-donate-userName">Nhà Thơ Tấn Lỗ</h3>
+                                                                    <p class="app__header-end-donate-description">@LoTan</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <div class="app__header-end-donate-icon">
+                                                            <p class="app__header-end-donate-money">+45000000đ</p>
+                                                        </div>
+                                                    </li>                                                                                  
+                                                </ul>
+                                            </div>
+                                        </div>
+                                   
+                                </li>
+
+                                <li class="app__header-end-item app__header-head-item-has-information">
+                                    <a href="#" class="app__header-end-link">
+                                        <img src="assets/img/icon_connection_2.png" alt="Ảnh kết nối"
+                                            class="app__header-end-picture">
+                                        <span class="app__header-head-content">Kết nối</span>
+                                    </a>
+                                    <!-- Thông tin bên trong kết nối -->
+                                    <div class="app__header-information">
+                                        <h2 class="app__header-information-head">Kết nối với chúng tôi:</h2>
+                                        <ul class="app__header-information-list">
+                                            <li class="app__header-information-item">
+                                                <a href="" class="app__header-information-link">
+                                                    <i class="fa-brands fa-facebook"></i>
                                                 </a>
-                                                <div class="app__header-end-donate-icon">
-                                                    <p class="app__header-end-donate-money">+25000000đ</p>
-                                                </div>
                                             </li>
-                                            <li class="app__header-end-donate-item">
-                                                <a href="#" class="app__header-end-donate-link">
-                                                    <div class="app__header-end-donate-photo">
-                                                        <img src="assets/img/Tấn lỗ.jpg" alt="Ảnh đại diện"
-                                                            class="app__header-end-donate-picture">
-                                                        <div class="app__header-end-donate-content">
-                                                            <h3 class="app__header-end-donate-userName">Nhà Thơ Tấn
-                                                                Lỗ</h3>
-                                                            <p class="app__header-end-donate-description">@LoTan</p>
-                                                        </div>
-                                                    </div>
+                                            <li class="app__header-information-item">
+                                                <a href="" class="app__header-information-link">
+                                                    <i class="fa-brands fa-facebook-messenger"></i>
                                                 </a>
-                                                <div class="app__header-end-donate-icon">
-                                                    <p class="app__header-end-donate-money">+45000000đ</p>
-                                                </div>
+                                            </li>
+                                            <li class="app__header-information-item">
+                                                <a href="" class="app__header-information-link">
+                                                    <i class="fa-brands fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="app__header-information-item">
+                                                <a href="" class="app__header-information-link">
+                                                    <i class="fa-brands fa-tiktok"></i>
+                                                </a>
+                                            </li>
+                                            <li class="app__header-information-item">
+                                                <a href="" class="app__header-information-link">
+                                                    <i class="fa-brands fa-reddit"></i>
+                                                </a>
                                             </li>
                                         </ul>
                                     </div>
-                                </div>
-
-                            </li>
-
-                            <li class="app__header-end-item app__header-head-item-has-information">
-                                <a href="#" class="app__header-end-link">
-                                    <img src="assets/img/icon_connection_2.png" alt="Ảnh kết nối"
-                                        class="app__header-end-picture">
-                                    <span class="app__header-head-content">Kết nối</span>
-                                </a>
-                                <!-- Thông tin bên trong kết nối -->
-                                <div class="app__header-information">
-                                    <h2 class="app__header-information-head">Kết nối với chúng tôi:</h2>
-                                    <ul class="app__header-information-list">
-                                        <li class="app__header-information-item">
-                                            <a href="" class="app__header-information-link">
-                                                <i class="fa-brands fa-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li class="app__header-information-item">
-                                            <a href="" class="app__header-information-link">
-                                                <i class="fa-brands fa-facebook-messenger"></i>
-                                            </a>
-                                        </li>
-                                        <li class="app__header-information-item">
-                                            <a href="" class="app__header-information-link">
-                                                <i class="fa-brands fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li class="app__header-information-item">
-                                            <a href="" class="app__header-information-link">
-                                                <i class="fa-brands fa-tiktok"></i>
-                                            </a>
-                                        </li>
-                                        <li class="app__header-information-item">
-                                            <a href="" class="app__header-information-link">
-                                                <i class="fa-brands fa-reddit"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
             </div>
         </header>
 
@@ -806,10 +850,8 @@
         </div>
 
         <footer>
-            <div></div>
         </footer>
     </div>
-
 </body>
 
 </html>
