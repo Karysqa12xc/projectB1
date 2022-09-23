@@ -1,7 +1,7 @@
 
 /* app_header */
 .app__header {
-    z-index: 1;
+    z-index: 100;
     width: 100%;
     background: linear-gradient(to left bottom, rgb(255 18 211), rgb(5 255 247));
     height: var(--header-height);
@@ -111,6 +111,7 @@
 
 /* Nội dung phần Avartar */
 .app__header-head-avartar {
+    z-index: 1;
     margin-top: -1px;
     width: 28px;
     border-radius: 100px;
@@ -1067,8 +1068,9 @@
 
 /* Làm phần main */
 .app__container{
+    z-index: 10;
     position: relative;
-    top: 140px;
+    top: 130px;
 }
 .app__container-main{
     /* width: 100%; */
@@ -1076,4 +1078,111 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--hover-1);
+}
+.carousel__mod{
+    width: 100%;
+}
+.carousel-inner-border{
+    border-radius: 20px;
+}
+.app__container-advertisement{
+    
+    display: flex;
+    justify-content: space-around;
+}
+.app__container-advertisement-list-up{
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.app__container-advertisement-list-down{
+    padding-left: 0;
+    list-style: none;
+}
+.app__container-advertisement-item{
+    color: var(--white-color);
+}
+
+.app__container-advertisement-head{
+    font-size: 3.0rem;
+}
+.head--switch-color-1{
+    color: var(--yellow-color);
+}
+.head--switch-color{
+    color: var(--primary-color);
+}
+.app__container-advertisement-description{
+    font-size: 2rem;
+}
+.learn-about-link{
+    width: 123px;
+    height: 32px;
+    display: block;
+    margin-left: 38px;
+    
+}
+.learn-about-btn{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    color: var(--text-color);
+    outline: none;
+    line-height: 1rem;
+    font-size: 1.3rem;
+    background-color: transparent;
+}
+.learn-about-btn-1{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    color: var(--white-color);
+    outline: none;
+    line-height: 1rem;
+    font-size: 1.3rem;
+    background-color: transparent;
+}
+.learn-about-btn-1:hover{
+    background-color:  var(--white-color);
+    color:  var(--button-color-2);
+}
+.learn-about-btn:hover{
+    background-color:  var(--white-color);
+    color:  var(--button-color-2);
+}
+.carousel-inner--fit{ 
+   
+}
+.carousel-item-photo-2{
+    background: linear-gradient(to right bottom, orange, Yellow);
+
+}
+.carousel-item-photo-1{
+    background: linear-gradient(0, blue, purple);
+}
+.carousel-item-picture{
+    height: 200px;
+    object-fit: contain;
+    opacity: 0.2;
+}
+.carousel-control-prev{
+    margin-left: 15px;
+}
+.carousel-control-next{
+    
+}
+.app__container-icon-pre{ 
+    z-index: 1;
+    border-radius: 50px;
+    background-color: var(--black-color);
+    margin-right: 120px;
+}
+.app__container-icon-next{
+    z-index: 1;
+    border-radius: 50px;
+    background-color: var(--black-color);
+    margin-left: 120px;
+    
 }
