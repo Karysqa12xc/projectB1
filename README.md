@@ -19,7 +19,7 @@ Quy định đặt tên class và id: Lấy thẻ bao làm gốc, toàn bộ cá
 # https://fontawesome.com/search?q=follower&o=r
 
 ## Link tham khảo responsive: 
-https://ui.dev/rwd/develop/browser-feature-support/media-queries-for-common-device-breakpoints
+# https://ui.dev/rwd/develop/browser-feature-support/media-queries-for-common-device-breakpoints
 
 VD: 
 <nav class="header__navbar">

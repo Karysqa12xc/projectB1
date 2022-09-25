@@ -39,6 +39,15 @@ html {
         opacity: 1;
     }
 }
+@keyframes  goUp{
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: 100px;
+    }
+}
 
 @keyframes headerNoticeGrow {
     from {

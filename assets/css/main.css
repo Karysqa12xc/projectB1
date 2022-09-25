@@ -1,4 +1,3 @@
-
 /* app_header */
 .app__header {
     z-index: 100;
@@ -425,6 +424,10 @@
 .app__header-end-list {
     list-style: none;
     padding-left: 0;
+}
+
+.mobie__responsive {
+    display: flex;
 }
 
 .app__header-end--flexLeft {
@@ -869,21 +872,27 @@
     animation: faceIn ease 0.3s;
     display: none;
 }
-.app__header-end-item-has-donate:hover .app__header-end-donate{
+
+.app__header-end-item-has-donate:hover .app__header-end-donate {
     display: block;
 }
-.app__header-end-donate-support{
+
+.app__header-end-donate-support {
     display: none;
 }
-#app__header-end-donate-1:target{
+
+#app__header-end-donate-1:target {
     display: block;
 }
-#app__header-end-donate-2:target{
+
+#app__header-end-donate-2:target {
     display: block;
 }
-.app__header-end-donate-history-support{
+
+.app__header-end-donate-history-support {
     display: none;
 }
+
 .app__header-end-donate-head {}
 
 .app__header-end-donate-head-list {
@@ -896,22 +905,24 @@
 
 .app__header-end-donate-head-item {
     margin: auto;
-    
+
 }
 
-.app__header-end-donate-infotmation { 
+.app__header-end-donate-infotmation {
     display: block;
     text-decoration: none;
     font-size: 1.6rem;
     font-weight: 600;
     color: var(--text-color);
     position: relative;
-    
+
 }
-.app__header-end-donate-infotmation:hover{
+
+.app__header-end-donate-infotmation:hover {
     color: var(--invalid-color);
 }
-.app__header-end-donate-infotmation::after{
+
+.app__header-end-donate-infotmation::after {
     position: absolute;
     top: 20px;
     right: -11px;
@@ -919,9 +930,10 @@
     width: 0px;
     height: 5px;
     border-radius: 10px;
-    background-color: var(--invalid-color);  
+    background-color: var(--invalid-color);
 }
-.app__header-end-donate-infotmation:hover::after{
+
+.app__header-end-donate-infotmation:hover::after {
     display: block;
     width: 100%;
     left: 0;
@@ -975,10 +987,10 @@
 
 .app__header-end-donate-icon {
     text-align: center;
-    line-height: 3.9rem; 
+    line-height: 3.9rem;
 }
 
-.app__header-end-donate-icon-link { 
+.app__header-end-donate-icon-link {
     width: 40px;
     height: 40px;
     border-radius: 30px;
@@ -987,15 +999,18 @@
     background-color: var(--hover-1);
     display: block
 }
-.app__header-end-donate-icon-link:hover{
+
+.app__header-end-donate-icon-link:hover {
     background-color: var(--fb-color);
     color: var(--white-color);
 }
-.app__header-end-donate-money{
+
+.app__header-end-donate-money {
     font-size: 1.6rem;
     color: var(--yellow-color);
     font-weight: 800;
 }
+
 /* Thông tin trong kết nối */
 .app__header-information {
     position: absolute;
@@ -1067,64 +1082,82 @@
 
 
 /* Làm phần main */
-.app__container{
+.app__container {
     z-index: 10;
     position: relative;
     top: 130px;
+    margin-bottom: 300px;
 }
-.app__container-main{
+
+.app__container-main {
     /* width: 100%; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--hover-1);
 }
-.carousel__mod{
+
+/* Phần slider bar */
+.carousel__mod {
+    margin: auto;
     width: 100%;
 }
-.carousel-inner-border{
+
+.carousel-inner-border {
+    /* margin: auto; */
     border-radius: 20px;
 }
-.app__container-advertisement{
-    
+
+.app__container-advertisement {
+
     display: flex;
     justify-content: space-around;
 }
-.app__container-advertisement-list-up{
+
+.app__container-advertisement-list-up {
     padding-left: 0;
     list-style: none;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-.app__container-advertisement-list-down{
+
+.app__container-advertisement-list-down {
+  
     padding-left: 0;
     list-style: none;
 }
-.app__container-advertisement-item{
+
+.app__container-advertisement-item {
+    
     color: var(--white-color);
 }
 
-.app__container-advertisement-head{
+.app__container-advertisement-head {
     font-size: 3.0rem;
 }
-.head--switch-color-1{
+
+.head--switch-color-1 {
     color: var(--yellow-color);
 }
-.head--switch-color{
+
+.head--switch-color {
     color: var(--primary-color);
 }
-.app__container-advertisement-description{
+
+.app__container-advertisement-description {
     font-size: 2rem;
 }
-.learn-about-link{
+
+.learn-about-link {
     width: 123px;
     height: 32px;
     display: block;
     margin-left: 38px;
-    
+
 }
-.learn-about-btn{
+
+.learn-about-btn {
     width: 100%;
     height: 100%;
     border-radius: 20px;
@@ -1134,7 +1167,8 @@
     font-size: 1.3rem;
     background-color: transparent;
 }
-.learn-about-btn-1{
+
+.learn-about-btn-1 {
     width: 100%;
     height: 100%;
     border-radius: 20px;
@@ -1144,45 +1178,258 @@
     font-size: 1.3rem;
     background-color: transparent;
 }
-.learn-about-btn-1:hover{
-    background-color:  var(--white-color);
-    color:  var(--button-color-2);
+
+.learn-about-btn-1:hover {
+    background-color: var(--white-color);
+    color: var(--button-color-2);
 }
-.learn-about-btn:hover{
-    background-color:  var(--white-color);
-    color:  var(--button-color-2);
+
+.learn-about-btn:hover {
+    background-color: var(--white-color);
+    color: var(--button-color-2);
 }
-.carousel-inner--fit{ 
-   
-}
-.carousel-item-photo-2{
+
+.carousel-inner--fit {}
+
+.carousel-item-photo-2 {
     background: linear-gradient(to right bottom, orange, Yellow);
 
 }
-.carousel-item-photo-1{
+
+.carousel-item-photo-1 {
     background: linear-gradient(0, blue, purple);
 }
-.carousel-item-picture{
+
+.carousel-item-picture {
     height: 200px;
     object-fit: contain;
     opacity: 0.2;
 }
-.carousel-control-prev{
+
+.carousel-control-prev {
     margin-left: 15px;
 }
-.carousel-control-next{
-    
-}
-.app__container-icon-pre{ 
+
+.carousel-control-next {}
+
+.app__container-icon-pre {
     z-index: 1;
     border-radius: 50px;
     background-color: var(--black-color);
     margin-right: 120px;
 }
-.app__container-icon-next{
+
+.app__container-icon-next {
     z-index: 1;
     border-radius: 50px;
     background-color: var(--black-color);
     margin-left: 120px;
-    
+}
+
+/* Phần chính */
+.app__container-main-width {
+    margin-top: 12px;
+    /* background-color: #1d9bf0; */
+}
+
+.app__container-col-1 {}
+
+.app__container-icon {
+    top: 108px;
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+.app__container-list {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app__container-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-top: 5px;
+    width: 64px;
+    height: 66px;
+    border-radius: 15px;
+
+}
+
+.app__container-item:hover {
+    background-color: #e8ebed;
+}
+
+.app__container-link {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 2.9rem;
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+.app__container-link:hover {
+    color: #1a1a1a;
+}
+
+.app__container-link:focus {
+    background-color: #e8ebed;
+    border-radius: 15px;
+    width: 64px;
+    height: 66px;
+}
+
+.app__container-paragram {
+    margin-top: 30px;
+    font-weight: 700;
+    position: absolute;
+    font-size: 1.2rem;
+}
+
+/* Phần cột 12 */
+.p-3 {
+    text-align: center;
+}
+
+.app__container-course {
+    margin-top: 30px;
+}
+
+.app__container-heading {
+    font-size: 4rem;
+}
+
+.app__container-course-It {
+    font-weight: 800;
+}
+
+.app__container-course-link {
+    display: block;
+    color: var(--white-color);
+    text-decoration: none;
+    background: linear-gradient(to top left, #12ace4, #1d9bf0);
+    display: block;
+    height: 160px;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    position: relative;
+    text-align: center;
+}
+
+.app__container-course-link-java {
+    background: linear-gradient(0, #1d9bf0, #ecb858);
+}
+
+.app__container-course-link-Csharp {
+    background: linear-gradient(to top right, #eb48eb, #986b98);
+}
+
+.app__container-course-link-python {
+    background: linear-gradient(to top right, #12ace4, #e6e66b);
+}
+
+.app__container-course-link-JS {
+    background: linear-gradient(to right bottom, orange, orange);
+}
+.app__container-course-link-Algorithm{
+    background: linear-gradient(to right bottom, #1d9bf0, #efef01);
+}
+.app__container-course-link-Git{
+    background: linear-gradient(to right bottom, black, white);
+}
+.app__container-course-link-GitLab{
+    background: linear-gradient(to right bottom,#fc3e3e, orange);
+}
+.app__container-course-link-PS {
+    background: linear-gradient(to right bottom, #4e4a4a, #3030ee);
+}
+
+.app__container-course-link-LR {
+    background: linear-gradient(to right bottom, #6a6767, #4848cf);
+}
+
+.app__container-course-link-Blender {
+    background: linear-gradient(to top right, orange, lightblue);
+}
+
+.app__container-course-link-AE {
+    background: linear-gradient(to top right, orange, purple);
+}
+
+.app__container-course-link-PR {
+    background: linear-gradient(to right bottom, #ebabb5, #d83bd8);
+}
+
+.app__container-course-link:hover {
+    opacity: 0.5;
+    color: var(--white-color);
+}
+
+.app__container-course-photo {
+    height: 160px;
+    position: relative;
+}
+
+.app__container-course-content {
+    position: absolute;
+    font-size: 3.5rem;
+    font-weight: 500;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+
+}
+
+.app__container-course-image {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    width: 103px;
+    height: 109px;
+    opacity: 0.4;
+}
+
+.app__container-course-description {
+    margin: 15px;
+}
+
+.app__container-course-description-intro {}
+
+.app__container-course-description-list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.app__container-course-description-item {
+    font-size: 1.4rem;
+}
+
+.app__container-course-description-link {
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+
+/* Viết phần footer */
+.app_footer{
+    z-index: 10;
+    position: relative;
+    bottom: calc( 0px  - 130px );
+    width: 100%;
+    height: 40px;
 }

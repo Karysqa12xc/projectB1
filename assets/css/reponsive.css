@@ -1,3 +1,26 @@
-@media only screen and (min-device-width: 23.4375em) and (max-device-height: 50.75em) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+@media only screen and (max-width: 46.1875em){
+    
+    
+    .carousel__mod{
+        display: none;
+    }
+    .app__header{
+        /* height: 400px; */
+    }
+    .app__header-heading{
+        display: none;
+    }
+    .app__header-head-search{
+    }
+    .mobie__responsive{
+        flex-direction: column;
+    }
+    .app__header-end--flexLeft{
+        flex-direction: column;
+    }
+    .app__header-end--flexRight{
+        flex-direction: column;
+        margin-left: 16px;
+    }
     
 }

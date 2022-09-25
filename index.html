@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/reponsive.css">
     <link rel="stylesheet" href="assets/bootstrap/bootstrap-5.2.1-dist/css/bootstrap.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="assets/fonts/boxIcon/boxicons-2.1.4/css/boxicons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,100&display=swap"
@@ -35,9 +36,20 @@
                         </ul>
 
                         <div class="app__header-head-search">
-                            <input type="text" class="app__header-head-inp" placeholder="Từ khóa tìm kiếm..!">
+                            <input type="text" list="items" class="app__header-head-inp"
+                                placeholder="Từ khóa tìm kiếm..!">
                             <div class="app__header-head-icon">
                                 <i class="app__header-head-icon-opacity fa-solid fa-magnifying-glass"></i>
+                                <datalist id="items">
+                                    <option value="Java"></option>
+                                    <option value="Java core"></option>
+                                    <option value="C++"></option>
+                                    <option value="Kung Fu"></option>
+                                    <option value="CSS"></option>
+                                    <option value="Học Blender cơ bản"></option>
+                                    <option value="Học Blender nâng cao"></option>
+                                    <option value="..."></option>
+                                </datalist>
                             </div>
                         </div>
 
@@ -370,491 +382,532 @@
 
                     <!-- nav end -->
                     <nav class="app__header-end">
-                        <div class="app__header-end-left">
-                            <ul class="app__header-end-list app__header-end--flexLeft">
-                                <li class="app__header-end-item">
-                                    <a href="#app__header-end-has-introduce" class="app__header-end-link">
-                                        <img src="assets/img/icon_people.png" alt="Ảnh về chúng tôi"
-                                            class="app__header-end-picture">
-                                        Giới thiệu
-                                    </a>
+                        <div class="mobie__responsive">
+                            <div class="app__header-end-left">
+                                <ul class="app__header-end-list app__header-end--flexLeft">
+                                    <li class="app__header-end-item">
+                                        <a href="#app__header-end-has-introduce" class="app__header-end-link">
+                                            <img src="assets/img/icon_people.png" alt="Ảnh về chúng tôi"
+                                                class="app__header-end-picture">
+                                            Giới thiệu
+                                        </a>
 
-                                    <!-- Thông tin trong giới thiệu -->
-                                    <div id="app__header-end-has-introduce" class="app__header-end-introduce">
-                                        <div class="app__header-end-introduce-dialog">
-                                            <div class="app__header-end-introduce-content">
-                                                <header class="app__header-end-introduce-head">
-                                                    <h2 class="app__header-end-introduce-title">Tổng quan chức năng của
-                                                        trang web</h2>
-                                                    <a href="#" class="app__header-end-introduce-link">x</a>
-                                                </header>
-                                                <hr class="app__header-end-introduce-separator">
-                                                <div class="app__header-end-introduce-main">
-                                                    <p class="app__header-end-introduce-paragraph">
-                                                    </p>
+                                        <!-- Thông tin trong giới thiệu -->
+                                        <div id="app__header-end-has-introduce" class="app__header-end-introduce">
+                                            <div class="app__header-end-introduce-dialog">
+                                                <div class="app__header-end-introduce-content">
+                                                    <header class="app__header-end-introduce-head">
+                                                        <h2 class="app__header-end-introduce-title">Tổng quan chức năng
+                                                            của
+                                                            trang web</h2>
+                                                        <a href="#" class="app__header-end-introduce-link">x</a>
+                                                    </header>
+                                                    <hr class="app__header-end-introduce-separator">
+                                                    <div class="app__header-end-introduce-main">
+                                                        <p class="app__header-end-introduce-paragraph">
+                                                        </p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="app__header-end-item app__header-end-item-has-course">
-                                    <a href="#" class="app__header-end-link">
-                                        <img src="assets/img/myCourse_2.png" alt="Ảnh khóa học của tôi"
-                                            class="app__header-end-picture">
-                                        My course
-                                    </a>
-                                    <!-- Thông tin trong phần my course -->
-                                    <div class="app__header-end-course">
-                                        <h2 class="app__header-end-course-heading">Khóa học của bạn</h2>
-                                        <ul class="app__header-end-course-list">
-                                            <li class="app__header-end-course-item">
-                                                <a href="#" class="app__header-end-course-link">
-                                                    <div class="app__header-end-course-photo">
-                                                        <img src="assets/img/Ảnh mẫu cho phần main.png"
-                                                            alt="Ảnh khóa học" class="app__header-end-course-picture">
-                                                    </div>
-                                                    <div class="app__header-end-course-content">
-                                                        <h4 class="app__header-end-course-title">Khóa học HTML, CSS</h4>
-                                                        <p class="app__header-end-course-notice">Bạn đã đăng ký học 4
-                                                            tháng trước</p>
-                                                        <progress class="app__header-end-course-process" value="60"
-                                                            max="100"></progress>
-                                                    </div>
-                                                </a>
+                                    </li>
+                                    <li class="app__header-end-item app__header-end-item-has-course">
+                                        <a href="#" class="app__header-end-link">
+                                            <img src="assets/img/myCourse_2.png" alt="Ảnh khóa học của tôi"
+                                                class="app__header-end-picture">
+                                            My course
+                                        </a>
+                                        <!-- Thông tin trong phần my course -->
+                                        <div class="app__header-end-course">
+                                            <h2 class="app__header-end-course-heading">Khóa học của bạn</h2>
+                                            <ul class="app__header-end-course-list">
+                                                <li class="app__header-end-course-item">
+                                                    <a href="#" class="app__header-end-course-link">
+                                                        <div class="app__header-end-course-photo">
+                                                            <img src="assets/img/Ảnh mẫu cho phần main.png"
+                                                                alt="Ảnh khóa học"
+                                                                class="app__header-end-course-picture">
+                                                        </div>
+                                                        <div class="app__header-end-course-content">
+                                                            <h4 class="app__header-end-course-title">Khóa học HTML, CSS
+                                                            </h4>
+                                                            <p class="app__header-end-course-notice">Bạn đã đăng ký học
+                                                                4
+                                                                tháng trước</p>
+                                                            <progress class="app__header-end-course-process" value="60"
+                                                                max="100"></progress>
+                                                        </div>
+                                                    </a>
 
-                                            </li>
-                                            <li class="app__header-end-course-item">
-                                                <a href="#" class="app__header-end-course-link">
-                                                    <div class="app__header-end-course-photo">
-                                                        <img src="assets/img/Ảnh mẫu cho phần main_1.png"
-                                                            alt="Ảnh khóa học" class="app__header-end-course-picture">
-                                                    </div>
-                                                    <div class="app__header-end-course-content">
-                                                        <h4 class="app__header-end-course-title">Cách reponsive trang
-                                                            web</h4>
-                                                        <p class="app__header-end-course-notice">Bạn đã đăng ký học 3h
-                                                            trước</p>
-                                                        <progress class="app__header-end-course-process" value="40"
-                                                            max="100"></progress>
-                                                    </div>
-                                                </a>
-                                            </li>
-
-                                            <li class="app__header-end-course-item">
-                                                <a href="#" class="app__header-end-course-link">
-                                                    <div class="app__header-end-course-photo">
-                                                        <img src="assets/img/Ảnh mẫu cho phần main_2.png"
-                                                            alt="Ảnh khóa học" class="app__header-end-course-picture">
-                                                    </div>
-                                                    <div class="app__header-end-course-content">
-                                                        <h4 class="app__header-end-course-title">JavaScript bản proMax
-                                                        </h4>
-                                                        <p class="app__header-end-course-notice">Bạn đã đăng ký học 6
-                                                            tháng trước</p>
-                                                        <progress class="app__header-end-course-process" value="90"
-                                                            max="100"></progress>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li
-                                                class="app__header-end-course-item app__header-end-course-item--no-hover">
-                                                <a href="#" class="app__header-end-course-link">
-                                                    <div class="app__header-end-course-photo">
-                                                        <img src="assets/img/Ảnh mẫu cho phần main_4.png"
-                                                            alt="Ảnh khóa học" class="app__header-end-course-picture">
-                                                    </div>
-                                                    <div
-                                                        class="app__header-end-course-content app__header-end-course-content--has-button">
-                                                        <h4 class="app__header-end-course-title">Cách làm việc với git
-                                                        </h4>
-                                                        <p class="app__header-end-course-notice">Bạn mới đăng ký học</p>
-                                                        <button class="app__header-end-course-btn">Bắt đầu</button>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="app__header-end-item app__header-end-item-has-follower">
-                                    <a href="#" class="app__header-end-link">
-                                        <img src="assets/img/icon_follower_3.png" alt="Ảnh follow"
-                                            class="app__header-end-picture">
-                                        Follower
-                                    </a>
-                                    <!-- Thông tin trong phần follower -->
-                                    <div class="app__header-end-follower">
-                                        <h2 class="app__header-end-follower-heading">Người đang theo dõi bạn</h2>
-                                        <hr class="app__header-end-follower-separator">
-                                        <div class="app__header-end-follower-content">
-                                            <ul class="app__header-end-follower-list">
-                                                <li class="app__header-end-follower-item">
-                                                    <a href="#" class="  app__header-end-follower-link ">
-                                                        <div class="app__header-end-follower-photo">
-                                                            <div class="app__header-end-follower-title">
-                                                                <h3 class="app__header-end-follower-userName">Uchiha
-                                                                    Chrome
-                                                                </h3>
-                                                                <p class="app__header-end-follower-description">
-                                                                    @DongHoUchiha</p>
-                                                            </div>
-                                                            <img src="assets/img/uchia_chrome.jpg" alt="Ảnh đại diện"
-                                                                class="app__header-end-follower-picture">
-                                                        </div>
-                                                    </a>
-                                                    <div class="app__header-end-follower-user">
-                                                        <a href="#" class="app__header-end-follower-btn">
-                                                            <i class="fa-solid fa-comment"></i>
-                                                            <a href="#" class="app__header-end-follower-fl">Follow</a>
-                                                        </a>
-                                                    </div>
                                                 </li>
-                                                <li class="app__header-end-follower-item">
-                                                    <a href="#" class="app__header-end-follower-link">
-                                                        <div class="app__header-end-follower-photo">
-                                                            <div class="app__header-end-follower-title">
-                                                                <h3 class="app__header-end-follower-userName">Uchiha
-                                                                    Fifefox
-                                                                </h3>
-                                                                <p class="app__header-end-follower-description">
-                                                                    @DongHoUchiha</p>
-                                                            </div>
-                                                            <img src="assets/img/uchia_firefox.jpg" alt="Ảnh đại diện"
-                                                                class="app__header-end-follower-picture">
+                                                <li class="app__header-end-course-item">
+                                                    <a href="#" class="app__header-end-course-link">
+                                                        <div class="app__header-end-course-photo">
+                                                            <img src="assets/img/Ảnh mẫu cho phần main_1.png"
+                                                                alt="Ảnh khóa học"
+                                                                class="app__header-end-course-picture">
+                                                        </div>
+                                                        <div class="app__header-end-course-content">
+                                                            <h4 class="app__header-end-course-title">Cách reponsive
+                                                                trang
+                                                                web</h4>
+                                                            <p class="app__header-end-course-notice">Bạn đã đăng ký học
+                                                                3h
+                                                                trước</p>
+                                                            <progress class="app__header-end-course-process" value="40"
+                                                                max="100"></progress>
                                                         </div>
                                                     </a>
-                                                    <div class="app__header-end-follower-user">
-                                                        <a href="#" class="app__header-end-follower-btn">
-                                                            <i class="fa-solid fa-comment"></i>
-                                                            <a href="#" class="app__header-end-follower-fl">Follow</a>
-                                                        </a>
-                                                    </div>
-                                                </li>
-                                                <li class="app__header-end-follower-item">
-                                                    <a href="#" class="app__header-end-follower-link">
-                                                        <div class="app__header-end-follower-photo">
-                                                            <div class="app__header-end-follower-title">
-                                                                <h3 class="app__header-end-follower-userName">Uchiha Cốc
-                                                                    Cốc
-                                                                </h3>
-                                                                <p class="app__header-end-follower-description">
-                                                                    @DongHoUchiha</p>
-                                                            </div>
-                                                            <img src="assets/img/uchia_coccoc.jpg" alt="Ảnh đại diện"
-                                                                class="app__header-end-follower-picture">
-                                                        </div>
-                                                    </a>
-                                                    <div class="app__header-end-follower-user">
-                                                        <a href="#" class="app__header-end-follower-btn">
-                                                            <i class="fa-solid fa-comment"></i>
-                                                            <a href="#" class="app__header-end-follower-fl">Follow</a>
-                                                        </a>
-                                                    </div>
-                                                </li>
-                                                <li class="app__header-end-follower-item">
-                                                    <a href="#" class="app__header-end-follower-link">
-                                                        <div class="app__header-end-follower-photo">
-                                                            <div class="app__header-end-follower-title">
-                                                                <h3 class="app__header-end-follower-userName">Uchiha
-                                                                    Edge
-                                                                </h3>
-                                                                <p class="app__header-end-follower-description">
-                                                                    @DongHoUchiha</p>
-                                                            </div>
-                                                            <img src="assets/img/uchia_edge.jpg" alt="Ảnh đại diện"
-                                                                class="app__header-end-follower-picture">
-                                                        </div>
-                                                    </a>
-                                                    <div class="app__header-end-follower-user">
-                                                        <a href="#" class="app__header-end-follower-btn">
-                                                            <i class="fa-solid fa-comment"></i>
-                                                            <a href="#" class="app__header-end-follower-fl">Follow</a>
-                                                        </a>
-                                                    </div>
                                                 </li>
 
-                                                <li class="app__header-end-follower-item">
-                                                    <a href="#" class="app__header-end-follower-link">
-                                                        <div class="app__header-end-follower-photo">
-                                                            <div class="app__header-end-follower-title">
-                                                                <h3 class="app__header-end-follower-userName">Uchiha IE
-                                                                </h3>
-                                                                <p class="app__header-end-follower-description">
-                                                                    @DongHoUchiha</p>
-                                                            </div>
-                                                            <img src="assets/img/uchia_IE.jpg.png" alt="Ảnh đại diện"
-                                                                class="app__header-end-follower-picture">
+                                                <li class="app__header-end-course-item">
+                                                    <a href="#" class="app__header-end-course-link">
+                                                        <div class="app__header-end-course-photo">
+                                                            <img src="assets/img/Ảnh mẫu cho phần main_2.png"
+                                                                alt="Ảnh khóa học"
+                                                                class="app__header-end-course-picture">
+                                                        </div>
+                                                        <div class="app__header-end-course-content">
+                                                            <h4 class="app__header-end-course-title">JavaScript bản
+                                                                proMax
+                                                            </h4>
+                                                            <p class="app__header-end-course-notice">Bạn đã đăng ký học
+                                                                6
+                                                                tháng trước</p>
+                                                            <progress class="app__header-end-course-process" value="90"
+                                                                max="100"></progress>
                                                         </div>
                                                     </a>
-                                                    <div class="app__header-end-follower-user">
-                                                        <a href="#" class="app__header-end-follower-btn">
-                                                            <i class="fa-solid fa-comment"></i>
-                                                            <a href="#" class="app__header-end-follower-fl">Follow</a>
-                                                        </a>
-                                                    </div>
                                                 </li>
-
-                                                <li class="app__header-end-follower-item">
-                                                    <a href="#" class="app__header-end-follower-link">
-                                                        <div class="app__header-end-follower-photo">
-                                                            <div class="app__header-end-follower-title">
-                                                                <h3 class="app__header-end-follower-userName">Một Đấm Là
-                                                                    Nằm
-                                                                </h3>
-                                                                <p class="app__header-end-follower-description">
-                                                                    @MaiTaiSon</p>
-                                                            </div>
-                                                            <img src="assets/img/mike_tyson.jpg" alt="Ảnh đại diện"
-                                                                class="app__header-end-follower-picture">
+                                                <li
+                                                    class="app__header-end-course-item app__header-end-course-item--no-hover">
+                                                    <a href="#" class="app__header-end-course-link">
+                                                        <div class="app__header-end-course-photo">
+                                                            <img src="assets/img/Ảnh mẫu cho phần main_4.png"
+                                                                alt="Ảnh khóa học"
+                                                                class="app__header-end-course-picture">
+                                                        </div>
+                                                        <div
+                                                            class="app__header-end-course-content app__header-end-course-content--has-button">
+                                                            <h4 class="app__header-end-course-title">Cách làm việc với
+                                                                git
+                                                            </h4>
+                                                            <p class="app__header-end-course-notice">Bạn mới đăng ký học
+                                                            </p>
+                                                            <button class="app__header-end-course-btn">Bắt đầu</button>
                                                         </div>
                                                     </a>
-                                                    <div class="app__header-end-follower-user">
-                                                        <a href="#" class="app__header-end-follower-btn">
-                                                            <i class="fa-solid fa-comment"></i>
-                                                            <a href="#" class="app__header-end-follower-fl">Follow</a>
-                                                        </a>
-                                                    </div>
-                                                </li>
-
-                                                <li class=" app__header-end-follower-item">
-                                                    <a href="#" class=" app__header-end-follower-link">
-                                                        <div class="app__header-end-follower-photo">
-                                                            <div class="app__header-end-follower-title">
-                                                                <h3 class="app__header-end-follower-userName">Cục Đá
-                                                                </h3>
-                                                                <p class="app__header-end-follower-description">@Rock
-                                                                </p>
-                                                            </div>
-                                                            <img src="assets/img/the_rock.jpg" alt="Ảnh đại diện"
-                                                                class="app__header-end-follower-picture">
-                                                        </div>
-                                                    </a>
-                                                    <div class="app__header-end-follower-user">
-                                                        <a href="#" class="app__header-end-follower-btn">
-                                                            <i class="fa-solid fa-comment"></i>
-                                                            <a href="#" class="app__header-end-follower-fl">Follow</a>
-                                                        </a>
-                                                    </div>
                                                 </li>
                                             </ul>
                                         </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="app__header-end-right">
-                            <ul class="app__header-end-list app__header-end--flexRight">
-                                <li class="app__header-end-item app__header-end-item-has-viewer">
-                                    <a href="#" class="app__header-end-link">
-                                        <img src="assets/img/Dang_follow.png" alt="Ảnh đang follow"
-                                            class="app__header-end-picture">
-                                        Đang Follow
-                                    </a>
-                                    <!-- Thông tin trong phần đang follow -->
-                                    <div class="app__header-end-viewer">
-                                        <h2 class="app__header-end-viewer-title">Người bạn đang Follow</h2>
-                                        <hr class="app__header-end-viewer-separator">
-                                        <ul class="app__header-end-viewer-list">
-                                            <li class="app__header-end-viewer-item">
-                                                <a href="#" class="app__header-end-viewer-link">
-                                                    <div class="app__header-end-viewer-user">
-                                                        <img src="assets/img/male.jpg" alt="Ảnh đại diện"
-                                                            class="app__header-end-viewer-photo">
-                                                        <div class="app__header-end-viewer-content">
-                                                            <h3 class="app__header-end-viewer-userName">Quỳnh</h3>
-                                                            <p class="app__header-end-viewer-description">@QuynhLe</p>
+                                    </li>
+                                    <li class="app__header-end-item app__header-end-item-has-follower">
+                                        <a href="#" class="app__header-end-link">
+                                            <img src="assets/img/icon_follower_3.png" alt="Ảnh follow"
+                                                class="app__header-end-picture">
+                                            Follower
+                                        </a>
+                                        <!-- Thông tin trong phần follower -->
+                                        <div class="app__header-end-follower">
+                                            <h2 class="app__header-end-follower-heading">Người đang theo dõi bạn</h2>
+                                            <hr class="app__header-end-follower-separator">
+                                            <div class="app__header-end-follower-content">
+                                                <ul class="app__header-end-follower-list">
+                                                    <li class="app__header-end-follower-item">
+                                                        <a href="#" class="  app__header-end-follower-link ">
+                                                            <div class="app__header-end-follower-photo">
+                                                                <div class="app__header-end-follower-title">
+                                                                    <h3 class="app__header-end-follower-userName">Uchiha
+                                                                        Chrome
+                                                                    </h3>
+                                                                    <p class="app__header-end-follower-description">
+                                                                        @DongHoUchiha</p>
+                                                                </div>
+                                                                <img src="assets/img/uchia_chrome.jpg"
+                                                                    alt="Ảnh đại diện"
+                                                                    class="app__header-end-follower-picture">
+                                                            </div>
+                                                        </a>
+                                                        <div class="app__header-end-follower-user">
+                                                            <a href="#" class="app__header-end-follower-btn">
+                                                                <i class="fa-solid fa-comment"></i>
+                                                                <a href="#"
+                                                                    class="app__header-end-follower-fl">Follow</a>
+                                                            </a>
                                                         </div>
-                                                    </div>
-                                                    <div class="app__header-end-viewer-icon">
-                                                        <a href="#"
-                                                            class="app__header-end-viewer-connect app__header-end-viewer-connect--1">
-                                                            <i class="fa-solid fa-comment"></i>
-                                                            <div class="app__header-end-viewer-information">Nhắn tin
+                                                    </li>
+                                                    <li class="app__header-end-follower-item">
+                                                        <a href="#" class="app__header-end-follower-link">
+                                                            <div class="app__header-end-follower-photo">
+                                                                <div class="app__header-end-follower-title">
+                                                                    <h3 class="app__header-end-follower-userName">Uchiha
+                                                                        Fifefox
+                                                                    </h3>
+                                                                    <p class="app__header-end-follower-description">
+                                                                        @DongHoUchiha</p>
+                                                                </div>
+                                                                <img src="assets/img/uchia_firefox.jpg"
+                                                                    alt="Ảnh đại diện"
+                                                                    class="app__header-end-follower-picture">
                                                             </div>
                                                         </a>
-                                                        <a href="#"
-                                                            class="app__header-end-viewer-connect app__header-end-viewer-connect--2">
-                                                            <svg width="20" height="20" viewBox="0 0 48 48"
-                                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                    d="M13.0001 13C13.0001 9.68629 15.6864 7 19.0001 7C22.3139 7 25.0001 9.68629 25.0001 13C25.0001 16.3137 22.3139 19 19.0001 19C15.6864 19 13.0001 16.3137 13.0001 13ZM19.0001 3C13.4773 3 9.00015 7.47715 9.00015 13C9.00015 18.5228 13.4773 23 19.0001 23C24.523 23 29.0001 18.5228 29.0001 13C29.0001 7.47715 24.523 3 19.0001 3ZM5.19435 40.9681C6.70152 35.5144 10.0886 32.2352 13.9162 30.738C17.7125 29.2531 22.0358 29.4832 25.6064 31.2486C26.1015 31.4934 26.7131 31.338 26.9931 30.8619L28.0072 29.1381C28.2872 28.662 28.1294 28.0465 27.6384 27.7937C23.0156 25.4139 17.4034 25.0789 12.4591 27.0129C7.37426 29.0018 3.09339 33.3505 1.2883 40.0887C1.14539 40.6222 1.48573 41.1592 2.02454 41.2805L3.97575 41.7195C4.51457 41.8408 5.04724 41.5004 5.19435 40.9681ZM44.7074 30.1212C45.0979 29.7307 45.0979 29.0975 44.7074 28.707L43.2932 27.2928C42.9026 26.9023 42.2695 26.9023 41.8789 27.2928L30.0003 39.1715L25.1216 34.2928C24.7311 33.9023 24.0979 33.9023 23.7074 34.2928L22.2932 35.707C21.9026 36.0975 21.9026 36.7307 22.2932 37.1212L28.586 43.4141C29.3671 44.1952 30.6334 44.1952 31.4145 43.4141L44.7074 30.1212Z">
-                                                                </path>
-                                                            </svg>
-                                                            <div class="app__header-end-viewer-information">Bỏ theo dõi
+                                                        <div class="app__header-end-follower-user">
+                                                            <a href="#" class="app__header-end-follower-btn">
+                                                                <i class="fa-solid fa-comment"></i>
+                                                                <a href="#"
+                                                                    class="app__header-end-follower-fl">Follow</a>
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="app__header-end-follower-item">
+                                                        <a href="#" class="app__header-end-follower-link">
+                                                            <div class="app__header-end-follower-photo">
+                                                                <div class="app__header-end-follower-title">
+                                                                    <h3 class="app__header-end-follower-userName">Uchiha
+                                                                        Cốc
+                                                                        Cốc
+                                                                    </h3>
+                                                                    <p class="app__header-end-follower-description">
+                                                                        @DongHoUchiha</p>
+                                                                </div>
+                                                                <img src="assets/img/uchia_coccoc.jpg"
+                                                                    alt="Ảnh đại diện"
+                                                                    class="app__header-end-follower-picture">
                                                             </div>
                                                         </a>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
+                                                        <div class="app__header-end-follower-user">
+                                                            <a href="#" class="app__header-end-follower-btn">
+                                                                <i class="fa-solid fa-comment"></i>
+                                                                <a href="#"
+                                                                    class="app__header-end-follower-fl">Follow</a>
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="app__header-end-follower-item">
+                                                        <a href="#" class="app__header-end-follower-link">
+                                                            <div class="app__header-end-follower-photo">
+                                                                <div class="app__header-end-follower-title">
+                                                                    <h3 class="app__header-end-follower-userName">Uchiha
+                                                                        Edge
+                                                                    </h3>
+                                                                    <p class="app__header-end-follower-description">
+                                                                        @DongHoUchiha</p>
+                                                                </div>
+                                                                <img src="assets/img/uchia_edge.jpg" alt="Ảnh đại diện"
+                                                                    class="app__header-end-follower-picture">
+                                                            </div>
+                                                        </a>
+                                                        <div class="app__header-end-follower-user">
+                                                            <a href="#" class="app__header-end-follower-btn">
+                                                                <i class="fa-solid fa-comment"></i>
+                                                                <a href="#"
+                                                                    class="app__header-end-follower-fl">Follow</a>
+                                                            </a>
+                                                        </div>
+                                                    </li>
 
-                                <li class="app__header-end-item app__header-end-item-has-donate">
-                                    <a href="#" class="app__header-end-link">
-                                        <img src="assets/img/icon_donate.png" alt="Ảnh icon_donate"
-                                            class="app__header-end-picture">
-                                        Ủng hộ
-                                    </a>
-                                    <!-- Thông tin bên trong Ủng hộ -->
-                                    <div class="app__header-end-donate">
-                                        <div class="app__header-end-donate-head">
-                                            <ul class="app__header-end-donate-head-list">
-                                                <li class="app__header-end-donate-head-item">
-                                                    <a href="#app__header-end-donate-1"
-                                                        class="app__header-end-donate-infotmation">Donate</a>
-                                                </li>
-                                                <li class="app__header-end-donate-head-item">
-                                                    <a href="#app__header-end-donate-2"
-                                                        class="app__header-end-donate-infotmation app__header-end-donate-infotmation--change">Received
-                                                        donate</a>
-                                                </li>
-                                            </ul>
+                                                    <li class="app__header-end-follower-item">
+                                                        <a href="#" class="app__header-end-follower-link">
+                                                            <div class="app__header-end-follower-photo">
+                                                                <div class="app__header-end-follower-title">
+                                                                    <h3 class="app__header-end-follower-userName">Uchiha
+                                                                        IE
+                                                                    </h3>
+                                                                    <p class="app__header-end-follower-description">
+                                                                        @DongHoUchiha</p>
+                                                                </div>
+                                                                <img src="assets/img/uchia_IE.jpg.png"
+                                                                    alt="Ảnh đại diện"
+                                                                    class="app__header-end-follower-picture">
+                                                            </div>
+                                                        </a>
+                                                        <div class="app__header-end-follower-user">
+                                                            <a href="#" class="app__header-end-follower-btn">
+                                                                <i class="fa-solid fa-comment"></i>
+                                                                <a href="#"
+                                                                    class="app__header-end-follower-fl">Follow</a>
+                                                            </a>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="app__header-end-follower-item">
+                                                        <a href="#" class="app__header-end-follower-link">
+                                                            <div class="app__header-end-follower-photo">
+                                                                <div class="app__header-end-follower-title">
+                                                                    <h3 class="app__header-end-follower-userName">Một
+                                                                        Đấm Là
+                                                                        Nằm
+                                                                    </h3>
+                                                                    <p class="app__header-end-follower-description">
+                                                                        @MaiTaiSon</p>
+                                                                </div>
+                                                                <img src="assets/img/mike_tyson.jpg" alt="Ảnh đại diện"
+                                                                    class="app__header-end-follower-picture">
+                                                            </div>
+                                                        </a>
+                                                        <div class="app__header-end-follower-user">
+                                                            <a href="#" class="app__header-end-follower-btn">
+                                                                <i class="fa-solid fa-comment"></i>
+                                                                <a href="#"
+                                                                    class="app__header-end-follower-fl">Follow</a>
+                                                            </a>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class=" app__header-end-follower-item">
+                                                        <a href="#" class=" app__header-end-follower-link">
+                                                            <div class="app__header-end-follower-photo">
+                                                                <div class="app__header-end-follower-title">
+                                                                    <h3 class="app__header-end-follower-userName">Cục Đá
+                                                                    </h3>
+                                                                    <p class="app__header-end-follower-description">
+                                                                        @Rock
+                                                                    </p>
+                                                                </div>
+                                                                <img src="assets/img/the_rock.jpg" alt="Ảnh đại diện"
+                                                                    class="app__header-end-follower-picture">
+                                                            </div>
+                                                        </a>
+                                                        <div class="app__header-end-follower-user">
+                                                            <a href="#" class="app__header-end-follower-btn">
+                                                                <i class="fa-solid fa-comment"></i>
+                                                                <a href="#"
+                                                                    class="app__header-end-follower-fl">Follow</a>
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
-                                        <hr class="app__header-end-donate-separator">
-                                        <div id="app__header-end-donate-1" class="app__header-end-donate-support">
-                                            <h3 class="app__header-end-donate-heading">Ủng hộ</h3>
-                                            <ul class="app__header-end-donate-list app__header-end-donate-list--1">
-                                                <li class="app__header-end-donate-item">
-                                                    <a href="#" class="app__header-end-donate-link">
-                                                        <div class="app__header-end-donate-photo">
-                                                            <img src="assets/img/male_1.jpg" alt="Ảnh đại diện"
-                                                                class="app__header-end-donate-picture">
-                                                            <div class="app__header-end-donate-content">
-                                                                <h3 class="app__header-end-donate-userName">Ngọc Ánh
-                                                                </h3>
-                                                                <p class="app__header-end-donate-description">@AnhNgoc
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="app__header-end-right">
+                                <ul class="app__header-end-list app__header-end--flexRight">
+                                    <li class="app__header-end-item app__header-end-item-has-viewer">
+                                        <a href="#" class="app__header-end-link">
+                                            <img src="assets/img/Dang_follow.png" alt="Ảnh đang follow"
+                                                class="app__header-end-picture">
+                                            Đang Follow
+                                        </a>
+                                        <!-- Thông tin trong phần đang follow -->
+                                        <div class="app__header-end-viewer">
+                                            <h2 class="app__header-end-viewer-title">Người bạn đang Follow</h2>
+                                            <hr class="app__header-end-viewer-separator">
+                                            <ul class="app__header-end-viewer-list">
+                                                <li class="app__header-end-viewer-item">
+                                                    <a href="#" class="app__header-end-viewer-link">
+                                                        <div class="app__header-end-viewer-user">
+                                                            <img src="assets/img/male.jpg" alt="Ảnh đại diện"
+                                                                class="app__header-end-viewer-photo">
+                                                            <div class="app__header-end-viewer-content">
+                                                                <h3 class="app__header-end-viewer-userName">Quỳnh</h3>
+                                                                <p class="app__header-end-viewer-description">@QuynhLe
                                                                 </p>
                                                             </div>
                                                         </div>
-                                                        <div class="app__header-end-donate-icon">
-                                                            <a href="#" class="app__header-end-donate-icon-link">
-                                                                <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                                                        <div class="app__header-end-viewer-icon">
+                                                            <a href="#"
+                                                                class="app__header-end-viewer-connect app__header-end-viewer-connect--1">
+                                                                <i class="fa-solid fa-comment"></i>
+                                                                <div class="app__header-end-viewer-information">Nhắn tin
+                                                                </div>
                                                             </a>
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                                <li class="app__header-end-donate-item">
-                                                    <a href="#" class="app__header-end-donate-link">
-                                                        <div class="app__header-end-donate-photo">
-                                                            <img src="assets/img/male_2.jpg" alt="Ảnh đại diện"
-                                                                class="app__header-end-donate-picture">
-                                                            <div class="app__header-end-donate-content">
-                                                                <h3 class="app__header-end-donate-userName">Thư Nguyễn
-                                                                </h3>
-                                                                <p class="app__header-end-donate-description">@NguyenThu
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="app__header-end-donate-icon">
-                                                            <a href="#" class="app__header-end-donate-icon-link">
-                                                                <i class="fa-solid fa-circle-dollar-to-slot"></i>
-                                                            </a>
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                                <li class="app__header-end-donate-item">
-                                                    <a href="#" class="app__header-end-donate-link">
-                                                        <div class="app__header-end-donate-photo">
-                                                            <img src="assets/img/male_3.jpg" alt="Ảnh đại diện"
-                                                                class="app__header-end-donate-picture">
-                                                            <div class="app__header-end-donate-content">
-                                                                <h3 class="app__header-end-donate-userName">Võ Tòng</h3>
-                                                                <p class="app__header-end-donate-description">@DamHo</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="app__header-end-donate-icon">
-                                                            <a href="#" class="app__header-end-donate-icon-link">
-                                                                <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                                                            <a href="#"
+                                                                class="app__header-end-viewer-connect app__header-end-viewer-connect--2">
+                                                                <svg width="20" height="20" viewBox="0 0 48 48"
+                                                                    fill="currentColor"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                        d="M13.0001 13C13.0001 9.68629 15.6864 7 19.0001 7C22.3139 7 25.0001 9.68629 25.0001 13C25.0001 16.3137 22.3139 19 19.0001 19C15.6864 19 13.0001 16.3137 13.0001 13ZM19.0001 3C13.4773 3 9.00015 7.47715 9.00015 13C9.00015 18.5228 13.4773 23 19.0001 23C24.523 23 29.0001 18.5228 29.0001 13C29.0001 7.47715 24.523 3 19.0001 3ZM5.19435 40.9681C6.70152 35.5144 10.0886 32.2352 13.9162 30.738C17.7125 29.2531 22.0358 29.4832 25.6064 31.2486C26.1015 31.4934 26.7131 31.338 26.9931 30.8619L28.0072 29.1381C28.2872 28.662 28.1294 28.0465 27.6384 27.7937C23.0156 25.4139 17.4034 25.0789 12.4591 27.0129C7.37426 29.0018 3.09339 33.3505 1.2883 40.0887C1.14539 40.6222 1.48573 41.1592 2.02454 41.2805L3.97575 41.7195C4.51457 41.8408 5.04724 41.5004 5.19435 40.9681ZM44.7074 30.1212C45.0979 29.7307 45.0979 29.0975 44.7074 28.707L43.2932 27.2928C42.9026 26.9023 42.2695 26.9023 41.8789 27.2928L30.0003 39.1715L25.1216 34.2928C24.7311 33.9023 24.0979 33.9023 23.7074 34.2928L22.2932 35.707C21.9026 36.0975 21.9026 36.7307 22.2932 37.1212L28.586 43.4141C29.3671 44.1952 30.6334 44.1952 31.4145 43.4141L44.7074 30.1212Z">
+                                                                    </path>
+                                                                </svg>
+                                                                <div class="app__header-end-viewer-information">Bỏ theo
+                                                                    dõi
+                                                                </div>
                                                             </a>
                                                         </div>
                                                     </a>
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div id="app__header-end-donate-2"
-                                            class="app__header-end-donate-history-support">
-                                            <h3 class="app__header-end-donate-heading">Lịch sử nhận donate</h3>
-                                            <ul class="app__header-end-donate-list app__header-end-donate-list--1">
-                                                <li class="app__header-end-donate-item">
-                                                    <a href="#" class="app__header-end-donate-link  ">
-                                                        <div class="app__header-end-donate-photo">
-                                                            <img src="assets/img/male_1.jpg" alt="Ảnh đại diện"
-                                                                class="app__header-end-donate-picture">
-                                                            <div class="app__header-end-donate-content">
-                                                                <h3 class="app__header-end-donate-userName">Ngọc Ánh
-                                                                </h3>
-                                                                <p class="app__header-end-donate-description">@AnhNgoc
-                                                                </p>
+                                    </li>
+
+                                    <li class="app__header-end-item app__header-end-item-has-donate">
+                                        <a href="#" class="app__header-end-link">
+                                            <img src="assets/img/icon_donate.png" alt="Ảnh icon_donate"
+                                                class="app__header-end-picture">
+                                            Ủng hộ
+                                        </a>
+                                        <!-- Thông tin bên trong Ủng hộ -->
+                                        <div class="app__header-end-donate">
+                                            <div class="app__header-end-donate-head">
+                                                <ul class="app__header-end-donate-head-list">
+                                                    <li class="app__header-end-donate-head-item">
+                                                        <a href="#app__header-end-donate-1"
+                                                            class="app__header-end-donate-infotmation">Donate</a>
+                                                    </li>
+                                                    <li class="app__header-end-donate-head-item">
+                                                        <a href="#app__header-end-donate-2"
+                                                            class="app__header-end-donate-infotmation app__header-end-donate-infotmation--change">Received
+                                                            donate</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <hr class="app__header-end-donate-separator">
+                                            <div id="app__header-end-donate-1" class="app__header-end-donate-support">
+                                                <h3 class="app__header-end-donate-heading">Ủng hộ</h3>
+                                                <ul class="app__header-end-donate-list app__header-end-donate-list--1">
+                                                    <li class="app__header-end-donate-item">
+                                                        <a href="#" class="app__header-end-donate-link">
+                                                            <div class="app__header-end-donate-photo">
+                                                                <img src="assets/img/male_1.jpg" alt="Ảnh đại diện"
+                                                                    class="app__header-end-donate-picture">
+                                                                <div class="app__header-end-donate-content">
+                                                                    <h3 class="app__header-end-donate-userName">Ngọc Ánh
+                                                                    </h3>
+                                                                    <p class="app__header-end-donate-description">
+                                                                        @AnhNgoc
+                                                                    </p>
+                                                                </div>
                                                             </div>
+                                                            <div class="app__header-end-donate-icon">
+                                                                <a href="#" class="app__header-end-donate-icon-link">
+                                                                    <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                                                                </a>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="app__header-end-donate-item">
+                                                        <a href="#" class="app__header-end-donate-link">
+                                                            <div class="app__header-end-donate-photo">
+                                                                <img src="assets/img/male_2.jpg" alt="Ảnh đại diện"
+                                                                    class="app__header-end-donate-picture">
+                                                                <div class="app__header-end-donate-content">
+                                                                    <h3 class="app__header-end-donate-userName">Thư
+                                                                        Nguyễn
+                                                                    </h3>
+                                                                    <p class="app__header-end-donate-description">
+                                                                        @NguyenThu
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="app__header-end-donate-icon">
+                                                                <a href="#" class="app__header-end-donate-icon-link">
+                                                                    <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                                                                </a>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="app__header-end-donate-item">
+                                                        <a href="#" class="app__header-end-donate-link">
+                                                            <div class="app__header-end-donate-photo">
+                                                                <img src="assets/img/male_3.jpg" alt="Ảnh đại diện"
+                                                                    class="app__header-end-donate-picture">
+                                                                <div class="app__header-end-donate-content">
+                                                                    <h3 class="app__header-end-donate-userName">Võ Tòng
+                                                                    </h3>
+                                                                    <p class="app__header-end-donate-description">@DamHo
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="app__header-end-donate-icon">
+                                                                <a href="#" class="app__header-end-donate-icon-link">
+                                                                    <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                                                                </a>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div id="app__header-end-donate-2"
+                                                class="app__header-end-donate-history-support">
+                                                <h3 class="app__header-end-donate-heading">Lịch sử nhận donate</h3>
+                                                <ul class="app__header-end-donate-list app__header-end-donate-list--1">
+                                                    <li class="app__header-end-donate-item">
+                                                        <a href="#" class="app__header-end-donate-link  ">
+                                                            <div class="app__header-end-donate-photo">
+                                                                <img src="assets/img/male_1.jpg" alt="Ảnh đại diện"
+                                                                    class="app__header-end-donate-picture">
+                                                                <div class="app__header-end-donate-content">
+                                                                    <h3 class="app__header-end-donate-userName">Ngọc Ánh
+                                                                    </h3>
+                                                                    <p class="app__header-end-donate-description">
+                                                                        @AnhNgoc
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <div class="app__header-end-donate-icon">
+                                                            <p class="app__header-end-donate-money">+25000000đ</p>
                                                         </div>
+                                                    </li>
+                                                    <li class="app__header-end-donate-item">
+                                                        <a href="#" class="app__header-end-donate-link ">
+                                                            <div class="app__header-end-donate-photo">
+                                                                <img src="assets/img/Tấn lỗ.jpg" alt="Ảnh đại diện"
+                                                                    class="app__header-end-donate-picture">
+                                                                <div class="app__header-end-donate-content">
+                                                                    <h3 class="app__header-end-donate-userName">Nhà Thơ
+                                                                        Tấn
+                                                                        Lỗ</h3>
+                                                                    <p class="app__header-end-donate-description">@LoTan
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <div class="app__header-end-donate-icon">
+                                                            <p class="app__header-end-donate-money">+45000000đ</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </li>
+
+                                    <li class="app__header-end-item app__header-head-item-has-information">
+                                        <a href="#" class="app__header-end-link">
+                                            <img src="assets/img/icon_connection_2.png" alt="Ảnh kết nối"
+                                                class="app__header-end-picture">
+                                            <span class="app__header-head-content">Kết nối</span>
+                                        </a>
+                                        <!-- Thông tin bên trong kết nối -->
+                                        <div class="app__header-information">
+                                            <h2 class="app__header-information-head">Kết nối với chúng tôi:</h2>
+                                            <ul class="app__header-information-list">
+                                                <li class="app__header-information-item">
+                                                    <a href="" class="app__header-information-link">
+                                                        <i class="fa-brands fa-facebook"></i>
                                                     </a>
-                                                    <div class="app__header-end-donate-icon">
-                                                        <p class="app__header-end-donate-money">+25000000đ</p>
-                                                    </div>
                                                 </li>
-                                                <li class="app__header-end-donate-item">
-                                                    <a href="#" class="app__header-end-donate-link ">
-                                                        <div class="app__header-end-donate-photo">
-                                                            <img src="assets/img/Tấn lỗ.jpg" alt="Ảnh đại diện"
-                                                                class="app__header-end-donate-picture">
-                                                            <div class="app__header-end-donate-content">
-                                                                <h3 class="app__header-end-donate-userName">Nhà Thơ Tấn
-                                                                    Lỗ</h3>
-                                                                <p class="app__header-end-donate-description">@LoTan</p>
-                                                            </div>
-                                                        </div>
+                                                <li class="app__header-information-item">
+                                                    <a href="" class="app__header-information-link">
+                                                        <i class="fa-brands fa-facebook-messenger"></i>
                                                     </a>
-                                                    <div class="app__header-end-donate-icon">
-                                                        <p class="app__header-end-donate-money">+45000000đ</p>
-                                                    </div>
+                                                </li>
+                                                <li class="app__header-information-item">
+                                                    <a href="" class="app__header-information-link">
+                                                        <i class="fa-brands fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="app__header-information-item">
+                                                    <a href="" class="app__header-information-link">
+                                                        <i class="fa-brands fa-tiktok"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="app__header-information-item">
+                                                    <a href="" class="app__header-information-link">
+                                                        <i class="fa-brands fa-reddit"></i>
+                                                    </a>
                                                 </li>
                                             </ul>
                                         </div>
-                                    </div>
-
-                                </li>
-
-                                <li class="app__header-end-item app__header-head-item-has-information">
-                                    <a href="#" class="app__header-end-link">
-                                        <img src="assets/img/icon_connection_2.png" alt="Ảnh kết nối"
-                                            class="app__header-end-picture">
-                                        <span class="app__header-head-content">Kết nối</span>
-                                    </a>
-                                    <!-- Thông tin bên trong kết nối -->
-                                    <div class="app__header-information">
-                                        <h2 class="app__header-information-head">Kết nối với chúng tôi:</h2>
-                                        <ul class="app__header-information-list">
-                                            <li class="app__header-information-item">
-                                                <a href="" class="app__header-information-link">
-                                                    <i class="fa-brands fa-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <li class="app__header-information-item">
-                                                <a href="" class="app__header-information-link">
-                                                    <i class="fa-brands fa-facebook-messenger"></i>
-                                                </a>
-                                            </li>
-                                            <li class="app__header-information-item">
-                                                <a href="" class="app__header-information-link">
-                                                    <i class="fa-brands fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <li class="app__header-information-item">
-                                                <a href="" class="app__header-information-link">
-                                                    <i class="fa-brands fa-tiktok"></i>
-                                                </a>
-                                            </li>
-                                            <li class="app__header-information-item">
-                                                <a href="" class="app__header-information-link">
-                                                    <i class="fa-brands fa-reddit"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    </a>
-                                </li>
-                            </ul>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </nav>
                 </div>
@@ -862,136 +915,962 @@
         </header>
 
 
-        <div class="app__container">
-            <div id="carouselExampleIndicators" class="carousel slide carousel__mod" data-bs-ride="true">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button>
-                </div>
-                <div class="carousel-inner carousel-inner-border">
-                    <div class="carousel-item active">
-                        <div class="app__container-advertisement carousel-item-photo-2">
-                            <ul class="app__container-advertisement-list-up">
-                                <li class="app__container-advertisement-item">
-                                    <h3 class="app__container-advertisement-head head--switch-color">Khóa học Java
-                                        Script từ cơ bản đến nâng cao</h3>
-                                    <p class="app__container-advertisement-description">Tham gia khóa học này
-                                        bạn sẽ học những kiến thức nền tảng của
-                                    </p>
-                                    <p class="app__container-advertisement-description">
-                                        ngôn ngữ Java Script
-                                    </p>
-
-                                    <a href="https://youtube.com/playlist?list=PLncHg6Kn2JT5dfQqpVtfNYvv3EBVHHVKo"
-                                        class="learn-about-link"><button class="learn-about-btn">Tìm hiểu thêm</button></a>
-                                </li>
-                            </ul>
-                            <ul class="app__container-advertisement-list-down">
-                                <li class="app__container-advertisement-item"><img src="assets/img/iconJavaScript_2.png"
-                                        alt="Ảnh slider" class="carousel-item-picture"></li>
-                            </ul>
+        <main class="app__container">
+            <div class="container-fluid">
+                <div id="carouselExampleIndicators" class="carousel slide carousel__mod" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner carousel-inner-border">
+                        <div class="carousel-item active">
+                            <div class="app__container-advertisement carousel-item-photo-2">
+                                <ul class="app__container-advertisement-list-up">
+                                    <li class="app__container-advertisement-item">
+                                        <h3 class="app__container-advertisement-head head--switch-color">Khóa học Java
+                                            Script từ cơ bản đến nâng cao</h3>
+                                        <p class="app__container-advertisement-description">Tham gia khóa học này
+                                            bạn sẽ học những kiến thức nền tảng của
+                                        </p>
+                                        <p class="app__container-advertisement-description">
+                                            ngôn ngữ Java Script
+                                        </p>
+    
+                                        <a href="https://youtube.com/playlist?list=PLncHg6Kn2JT5dfQqpVtfNYvv3EBVHHVKo"
+                                            class="learn-about-link"><button class="learn-about-btn">Tìm hiểu
+                                                thêm</button></a>
+                                    </li>
+                                </ul>
+                                <ul class="app__container-advertisement-list-down">
+                                    <li class="app__container-advertisement-item"><img src="assets/img/iconJavaScript_2.png"
+                                            alt="Ảnh slider" class="carousel-item-picture"></li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-item carousel-item-photo-1">
-                        <div class="app__container-advertisement">
-                            <ul class="app__container-advertisement-list-up">
-                                <li class="app__container-advertisement-item">
-                                    <h3 class="app__container-advertisement-head head--switch-color-1">Khóa học võ cấp
-                                        tốc</h3>
-                                    <p class="app__container-advertisement-description">Tham gia khóa học này
-                                        bạn sẽ học được những môn võ đã bị thất truyền như:
-                                    </p>
-                                    <p class="app__container-advertisement-description">
-                                        Hàng Long Thập Ba Chưởng, Dịch Cân Kinh, Cách tự vệ khi bị chó đuổi...
-                                    </p>
-                                    <a href="https://youtube.com/playlist?list=PLncHg6Kn2JT5dfQqpVtfNYvv3EBVHHVKo"
-                                        class="learn-about-link"><button class="learn-about-btn-1">Tìm hiểu thêm</button></a>
-                                </li>
-                            </ul>
-                            <ul class="app__container-advertisement-list-down">
-                                <li class="app__container-advertisement-item"><img src="assets/img/kungfu.png"
-                                        alt="Ảnh slider" class="carousel-item-picture"></li>
-                            </ul>
+                        <div class="carousel-item carousel-item-photo-1">
+                            <div class="app__container-advertisement">
+                                <ul class="app__container-advertisement-list-up">
+                                    <li class="app__container-advertisement-item">
+                                        <h3 class="app__container-advertisement-head head--switch-color-1">Khóa học võ cấp
+                                            tốc</h3>
+                                        <p class="app__container-advertisement-description">Tham gia khóa học này
+                                            bạn sẽ học được những môn võ đã bị thất truyền như:
+                                        </p>
+                                        <p class="app__container-advertisement-description">
+                                            Hàng Long Thập Ba Chưởng, Dịch Cân Kinh, Cách tự vệ khi bị chó đuổi...
+                                        </p>
+                                        <a href="https://youtube.com/playlist?list=PLncHg6Kn2JT5dfQqpVtfNYvv3EBVHHVKo"
+                                            class="learn-about-link"><button class="learn-about-btn-1">Tìm hiểu
+                                                thêm</button></a>
+                                    </li>
+                                </ul>
+                                <ul class="app__container-advertisement-list-down">
+                                    <li class="app__container-advertisement-item"><img src="assets/img/kungfu.png"
+                                            alt="Ảnh slider" class="carousel-item-picture"></li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-item carousel-item-photo-1">
-                        <div class="app__container-advertisement">
-                            <ul class="app__container-advertisement-list-up">
-                                <li class="app__container-advertisement-item">
-                                    <h3 class="app__container-advertisement-head head--switch-color-1">Khóa học võ cấp
-                                        tốc</h3>
-                                    <p class="app__container-advertisement-description">Tham gia khóa học này
-                                        bạn sẽ học được những môn võ đã bị thất truyền như:
-                                    </p>
-                                    <p class="app__container-advertisement-description">
-                                        Hàng Long Thập Ba Chưởng, Dịch Cân Kinh, Cách tự vệ khi bị chó đuổi...
-                                    </p>
-                                    <a href="https://youtube.com/playlist?list=PLncHg6Kn2JT5dfQqpVtfNYvv3EBVHHVKo"
-                                        class="learn-about-link"><button class="learn-about-btn-1">Tìm hiểu thêm</button></a>
-                                </li>
-                            </ul>
-                            <ul class="app__container-advertisement-list-down">
-                                <li class="app__container-advertisement-item"><img src="assets/img/kungfu.png"
-                                        alt="Ảnh slider" class="carousel-item-picture"></li>
-                            </ul>
+                        <div class="carousel-item carousel-item-photo-1">
+                            <div class="app__container-advertisement">
+                                <ul class="app__container-advertisement-list-up">
+                                    <li class="app__container-advertisement-item">
+                                        <h3 class="app__container-advertisement-head head--switch-color-1">Khóa học võ cấp
+                                            tốc</h3>
+                                        <p class="app__container-advertisement-description">Tham gia khóa học này
+                                            bạn sẽ học được những môn võ đã bị thất truyền như:
+                                        </p>
+                                        <p class="app__container-advertisement-description">
+                                            Hàng Long Thập Ba Chưởng, Dịch Cân Kinh, Cách tự vệ khi bị chó đuổi...
+                                        </p>
+                                        <a href="https://youtube.com/playlist?list=PLncHg6Kn2JT5dfQqpVtfNYvv3EBVHHVKo"
+                                            class="learn-about-link"><button class="learn-about-btn-1">Tìm hiểu
+                                                thêm</button></a>
+                                    </li>
+                                </ul>
+                                <ul class="app__container-advertisement-list-down">
+                                    <li class="app__container-advertisement-item"><img src="assets/img/kungfu.png"
+                                            alt="Ảnh slider" class="carousel-item-picture"></li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-item carousel-item-photo-1">
-                        <div class="app__container-advertisement">
-                            <ul class="app__container-advertisement-list-up">
-                                <li class="app__container-advertisement-item">
-                                    <h3 class="app__container-advertisement-head head--switch-color-1">Khóa học võ cấp
-                                        tốc</h3>
-                                    <p class="app__container-advertisement-description">Tham gia khóa học này
-                                        bạn sẽ học được những môn võ đã bị thất truyền như:
-                                    </p>
-                                    <p class="app__container-advertisement-description">
-                                        Hàng Long Thập Ba Chưởng, Dịch Cân Kinh, Cách tự vệ khi bị chó đuổi...
-                                    </p>
-                                    <a href="https://youtube.com/playlist?list=PLncHg6Kn2JT5dfQqpVtfNYvv3EBVHHVKo"
-                                        class="learn-about-link"><button class="learn-about-btn-1">Tìm hiểu thêm</button></a>
-                                </li>
-                            </ul>
-                            <ul class="app__container-advertisement-list-down">
-                                <li class="app__container-advertisement-item"><img src="assets/img/kungfu.png"
-                                        alt="Ảnh slider" class="carousel-item-picture"></li>
-                            </ul>
+                        <div class="carousel-item carousel-item-photo-1">
+                            <div class="app__container-advertisement">
+                                <ul class="app__container-advertisement-list-up">
+                                    <li class="app__container-advertisement-item">
+                                        <h3 class="app__container-advertisement-head head--switch-color-1">Khóa học võ cấp
+                                            tốc</h3>
+                                        <p class="app__container-advertisement-description">Tham gia khóa học này
+                                            bạn sẽ học được những môn võ đã bị thất truyền như:
+                                        </p>
+                                        <p class="app__container-advertisement-description">
+                                            Hàng Long Thập Ba Chưởng, Dịch Cân Kinh, Cách tự vệ khi bị chó đuổi...
+                                        </p>
+                                        <a href="https://youtube.com/playlist?list=PLncHg6Kn2JT5dfQqpVtfNYvv3EBVHHVKo"
+                                            class="learn-about-link"><button class="learn-about-btn-1">Tìm hiểu
+                                                thêm</button></a>
+                                    </li>
+                                </ul>
+                                <ul class="app__container-advertisement-list-down">
+                                    <li class="app__container-advertisement-item"><img src="assets/img/kungfu.png"
+                                            alt="Ảnh slider" class="carousel-item-picture"></li>
+                                </ul>
+                            </div>
                         </div>
+    
+    
                     </div>
-
-                    
-                </div>
-                <button class="carousel-control-prev carousel-control-prev-fit" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon  app__container-icon-pre" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next carousel-control-next-fit" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon app__container-icon-next" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-            <div class="container text-center">
-                <div class="row  app__container-main-width">
-                    <div class="col-xl-1">
-
-                    </div>
-                    <div class="col-6 col-xl-4">
-
-                    </div>
+                    <button class="carousel-control-prev carousel-control-prev-fit" type="button"
+                        data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon  app__container-icon-pre" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next carousel-control-next-fit" type="button"
+                        data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon app__container-icon-next" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
+            <div class="container-fluid app__container-main-width">
+                <div class="row ">
+                    <div class="col-1 app__container-col-1">
+                        <div class="app__container-icon app__container-icon--sticky">
+                            <ul class="app__container-list">
+                                <li class="app__container-item">
+                                    <a href="#" class="app__container-link">
+                                        <i class="fa-solid fa-house"></i>
+                                        <span class="app__container-paragram">Home</span>
+                                    </a>
+                                </li>
+                                <li class="app__container-item">
+                                    <a href="#" class="app__container-link">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span class="app__container-paragram">User</span>
+                                    </a>
+                                </li>
+                                <li class="app__container-item">
+                                    <a href="#" class="app__container-link">
+                                        <i class="fa-solid fa-road"></i>
+                                        <span class="app__container-paragram ">Lộ trình</span>
+                                    </a>
+                                </li>
+                                <li class="app__container-item">
+                                    <a href="#" class="app__container-link">
+                                        <i class="fa-solid fa-newspaper"></i>
+                                        <span class="app__container-paragram">Bảng tin</span>
+                                    </a>
+                                </li>
+                                <li class="app__container-item">
+                                    <a href="#" class="app__container-link">
+                                        <i class="fa-solid fa-lightbulb"></i>
+                                        <span class="app__container-paragram ">Học</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <div class="col-6 col-xl-11 app__container-col-11">
+                        <h1 class="app__container-heading">
+                            Danh sách các khóa học
+                        </h1>
+                        <div class="app__container-course">
+                            <h3 class="app__container-course-It">Các khóa học cơ bản về lập trình</h3>
+                            <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                                <div class="col">
+                                    <div class="p-3">
+                                        <a href="https://youtube.com/playlist?list=PLE1qPKuGSJaCXBMB3FBzl45imx7rkKR5Y"
+                                            class="app__container-course-link">
+                                            <div class="app__container-course-photo">
+                                                <p class="app__container-course-content">C++</p>
+                                                <img src="assets/img/Ảnh_phần_main+C++.png" alt="Ảnh khóa học"
+                                                    class="app__container-course-image">
+                                            </div>
+                                        </a>
+                                        <div class="app__container-course-description">
+                                            <h2 class="app__container-course-description-intro">Khóa học cơ bản C++</h2>
+                                            <ul class="app__container-course-description-list">
+                                                <li class="app__container-course-description-item">
+                                                    <i class="fa-solid fa-eye"></i>
+                                                    1,754 lượt xem
+                                                </li>
+                                                <li class="app__container-course-description-item">
+                                                    <i class="fa-solid fa-comment"></i>
+                                                    Bình luận
+                                                </li>
+                                            </ul>
+                                            <ul class="app__container-course-description-list">
+                                                <li class="app__container-course-description-item">
+                                                    <a href="" class="app__container-course-description-link">
+                                                        <i class="fa-solid fa-circle-plus"></i>
+                                                        Đăng ký
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="p-3">
+                                        <a href="https://youtube.com/playlist?list=PLyxSzL3F748401hWFgJ8gKMnN6MM8QQ7F"
+                                            class="app__container-course-link app__container-course-link-java">
+                                            <div class="app__container-course-photo">
+                                                <p class="app__container-course-content">Java</p>
+                                                <img src="assets/img/Ảnh_phần_main+Java_2.png" alt="Ảnh khóa học"
+                                                    class="app__container-course-image">
+                                            </div>
+                                        </a>
+                                        <div class="app__container-course-description">
+                                            <h2 class="app__container-course-description-intro">Khóa học cơ bản Java
+                                            </h2>
+                                            <ul class="app__container-course-description-list">
+                                                <li class="app__container-course-description-item">
+                                                    <i class="fa-solid fa-eye"></i>
+                                                    1,812 lượt xem
+                                                </li>
+                                                <li class="app__container-course-description-item">
+                                                    <i class="fa-solid fa-comment"></i>
+                                                    Bình luận
+                                                </li>
+                                            </ul>
+                                            <ul class="app__container-course-description-list">
+                                                <li class="app__container-course-description-item">
+                                                    <a href="" class="app__container-course-description-link">
+                                                        <i class="fa-solid fa-circle-plus"></i>
+                                                        Đăng ký
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="p-3">
+                                        <a href="https://youtube.com/playlist?list=PLwJr0JSP7i8BERdErX9Ird67xTflZkxb-"
+                                            class="app__container-course-link app__container-course-link-Csharp">
+                                            <div class="app__container-course-photo">
+                                                <p class="app__container-course-content">C#</p>
+                                                <img src="assets/img/Ảnh_phần_main+Csharp.png" alt="Ảnh khóa học"
+                                                    class="app__container-course-image">
+                                            </div>
+                                        </a>
+                                        <div class="app__container-course-description">
+                                            <h2 class="app__container-course-description-intro">Khóa học cơ bản C#</h2>
+                                            <ul class="app__container-course-description-list">
+                                                <li class="app__container-course-description-item">
+                                                    <i class="fa-solid fa-eye"></i>
+                                                    12,754 lượt xem
+                                                </li>
+                                                <li class="app__container-course-description-item">
+                                                    <i class="fa-solid fa-comment"></i>
+                                                    Bình luận
+                                                </li>
+                                            </ul>
+                                            <ul class="app__container-course-description-list">
+                                                <li class="app__container-course-description-item">
+                                                    <a href="" class="app__container-course-description-link">
+                                                        <i class="fa-solid fa-circle-plus"></i>
+                                                        Đăng ký
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="p-3">
+                                        <a href="https://youtube.com/playlist?list=PL33lvabfss1xczCv2BA0SaNJHu_VXsFtg"
+                                            class="app__container-course-link app__container-course-link-python">
+                                            <div class="app__container-course-photo">
+                                                <p class="app__container-course-content">Python</p>
+                                                <img src="assets/img/Ảnh_phần_main+Python.png" alt="Ảnh khóa học"
+                                                    class="app__container-course-image">
+                                            </div>
+                                        </a>
+                                        <div class="app__container-course-description">
+                                            <h2 class="app__container-course-description-intro">Khóa học cơ bản Python
+                                            </h2>
+                                            <ul class="app__container-course-description-list">
+                                                <li class="app__container-course-description-item">
+                                                    <i class="fa-solid fa-eye"></i>
+                                                    10,000 lượt xem
+                                                </li>
+                                                <li class="app__container-course-description-item">
+                                                    <i class="fa-solid fa-comment"></i>
+                                                    Bình luận
+                                                </li>
+                                            </ul>
+                                            <ul class="app__container-course-description-list">
+                                                <li class="app__container-course-description-item">
+                                                    <a href="" class="app__container-course-description-link">
+                                                        <i class="fa-solid fa-circle-plus"></i>
+                                                        Đăng ký
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="p-3">
+                                        <a href="https://youtube.com/playlist?list=PL_-VfJajZj0VgpFpEVFzS5Z-lkXtBe-x5"
+                                            class="app__container-course-link app__container-course-link-JS">
+                                            <div class="app__container-course-photo">
+                                                <p class="app__container-course-content">JavaScript</p>
+                                                <img src="assets/img/Ảnh_phần_main+JS.png" alt="Ảnh khóa học"
+                                                    class="app__container-course-image">
+                                            </div>
+                                        </a>
+                                        <div class="app__container-course-description">
+                                            <h2 class="app__container-course-description-intro">Khóa học cơ bản Java
+                                                Script</h2>
+                                            <ul class="app__container-course-description-list">
+                                                <li class="app__container-course-description-item">
+                                                    <i class="fa-solid fa-eye"></i>
+                                                    5,702 lượt xem
+                                                </li>
+                                                <li class="app__container-course-description-item">
+                                                    <i class="fa-solid fa-comment"></i>
+                                                    Bình luận
+                                                </li>
+                                            </ul>
+                                            <ul class="app__container-course-description-list">
+                                                <li class="app__container-course-description-item">
+                                                    <a href="" class="app__container-course-description-link">
+                                                        <i class="fa-solid fa-circle-plus"></i>
+                                                        Đăng ký
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <h3 class="app__container-course-It">Các khóa học nâng cao về lập trình</h3>
+                            <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                                <div class="col">
+                                    <div class="p-3">
+                                        <a href="https://youtube.com/playlist?list=PLjzUB93NObY4DramORoDGR713QNDyClq1"
+                                            class="app__container-course-link app__container-course-link-Algorithm">
+                                            <div class="app__container-course-photo">
+                                                <p class="app__container-course-content">Algorithm</p>
+                                                <img src="assets/img/Ảnh_phần_main+Algorithm.png" alt="Ảnh khóa học"
+                                                    class="app__container-course-image">
+                                            </div>
+                                        </a>
+                                        <div class="app__container-course-description">
+                                            <h2 class="app__container-course-description-intro">Thuật toán trong lập
+                                                trình</h2>
+                                            <ul class="app__container-course-description-list">
+                                                <li class="app__container-course-description-item">
+                                                    <i class="fa-solid fa-eye"></i>
+                                                    412,024 lượt xem
+                                                </li>
+                                                <li class="app__container-course-description-item">
+                                                    <i class="fa-solid fa-comment"></i>
+                                                    Bình luận
+                                                </li>
+                                            </ul>
+                                            <ul class="app__container-course-description-list">
+                                                <li class="app__container-course-description-item">
+                                                    <a href="" class="app__container-course-description-link">
+                                                        <i class="fa-solid fa-circle-plus"></i>
+                                                        Đăng ký
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="p-3">
+                                        <a href="https://youtube.com/playlist?list=PLwJr0JSP7i8DXGzj8NgnhOApBMRhWD4J-"
+                                            class="app__container-course-link app__container-course-link-Csharp">
+                                            <div class="app__container-course-photo">
+                                                <p class="app__container-course-content">C# - ASP.NET</p>
+                                                <img src="assets/img/Ảnh_phần_main+ASP.png" alt="Ảnh khóa học"
+                                                    class="app__container-course-image">
+                                            </div>
+                                        </a>
+                                        <div class="app__container-course-description">
+                                            <h2 class="app__container-course-description-intro">Lập trình web bằng
+                                                ASP.NET</h2>
+                                            <ul class="app__container-course-description-list">
+                                                <li class="app__container-course-description-item">
+                                                    <i class="fa-solid fa-eye"></i>
+                                                    5,754 lượt xem
+                                                </li>
+                                                <li class="app__container-course-description-item">
+                                                    <i class="fa-solid fa-comment"></i>
+                                                    Bình luận
+                                                </li>
+                                            </ul>
+                                            <ul class="app__container-course-description-list">
+                                                <li class="app__container-course-description-item">
+                                                    <a href="" class="app__container-course-description-link">
+                                                        <i class="fa-solid fa-circle-plus"></i>
+                                                        Đăng ký
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="p-3">
+                                        <a href="https://youtube.com/playlist?list=PLZEIt444jqpB1j3RD4BrYm9JmNVYuzVNm"
+                                            class="app__container-course-link app__container-course-link-python">
+                                            <div class="app__container-course-photo">
+                                                <p class="app__container-course-content">Python Django</p>
+                                                <img src="assets/img/Ảnh_phần_main+Python_Django.png" alt="Ảnh khóa học"
+                                                    class="app__container-course-image">
+                                            </div>
+                                        </a>
+                                        <div class="app__container-course-description">
+                                            <h2 class="app__container-course-description-intro">Lập trình web bằng
+                                                Python</h2>
+                                            <ul class="app__container-course-description-list">
+                                                <li class="app__container-course-description-item">
+                                                    <i class="fa-solid fa-eye"></i>
+                                                    12,024 lượt xem
+                                                </li>
+                                                <li class="app__container-course-description-item">
+                                                    <i class="fa-solid fa-comment"></i>
+                                                    Bình luận
+                                                </li>
+                                            </ul>
+                                            <ul class="app__container-course-description-list">
+                                                <li class="app__container-course-description-item">
+                                                    <a href="" class="app__container-course-description-link">
+                                                        <i class="fa-solid fa-circle-plus"></i>
+                                                        Đăng ký
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+
+                            <h3 class="app__container-course-It">Khóa học làm game</h3>
+                            <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                                <div class="col">
+                                    <div class="p-3">
+                                        <a href="https://youtu.be/LsNW4FPHuZE"
+                                            class="app__container-course-link app__container-course-link-Git">
+                                            <div class="app__container-course-photo">
+                                                <p class="app__container-course-content">Unreal Engine</p>
+                                                <img src="assets/img/Ảnh_phần_main+Unreal.png" alt="Ảnh khóa học"
+                                                    class="app__container-course-image">
+                                            </div>
+                                        </a>
+                                        <div class="app__container-course-description">
+                                            <h2 class="app__container-course-description-intro">Học Unreal Engine với C++</h2>
+                                            <ul class="app__container-course-description-list">
+                                                <li class="app__container-course-description-item">
+                                                    <i class="fa-solid fa-eye"></i>
+                                                    2,024 lượt xem
+                                                </li>
+                                                <li class="app__container-course-description-item">
+                                                    <i class="fa-solid fa-comment"></i>
+                                                    Bình luận
+                                                </li>
+                                            </ul>
+                                            <ul class="app__container-course-description-list">
+                                                <li class="app__container-course-description-item">
+                                                    <a href="" class="app__container-course-description-link">
+                                                        <i class="fa-solid fa-circle-plus"></i>
+                                                        Đăng ký
+                                                    </a>
+                                                </li>
+                                            </ul>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="p-3">
+                                        <a href="https://youtube.com/playlist?list=PLU0qUoDEFcBgIuyaWtVHBqwYJ7Le-1Tab"
+                                            class="app__container-course-link app__container-course-link-Git">
+                                            <div class="app__container-course-photo">
+                                                <p class="app__container-course-content">Unity Engine</p>
+                                                <img src="assets/img/Ảnh_phần_main+Unity.png" alt="Ảnh khóa học"
+                                                    class="app__container-course-image">
+                                            </div>
+                                        </a>
+                                        <div class="app__container-course-description">
+                                            <h2 class="app__container-course-description-intro">Học Unity Engine</h2>
+                                            <ul class="app__container-course-description-list">
+                                                <li class="app__container-course-description-item">
+                                                    <i class="fa-solid fa-eye"></i>
+                                                    2,024 lượt xem
+                                                </li>
+                                                <li class="app__container-course-description-item">
+                                                    <i class="fa-solid fa-comment"></i>
+                                                    Bình luận
+                                                </li>
+                                            </ul>
+                                            <ul class="app__container-course-description-list">
+                                                <li class="app__container-course-description-item">
+                                                    <a href="" class="app__container-course-description-link">
+                                                        <i class="fa-solid fa-circle-plus"></i>
+                                                        Đăng ký
+                                                    </a>
+                                                </li>
+                                            </ul>
+    
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <h3 class="app__container-course-It">Cộng cụ bộ trợ cho ITer</h3>
+                        <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                            <div class="col">
+                                <div class="p-3">
+                                    <a href="https://youtube.com/playlist?list=PLodO7Gi1F7R0t9SyEZF5mwfKevCULLjgG"
+                                        class="app__container-course-link app__container-course-link-Git">
+                                        <div class="app__container-course-photo">
+                                            <p class="app__container-course-content">Github</p>
+                                            <img src="assets/img/Ảnh_phần_main+Git.png" alt="Ảnh khóa học"
+                                                class="app__container-course-image">
+                                        </div>
+                                    </a>
+                                    <div class="app__container-course-description">
+                                        <h2 class="app__container-course-description-intro">Cách sử dụng Github trong dự
+                                            án</h2>
+                                        <ul class="app__container-course-description-list">
+                                            <li class="app__container-course-description-item">
+                                                <i class="fa-solid fa-eye"></i>
+                                                4,024 lượt xem
+                                            </li>
+                                            <li class="app__container-course-description-item">
+                                                <i class="fa-solid fa-comment"></i>
+                                                Bình luận
+                                            </li>
+                                        </ul>
+                                        <ul class="app__container-course-description-list">
+                                            <li class="app__container-course-description-item">
+                                                <a href="" class="app__container-course-description-link">
+                                                    <i class="fa-solid fa-circle-plus"></i>
+                                                    Đăng ký
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="p-3">
+                                    <a href="https://youtube.com/playlist?list=PLimUMiJPPvQARw0JZXWIrAeG8Zu-Lmp3-"
+                                        class="app__container-course-link app__container-course-link-GitLab">
+                                        <div class="app__container-course-photo">
+                                            <p class="app__container-course-content">GitLab</p>
+                                            <img src="assets/img/Ảnh_phần_main+GitLap.png" alt="Ảnh khóa học"
+                                                class="app__container-course-image">
+                                        </div>
+                                    </a>
+                                    <div class="app__container-course-description">
+                                        <h2 class="app__container-course-description-intro">Đẩy dự án lên GitLab</h2>
+                                        <ul class="app__container-course-description-list">
+                                            <li class="app__container-course-description-item">
+                                                <i class="fa-solid fa-eye"></i>
+                                                35,234 lượt xem
+                                            </li>
+                                            <li class="app__container-course-description-item">
+                                                <i class="fa-solid fa-comment"></i>
+                                                Bình luận
+                                            </li>
+                                        </ul>
+                                        <ul class="app__container-course-description-list">
+                                            <li class="app__container-course-description-item">
+                                                <a href="" class="app__container-course-description-link">
+                                                    <i class="fa-solid fa-circle-plus"></i>
+                                                    Đăng ký
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="p-3">
+                                    <a href="https://youtube.com/playlist?list=PLB3qlNgi-pVWAyjKc_aUho_yyesjUgCaX"
+                                        class="app__container-course-link app__container-course-link-Linkdin">
+                                        <div class="app__container-course-photo">
+                                            <p class="app__container-course-content">Linkdin</p>
+                                            <img src="assets/img/Ảnh_phần_main+Linkdin.png" alt="Ảnh khóa học"
+                                                class="app__container-course-image">
+                                        </div>
+                                    </a>
+                                    <div class="app__container-course-description">
+                                        <h2 class="app__container-course-description-intro">Sử dụng Linkdin hiệu quả
+                                        </h2>
+                                        <ul class="app__container-course-description-list">
+                                            <li class="app__container-course-description-item">
+                                                <i class="fa-solid fa-eye"></i>
+                                                3,234 lượt xem
+                                            </li>
+                                            <li class="app__container-course-description-item">
+                                                <i class="fa-solid fa-comment"></i>
+                                                Bình luận
+                                            </li>
+                                        </ul>
+                                        <ul class="app__container-course-description-list">
+                                            <li class="app__container-course-description-item">
+                                                <a href="" class="app__container-course-description-link">
+                                                    <i class="fa-solid fa-circle-plus"></i>
+                                                    Đăng ký
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <h3 class="app__container-course-It">Các khóa học về thiết kế đồ họa</h3>
+                        <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                            <div class="col">
+                                <div class="p-3">
+                                    <a href="https://youtube.com/playlist?list=PLH88ngaKjRaQdJkYizDyCE_5Bpcfk9DEO"
+                                        class="app__container-course-link app__container-course-link-PS">
+                                        <div class="app__container-course-photo">
+                                            <p class="app__container-course-content">Adobe Photoshop</p>
+                                            <img src="assets/img/Ảnh_phần_main+PS.png" alt="Ảnh khóa học"
+                                                class="app__container-course-image">
+                                        </div>
+                                    </a>
+                                    <div class="app__container-course-description">
+                                        <h2 class="app__container-course-description-intro">Khóa học Adobe Photoshop
+                                        </h2>
+                                        <ul class="app__container-course-description-list">
+                                            <li class="app__container-course-description-item">
+                                                <i class="fa-solid fa-eye"></i>
+                                                454 lượt xem
+                                            </li>
+                                            <li class="app__container-course-description-item">
+                                                <i class="fa-solid fa-comment"></i>
+                                                Bình luận
+                                            </li>
+                                        </ul>
+                                        <ul class="app__container-course-description-list">
+                                            <li class="app__container-course-description-item">
+                                                <a href="" class="app__container-course-description-link">
+                                                    <i class="fa-solid fa-circle-plus"></i>
+                                                    Đăng ký
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="p-3">
+                                    <a href="https://youtube.com/playlist?list=PLH88ngaKjRaSkom-7caDVFYFJ3kgTs641"
+                                        class="app__container-course-link app__container-course-link-LR">
+                                        <div class="app__container-course-photo">
+                                            <p class="app__container-course-content">Adobe LightRoom</p>
+                                            <img src="assets/img/Ảnh_phần_main+LR.png" alt="Ảnh khóa học"
+                                                class="app__container-course-image">
+                                        </div>
+                                    </a>
+                                    <div class="app__container-course-description">
+                                        <h2 class="app__container-course-description-intro">Khóa học Adobe LightRoom
+                                        </h2>
+                                        <ul class="app__container-course-description-list">
+                                            <li class="app__container-course-description-item">
+                                                <i class="fa-solid fa-eye"></i>
+                                                5,354 lượt xem
+                                            </li>
+                                            <li class="app__container-course-description-item">
+                                                <i class="fa-solid fa-comment"></i>
+                                                Bình luận
+                                            </li>
+                                        </ul>
+                                        <ul class="app__container-course-description-list">
+                                            <li class="app__container-course-description-item">
+                                                <a href="" class="app__container-course-description-link">
+                                                    <i class="fa-solid fa-circle-plus"></i>
+                                                    Đăng ký
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="p-3">
+                                    <a href="https://youtube.com/playlist?list=PLfyZn-NXs_wUCswpYZINDO71OlFdsvO4p"
+                                        class="app__container-course-link app__container-course-link-Blender">
+                                        <div class="app__container-course-photo">
+                                            <p class="app__container-course-content">Blender</p>
+                                            <img src="assets/img/Ảnh_phần_main+Blender.png" alt="Ảnh khóa học"
+                                                class="app__container-course-image">
+                                        </div>
+                                    </a>
+                                    <div class="app__container-course-description">
+                                        <h2 class="app__container-course-description-intro">Khóa học Blender</h2>
+                                        <ul class="app__container-course-description-list">
+                                            <li class="app__container-course-description-item">
+                                                <i class="fa-solid fa-eye"></i>
+                                                6,544 lượt xem
+                                            </li>
+                                            <li class="app__container-course-description-item">
+                                                <i class="fa-solid fa-comment"></i>
+                                                Bình luận
+                                            </li>
+                                        </ul>
+                                        <ul class="app__container-course-description-list">
+                                            <li class="app__container-course-description-item">
+                                                <a href="" class="app__container-course-description-link">
+                                                    <i class="fa-solid fa-circle-plus"></i>
+                                                    Đăng ký
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <h3 class="app__container-course-It">Các khóa học về dựng video</h3>
+                        <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                            <div class="col">
+                                <div class="p-3">
+                                    <a href="https://youtube.com/playlist?list=PLtyw7hXeRjtULImP0ogm9PLfGJIQfQNTU"
+                                        class="app__container-course-link app__container-course-link-AE">
+                                        <div class="app__container-course-photo">
+                                            <p class="app__container-course-content">After Effect</p>
+                                            <img src="assets/img/Ảnh_phần_main+AE.png" alt="Ảnh khóa học"
+                                                class="app__container-course-image">
+                                        </div>
+                                    </a>
+                                    <div class="app__container-course-description">
+                                        <h2 class="app__container-course-description-intro">Khóa học After Effect</h2>
+                                        <ul class="app__container-course-description-list">
+                                            <li class="app__container-course-description-item">
+                                                <i class="fa-solid fa-eye"></i>
+                                                4,024 lượt xem
+                                            </li>
+                                            <li class="app__container-course-description-item">
+                                                <i class="fa-solid fa-comment"></i>
+                                                Bình luận
+                                            </li>
+                                        </ul>
+                                        <ul class="app__container-course-description-list">
+                                            <li class="app__container-course-description-item">
+                                                <a href="" class="app__container-course-description-link">
+                                                    <i class="fa-solid fa-circle-plus"></i>
+                                                    Đăng ký
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="p-3">
+                                    <a href="https://youtube.com/playlist?list=PLtyw7hXeRjtX9xR4sdKXZi8PXAxYw_jyX"
+                                        class="app__container-course-link app__container-course-link-PR">
+                                        <div class="app__container-course-photo">
+                                            <p class="app__container-course-content">Adobe Premiere</p>
+                                            <img src="assets/img/Ảnh_phần_main+PR.png" alt="Ảnh khóa học"
+                                                class="app__container-course-image">
+                                        </div>
+                                    </a>
+                                    <div class="app__container-course-description">
+                                        <h2 class="app__container-course-description-intro">Khóa học Adobe Premiere</h2>
+                                        <ul class="app__container-course-description-list">
+                                            <li class="app__container-course-description-item">
+                                                <i class="fa-solid fa-eye"></i>
+                                                35,234 lượt xem
+                                            </li>
+                                            <li class="app__container-course-description-item">
+                                                <i class="fa-solid fa-comment"></i>
+                                                Bình luận
+                                            </li>
+                                        </ul>
+                                        <ul class="app__container-course-description-list">
+                                            <li class="app__container-course-description-item">
+                                                <a href="" class="app__container-course-description-link">
+                                                    <i class="fa-solid fa-circle-plus"></i>
+                                                    Đăng ký
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </main>
+
+
+
+    <div class="app_footer">
+        <!-- Footer -->
+<footer class="text-center text-lg-start bg-dark text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3 text-secondary"></i>Company name
+            </h6>
+            <p>
+              Nhóm 8 làm bài tập lớn B1 môn Phát triển ứng dụng web
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Khóa học lập trình</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Khóa học lập trình nâng cao</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Khóa học làm game</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Khóa học võ</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3 text-secondary"></i> Số 18 Phố Viên - Phường Đức Thắng - Q. Bắc Từ Liêm - Hà Nội</p>
+            <p>
+              <i class="fas fa-envelope me-3 text-secondary"></i>
+              Namdeptrai123x2321@gmail.com
+            </p>
+            <p><i class="fas fa-phone me-3 text-secondary"></i> + 039xxxxxx421</p>
+            <p><i class="fas fa-print me-3 text-secondary"></i> + 097xxxxxx451</p>
+          </div>
+          <!-- Grid column -->
         </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="\">Hotdog.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+    </div>
 
-        <footer>
-        </footer>
+
     </div>
 
     <script src="assets/bootstrap/bootstrap-5.2.1-dist/js/bootstrap.bundle.min.js"></script>
