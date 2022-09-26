@@ -289,10 +289,18 @@
 
 .app__header-notice-note {
     display: flex;
-    color: var(--mail-color);
+    color:var(--mail-color);
     flex-direction: column;
     justify-content: space-between;
 }
+
+.app__header-notice-note_1 {
+    display: flex;
+    color:var(--black-color);
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 
 .app__header-note-content {
     font-size: 1.9rem;
@@ -305,6 +313,11 @@
     color: rgba(245, 117, 38, 0.7);
 }
 
+.app__header-notice-note-item_1 {
+    font-size: 1.2rem;
+    padding-left: 10px;
+    color: black;
+}
 
 /* Thông tin trong phần tin nhắn */
 .app__header-msg {
@@ -1079,7 +1092,9 @@
 .fa-reddit {
     color: red;
 }
-
+.fa-github {
+    color:black
+}
 
 /* Làm phần main */
 .app__container {
@@ -1197,7 +1212,15 @@
 }
 
 .carousel-item-photo-1 {
-    background: linear-gradient(0, blue, purple);
+    background: linear-gradient(0, rgb(222, 200, 200), rgb(20, 4, 128));
+}
+
+.carousel-item-photo-3 {
+    background: linear-gradient(0, rgb(89, 225, 237), rgb(247, 213, 133));
+}
+
+.carousel-item-photo-4 {
+    background: linear-gradient(0, aqua, rgb(123, 241, 123));
 }
 
 .carousel-item-picture {
