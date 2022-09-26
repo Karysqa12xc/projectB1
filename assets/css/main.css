@@ -172,7 +172,7 @@
     margin-left: 15px;
 }
 
-.app__header-avartar-separator {}
+
 
 .app__header-avartar-list {
     list-style: none;
@@ -390,9 +390,6 @@
     padding: 15px;
 }
 
-.app__header-msg-item:hover {
-    /* background-color: var(--gray-color); */
-}
 
 .app__header-msg-link {
     text-decoration: none;
@@ -405,7 +402,7 @@
     color: var(--text-color);
 }
 
-.app__header-msg-avartar {}
+
 
 .app__header-msg-picture {
     width: 56px;
@@ -498,7 +495,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.app__header-end-introduce-content {}
+
 
 .app__header-end-introduce-head {
     display: flex;
@@ -583,7 +580,7 @@
     color: var(--text-color);
 }
 
-.app__header-end-course-photo {}
+
 
 .app__header-end-course-picture {
     border-radius: 10px;
@@ -591,13 +588,13 @@
     height: 70px;
 }
 
-.app__header-end-course-content {}
+
 
 .app__header-end-course-content--has-button {
     margin-right: 56px;
 }
 
-.app__header-end-course-title {}
+
 
 .app__header-end-course-notice {
     color: var(--invalid-color);
@@ -642,9 +639,7 @@
     padding: 10px;
 }
 
-.app__header-end-follower-separator {}
 
-.app__header-end-follower-content {}
 
 .app__header-end-follower-list {
     max-height: 420px;
@@ -906,7 +901,7 @@
     display: none;
 }
 
-.app__header-end-donate-head {}
+
 
 .app__header-end-donate-head-list {
     display: flex;
@@ -996,7 +991,7 @@
     font-size: 1.8rem;
 }
 
-.app__header-end-donate-description {}
+
 
 .app__header-end-donate-icon {
     text-align: center;
@@ -1138,13 +1133,13 @@
 }
 
 .app__container-advertisement-list-down {
-  
+
     padding-left: 0;
     list-style: none;
 }
 
 .app__container-advertisement-item {
-    
+
     color: var(--white-color);
 }
 
@@ -1204,7 +1199,7 @@
     color: var(--button-color-2);
 }
 
-.carousel-inner--fit {}
+
 
 .carousel-item-photo-2 {
     background: linear-gradient(to right bottom, orange, Yellow);
@@ -1216,11 +1211,11 @@
 }
 
 .carousel-item-photo-3 {
-    background: linear-gradient(0, rgb(89, 225, 237), rgb(247, 213, 133));
+    background: linear-gradient(0, rgb(133, 247, 236), rgb(237, 96, 89));
 }
 
 .carousel-item-photo-4 {
-    background: linear-gradient(0, aqua, rgb(123, 241, 123));
+    background: linear-gradient(0, rgb(245, 140, 222), rgb(57, 49, 94));
 }
 
 .carousel-item-picture {
@@ -1233,7 +1228,7 @@
     margin-left: 15px;
 }
 
-.carousel-control-next {}
+
 
 .app__container-icon-pre {
     z-index: 1;
@@ -1255,7 +1250,7 @@
     /* background-color: #1d9bf0; */
 }
 
-.app__container-col-1 {}
+
 
 .app__container-icon {
     top: 108px;
@@ -1363,15 +1358,23 @@
 .app__container-course-link-JS {
     background: linear-gradient(to right bottom, orange, orange);
 }
-.app__container-course-link-Algorithm{
+
+.app__container-course-link-Algorithm {
     background: linear-gradient(to right bottom, #1d9bf0, #efef01);
 }
-.app__container-course-link-Git{
+
+.app__container-course-link-Git {
     background: linear-gradient(to right bottom, black, white);
 }
-.app__container-course-link-GitLab{
-    background: linear-gradient(to right bottom,#fc3e3e, orange);
+
+.app__container-course-link-gitWork {
+    background: linear-gradient(to right bottom, white, whitesmoke);
 }
+
+.app__container-course-link-GitLab {
+    background: linear-gradient(to right bottom, #fc3e3e, orange);
+}
+
 .app__container-course-link-PS {
     background: linear-gradient(to right bottom, #4e4a4a, #3030ee);
 }
@@ -1392,6 +1395,10 @@
     background: linear-gradient(to right bottom, #ebabb5, #d83bd8);
 }
 
+.app__container-course-link-KF {
+    background: linear-gradient(0, blue, purple);
+}
+
 .app__container-course-link:hover {
     opacity: 0.5;
     color: var(--white-color);
@@ -1400,6 +1407,14 @@
 .app__container-course-photo {
     height: 160px;
     position: relative;
+}
+
+.app__container-course-picture {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    right: 0;
 }
 
 .app__container-course-content {
@@ -1426,8 +1441,6 @@
     margin: 15px;
 }
 
-.app__container-course-description-intro {}
-
 .app__container-course-description-list {
     list-style: none;
     padding-left: 0;
@@ -1447,12 +1460,28 @@
     color: var(--primary-color);
 }
 
+.app__container-course-description-link:hover {
+    opacity: 0.5;
+    color: var(--primary-color);
+}
+
+.app__container-course-description-sub {
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--gray-color);
+    cursor: default;
+}
+
+.app__container-course-description-sub:hover {
+
+    color: var(--gray-color);
+}
 
 /* Viết phần footer */
-.app_footer{
+.app_footer {
     z-index: 10;
     position: relative;
-    bottom: calc( 0px  - 130px );
+    bottom: calc(0px - 130px);
     width: 100%;
     height: 40px;
 }
