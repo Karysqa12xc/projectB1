@@ -1217,7 +1217,9 @@
 .carousel-item-photo-4 {
     background: linear-gradient(0, rgb(245, 140, 222), rgb(57, 49, 94));
 }
-
+.carousel-item-photo-5{
+    background: linear-gradient(0, blue, purple);
+}
 .carousel-item-picture {
     height: 200px;
     object-fit: contain;
