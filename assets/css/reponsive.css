@@ -1,26 +1,61 @@
-@media only screen and (max-width: 46.1875em){
-    
-    
-    .carousel__mod{
+@media only screen and (max-width: 46.1875em) {
+    #app__header-head-item-up-res{
+        font-size: 1.2rem;
+    }
+    #app__header-head-search-res {
+        display: none;
+
+    }
+
+    #app__header-res {
+        top: 0;
+        position: relative;
+        height: 90px;
+        width: 100%;
+    }
+    #app__header-head-res{
+
+    }
+    #app__header-msg-res{
+        /* display: block; */
+    }
+    #app__header-head-list-down-res {}
+
+    #app__header-head-pointer-res {
+      display: none;
+    }
+
+    #app__header-head-link-res {
+        align-items: center;
+        display: flex;
+        font-size: 1.1rem;
+    }
+
+    .carousel__mod {
         display: none;
     }
-    .app__header{
-        /* height: 400px; */
+
+    #app__header-end-res {
+        position: absolute;
+        top: 50px;
+
     }
-    .app__header-heading{
-        display: none;
+    #app__container-res{
+        position: relative;
+        top:0px;
     }
-    .app__header-head-search{
+    #app__container-icon--sticky-res{
+        top: 8px;
+        position: -webkit-sticky;
+        position: sticky;
     }
-    .mobie__responsive{
-        flex-direction: column;
+    #app__container-course-link-res{
+        /* width: 100%; */
     }
-    .app__header-end--flexLeft{
-        flex-direction: column;
+    #app__container-mobile-responsive {
+        /* font-size: 1.4rem; */
+        font-weight: 900;
+
     }
-    .app__header-end--flexRight{
-        flex-direction: column;
-        margin-left: 16px;
-    }
-    
+
 }
