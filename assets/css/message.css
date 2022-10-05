@@ -1,12 +1,14 @@
 .app__mess {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: 0.3fr 0.3fr 1fr 1fr 1fr;
     grid-template-areas:
         "h1 h1 h1 h1 h1"
         "h2 h4 h4 h4 h4"
         "h3 h4 h4 h4 h4"
         "h3 h4 h4 h4 h4"
-        "h3 h4 h4 h4 h4";
+        "h3 h4 h4 h4 h4"
+        "h5 h5 h5 h5 h5";
     grid-gap: 8px;
 }
 
@@ -291,6 +293,57 @@ main {
     font-size: 1.4rem;
     margin-right: 10px;
 }
+/* Viết Footer */
 .app__mess-footer{
     grid-area: h5;
+    background-color: black;
+    position: relative;
+    bottom: -5px;
+}
+.app__mess-footer-head-list{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+}
+.app__mess-footer-head-item{
+    margin-left: 10px;
+}
+.app__mess-footer-head-link{
+    text-decoration: none;
+    display: block;
+    font-size: 1.4rem;
+    color: var(--fb-color);
+}
+
+.app__mess-footer-head-mid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    padding: 0 12px 20px 12px;
+    grid-gap:10px;
+}
+.app__mess-footer-head-company, 
+.app__mess-footer-head-setting,
+.app__mess-footer-head-products,
+.app__mess-footer-head-contact
+{
+    color: var(--white-color);
+} 
+.app__mess-footer-head-products-list,
+.app__mess-footer-head-setting-list,
+.app__mess-footer-head-contact-list{
+    padding-left: 0;
+    list-style: none;
+}
+.app__mess-footer-head-products-item,
+.app__mess-footer-head-setting-item,
+.app__mess-footer-head-contact-item{
+    margin-top: 12px;
+}
+.app__mess-footer-head-down{
+    color: var(--white-color);
+    text-align: center;
+}
+.app__mess-footer-head-down-link{
+    color: var(--white-color);
 }
