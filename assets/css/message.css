@@ -1,0 +1,296 @@
+.app__mess {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+        "h1 h1 h1 h1 h1"
+        "h2 h4 h4 h4 h4"
+        "h3 h4 h4 h4 h4"
+        "h3 h4 h4 h4 h4"
+        "h3 h4 h4 h4 h4";
+    grid-gap: 8px;
+}
+
+/* Phần header */
+header {
+    height: 60px;
+    grid-area: h1;
+    position: relative;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.app__mess-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app__mess-head-list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.app__mess-head-item {
+    font-size: 2rem;
+
+}
+
+.app__mess-head-item+.app__mess-head-item {
+    margin-left: 50px;
+}
+
+.app__mess-head--item-title {
+    font-size: 2.4rem;
+    margin-left: 12px;
+}
+
+.app__mess-head-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.app__mess-contact {
+    height: 70px;
+    box-shadow: var(--shadow);
+    grid-area: h2;
+}
+
+.app__mess-contact-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.app__mess-contact-item {
+    margin: 12px;
+}
+
+.app__mess-contact-link {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.app__mess-contact-search {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #ccc;
+    border-radius: 10px;
+    font-size: 1.6rem;
+}
+
+.app__mess-contact-inp {
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: 1.8rem;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.app__mess-navigation {
+    height: 620px;
+    grid-area: h3;
+}
+
+.app__mess-navigation-list {
+    list-style: none;
+    padding-left: 0;
+    height: 550px;
+    overflow-y: scroll;
+}
+
+.app__mess-navigation-item {
+    padding: 10px;
+}
+
+.app__mess-navigation-link {
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    display: flex;
+    align-items: center;
+}
+
+.app__mess-navigation-link:hover {
+    background-color: var(--hover-1);
+}
+
+.app__mess-navigation-picture {
+    width: 65px;
+    height: 65px;
+    border-radius: 50px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.app__mess-navigation-description {
+    margin-left: 10px;
+}
+
+.app__mess-navigation-userName {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.app__mess-navigation-content {
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+}
+
+
+
+main {
+    height: 620px;
+    grid-area: h4;
+    position: relative;
+}
+
+.app__mess-noMgs {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.app__mess-noMgs-title {
+    font-size: 2.4rem;
+}
+
+.app__mess-hasMsg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #fff;
+    display: none;
+}
+
+#TanLo:target,
+#Processsor:target,
+#HoaHau:target,
+#LowGFake:target,
+#lyquychan:target,
+#link:target,
+#diepvan:target,
+#longaoden:target{
+    display: block;
+}
+
+.app__mess-hasMsg::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.app__mess-hasMsg-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.app__mess-hasMsg-head-user-link {
+    text-decoration: none;
+    color: var(--text-color);
+    display: flex;
+}
+
+.app__mess-hasMsg-head-user-picture {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.app__mess-hasMsg-head-user-call {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+.app__mess-hasMsg-head-user-icon {
+    margin-right: 25px;
+    font-size: 1.4rem;
+}
+
+.app__mess-hasMsg-mid {
+    position: absolute;
+    bottom: 90px;
+}
+
+.app__mess-hasMsg-mid-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    object-fit: cover;
+    object-position: top;
+    position: absolute;
+}
+
+.app__mess-hasMsg-mid-msg {
+    position: absolute;
+    background-color: #3e4042;
+    width: 150px;
+    border-radius: 15px;
+    left: 50px;
+    bottom: -20px;
+}
+
+.app__mess-hasMsg-mid-content {
+    font-size: 1.8rem;
+    text-align: center;
+    color: #dae6eb;
+}
+
+.app__mess-hasMsg-down {
+    width: 100%;
+    bottom: -20px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    box-shadow: -2px -2px 8px 0px #ccc;
+    justify-content: space-between;
+}
+
+.app__mess-hasMsg-down-list {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.app__mess-hasMsg-down-item {
+    margin-left: 15px;
+}
+
+.app__mess-hasMsg-down-text {
+    margin-left: 15px;
+    width: 1000px;
+}
+
+.app__mess-hasMsg-down-inp {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.app__mess-hasMsg-down-send {
+    font-size: 1.4rem;
+    margin-right: 10px;
+}
+.app__mess-footer{
+    grid-area: h5;
+}

@@ -438,6 +438,9 @@
     line-height: 3.6rem;
     text-align: center;
 }
+.app__header-msg-seeAll-link:hover{
+    text-decoration: underline;
+}
 /* nav end */
 .app__header-end {
     top: 86px;
